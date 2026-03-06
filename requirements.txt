@@ -1,0 +1,25 @@
+# IA e LLM
+langchain>=0.3.0
+langchain-community
+langchain-groq
+langchain-huggingface
+langchain-core
+langchain-chroma
+sentence-transformers
+chromadb
+
+# Processamento de Documentos e OCR
+pdf2image
+pytesseract
+pillow
+
+# Machine Learning Local e Dados
+pandas
+matplotlib
+scikit-learn
+joblib
+
+# Utilidades e API
+python-dotenv
+fastapi
+uvicorn

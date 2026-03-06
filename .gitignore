@@ -1,0 +1,13 @@
+# Ignorar ambiente virtual
+venv/
+# Ignorar arquivos CSV grandes
+data/resultados/*.csv
+data/processados/*.csv
+
+# Ignorar caches do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.json
+
