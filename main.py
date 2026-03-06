@@ -1,43 +1,54 @@
 import os
+import logging
+
+# --- 1. SUPRESSÃO DE LOGS TÉCNICOS (Deve vir antes de qualquer import de IA) ---
+os.environ['TRANSFORMERS_VERBOSITY'] = 'error'
+os.environ['HF_HUB_DISABLE_SYMLINKS_WARNING'] = '1'
+from transformers import logging as transformers_logging
+transformers_logging.set_verbosity_error()
+
 import time
 import csv
 from datetime import datetime
 from dotenv import load_dotenv
 
-# LangChain e Integrações
+# --- 2. LANGCHAIN E INTEGRAÇÕES ATUALIZADAS ---
 from langchain_groq import ChatGroq
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma  # Migrado para o pacote atualizado
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnableLambda
 from langchain_core.output_parsers import StrOutputParser
 
-# --- IMPORT CORRIGIDO ---
+# --- 3. IMPORT DO CLASSIFICADOR LOCAL ---
 from localclassifier import LocalClassifier 
 
-# Carrega variáveis de ambiente (API Keys, etc)
+# Carrega variáveis do .env
 load_dotenv()
 
 class SeverinoIA:
     def __init__(self):
-        # Configurações de Identidade
+        # Configurações de Identidade e Infraestrutura
         self.config = {
             "nome_ia": "Severino",
             "nome_condominio": "Monte Fuji",
             "db_dir": "chroma_db",
-            "model_llm": "llama-3.1-8b-instant"
+            "model_llm": "llama-3.1-8b-instant" # O modelo mais potente para RAG
         }
         
-        # 1. Inicializa o Classificador Local (ML)
+        # A. Inicializa o Classificador Local (Machine Learning)
         self.classifier = LocalClassifier()
         
-        # 2. Inicializa Embeddings (Mesmo modelo do indexador.py)
+        # B. Inicializa Embeddings (Silencioso)
         print("🧠 Carregando inteligência vetorial...")
-        self.embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+        self.embeddings = HuggingFaceEmbeddings(
+            model_name="sentence-transformers/all-MiniLM-L6-v2",
+            model_kwargs={'device': 'cpu'}
+        )
         
-        # 3. Conecta ao Banco de Dados criado pelo indexador.py
+        # C. Conecta ao Banco de Dados (Padrão Novo)
         if not os.path.exists(self.config["db_dir"]):
-            print("❌ ERRO: Banco 'chroma_db' não encontrado. Rode o indexador.py primeiro!")
+            print(f"❌ ERRO: Banco '{self.config['db_dir']}' não encontrado. Execute o indexador.py primeiro.")
             exit()
             
         self.vectorstore = Chroma(
@@ -45,16 +56,16 @@ class SeverinoIA:
             embedding_function=self.embeddings
         )
         
-        # 4. Configura o LLM (Groq)
+        # D. Configura o LLM com Temperature Zero (Precisão Jurídica)
         self.llm = ChatGroq(
             model=self.config["model_llm"],
-            temperature=0, # Respostas precisas, sem "criatividade" excessiva
+            temperature=0, 
             groq_api_key=os.getenv("GROQ_API_KEY")
         )
 
     def recuperar_contexto(self, pergunta: str) -> str:
-        """Busca no regimento os trechos mais relevantes."""
-        # Aumentamos para K=10 para garantir cobertura de artigos longos
+        """Busca no regimento os trechos mais relevantes para o morador."""
+        # K=10 para garantir que pegamos o contexto completo de artigos longos
         docs = self.vectorstore.similarity_search(pergunta, k=10)
         contexto = "\n\n".join([
             f"[Página {d.metadata.get('page', 'S/N')}]: {d.page_content}" 
@@ -63,7 +74,7 @@ class SeverinoIA:
         return contexto
 
     def registrar_log_sindico(self, pergunta: str):
-        """Classifica a intenção e salva para o dashboard.py."""
+        """Classifica a intenção via ML local e salva no CSV para o Dashboard."""
         categoria = self.classifier.classificar(pergunta)
         log_file = "dashboard_sindico.csv"
         
@@ -74,11 +85,11 @@ class SeverinoIA:
                 writer.writerow(["Data", "Pergunta", "Categoria"])
             writer.writerow([datetime.now().strftime("%d/%m/%Y %H:%M"), pergunta, categoria])
         
-        print(f"📡 [LOG] Assunto: {categoria}")
+        print(f"📡 [LOG] Assunto identificado: {categoria}")
         return pergunta
 
     def criar_chain(self):
-        """Monta o pipeline de execução."""
+        """Pipeline de Processamento (RAG + Agentic Logging)."""
         template = """
         Você é o {nome_ia}, o assistente virtual do Condomínio {nome_condominio}.
         Sua missão é ajudar os moradores com base estrita no Regimento Interno fornecido.
@@ -90,10 +101,9 @@ class SeverinoIA:
         {question}
 
         ### ORIENTAÇÕES PARA SUA RESPOSTA:
-        1. Seja cordial e educado.
-        2. Se a resposta estiver no contexto, cite o número da página ou artigo.
-        3. Se não encontrar a informação, diga: "Sinto muito, mas não encontrei uma regra específica sobre isso no regimento atual. Recomendo consultar a administração."
-        4. Se o morador pedir para "transcrever" ou "copiar", forneça o texto literal.
+        1. Seja cordial e cite o número da página ou artigo encontrado.
+        2. Responda apenas o que estiver no texto. Se não souber, oriente a falar com a administração.
+        3. Se o morador pedir "transcrição" ou "cópia", forneça o texto literal do regimento.
 
         RESPOSTA DO {nome_ia}:
         """
@@ -111,14 +121,14 @@ class SeverinoIA:
             | StrOutputParser()
         )
 
-# --- LOOP PRINCIPAL ---
+# --- EXECUÇÃO DO SISTEMA ---
 if __name__ == "__main__":
     severino = SeverinoIA()
     chain = severino.criar_chain()
     
-    print("\n" + "="*30)
-    print(f"🏢 {severino.config['nome_ia']} pronto para o {severino.config['nome_condominio']}!")
-    print("="*30)
+    print("\n" + "="*40)
+    print(f"🏢 {severino.config['nome_ia']} ONLINE | CONDOMÍNIO {severino.config['nome_condominio']}")
+    print("="*40)
 
     while True:
         entrada = input("\nMorador: ")
@@ -128,9 +138,9 @@ if __name__ == "__main__":
         try:
             inicio = time.time()
             resposta = chain.invoke(entrada)
-            tempo = time.time() - inicio
+            fim = time.time() - inicio
             
             print(f"\n{severino.config['nome_ia']}: {resposta}")
-            print(f"\n[⏱️ {tempo:.2f}s]")
+            print(f"\n[🕒 Tempo de processamento: {fim:.2f}s]")
         except Exception as e:
-            print(f"⚠️ Erro ao processar: {e}")
+            print(f"⚠️ Erro ao processar solicitação: {e}")
