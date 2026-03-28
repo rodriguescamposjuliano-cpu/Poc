@@ -1,25 +1,50 @@
-# IA e LLM
-langchain>=0.3.0
-langchain-community
-langchain-groq
-langchain-huggingface
-langchain-core
+# =========================
+# IA / LLM (LangChain 1.x)
+# =========================
+langchain==1.2.13
+langchain-core==1.2.22
+langchain-community==0.4.1
 langchain-chroma
+langchain-huggingface
+langchain-groq
+nltk
+
+# =========================
+# Embeddings / Vetor
+# =========================
 sentence-transformers
 chromadb
 
-# Processamento de Documentos e OCR
+# =========================
+# Reranking
+# =========================
+flashrank
+
+
+# =========================
+# PDF / OCR
+# =========================
+pymupdf            # ✅ CORRETO (usa import fitz)
 pdf2image
 pytesseract
 pillow
 
-# Machine Learning Local e Dados
+# =========================
+# Dados (opcional)
+# =========================
 pandas
 matplotlib
 scikit-learn
 joblib
 
-# Utilidades e API
+# =========================
+# API / Utils
+# =========================
 python-dotenv
 fastapi
 uvicorn
+
+# =========================
+# Interface
+# =========================
+rich

@@ -1,146 +1,190 @@
 import os
-import logging
-
-# --- 1. SUPRESSÃO DE LOGS TÉCNICOS (Deve vir antes de qualquer import de IA) ---
-os.environ['TRANSFORMERS_VERBOSITY'] = 'error'
-os.environ['HF_HUB_DISABLE_SYMLINKS_WARNING'] = '1'
-from transformers import logging as transformers_logging
-transformers_logging.set_verbosity_error()
-
 import time
-import csv
 from datetime import datetime
 from dotenv import load_dotenv
-
-# --- 2. LANGCHAIN E INTEGRAÇÕES ATUALIZADAS ---
+import json
+import nltk
+from nltk.stem import SnowballStemmer
+from nltk.tokenize import word_tokenize
+from rich.console import Console
+from rich.panel import Panel
 from langchain_groq import ChatGroq
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_chroma import Chroma  # Migrado para o pacote atualizado
+from langchain_chroma import Chroma
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.runnables import RunnableLambda
 from langchain_core.output_parsers import StrOutputParser
+from langchain_core.documents import Document
+from langchain_community.retrievers import BM25Retriever
+from flashrank import Ranker, RerankRequest
 
-# --- 3. IMPORT DO CLASSIFICADOR LOCAL ---
-from localclassifier import LocalClassifier 
+# Recursos NLTK
+try:
+    nltk.download('punkt', quiet=True)
+    nltk.download('punkt_tab', quiet=True)
+except:
+    pass
 
-# Carrega variáveis do .env
 load_dotenv()
+console = Console()
+DEBUG = True
+LOG_FILE = "severino_debug.log"
+
+def limpar_console():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def log_debug(titulo, data):
+    if not DEBUG: return
+    def convert(o): 
+        if hasattr(o, "item"): return float(o)
+        if isinstance(o, Document): return {"content": o.page_content[:200], "metadata": o.metadata}
+        return str(o)
+    
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    log_entry = f"\n{'='*80}\n[{timestamp}] {titulo}\n"
+    log_entry += json.dumps(data, indent=2, ensure_ascii=False, default=convert)
+    log_entry += f"\n{'='*80}\n"
+    
+    with open(LOG_FILE, "a", encoding="utf-8") as f: 
+        f.write(log_entry)
 
 class SeverinoIA:
     def __init__(self):
-        # Configurações de Identidade e Infraestrutura
-        self.config = {
-            "nome_ia": "Severino",
-            "nome_condominio": "Monte Fuji",
-            "db_dir": "chroma_db",
-            "model_llm": "llama-3.1-8b-instant" # O modelo mais potente para RAG
+        console.print("[yellow]Iniciando motores do Severino...[/yellow]")
+        # Mapeamento estático apenas para o menu, os nomes reais vêm do banco agora
+        self.tenants_map = {
+            "001": "WISH COIMBRA", "002": "REALITY BURITIS", 
+            "003": "American Tower", "004": "Edifício Florença", "005": "Monte Fuji"
         }
-        
-        # A. Inicializa o Classificador Local (Machine Learning)
-        self.classifier = LocalClassifier()
-        
-        # B. Inicializa Embeddings (Silencioso)
-        print("🧠 Carregando inteligência vetorial...")
-        self.embeddings = HuggingFaceEmbeddings(
-            model_name="sentence-transformers/all-MiniLM-L6-v2",
-            model_kwargs={'device': 'cpu'}
-        )
-        
-        # C. Conecta ao Banco de Dados (Padrão Novo)
-        if not os.path.exists(self.config["db_dir"]):
-            print(f"❌ ERRO: Banco '{self.config['db_dir']}' não encontrado. Execute o indexador.py primeiro.")
-            exit()
-            
-        self.vectorstore = Chroma(
-            persist_directory=self.config["db_dir"], 
-            embedding_function=self.embeddings
-        )
-        
-        # D. Configura o LLM com Temperature Zero (Precisão Jurídica)
-        self.llm = ChatGroq(
-            model=self.config["model_llm"],
-            temperature=0, 
-            groq_api_key=os.getenv("GROQ_API_KEY")
-        )
+        self.stemmer = SnowballStemmer("portuguese")
+        self.embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-mpnet-base-v2")
+        self.vectorstore = Chroma(persist_directory="chroma_db", embedding_function=self.embeddings)
+        self.reranker = Ranker(model_name="ms-marco-MiniLM-L-12-v2")
+        self.llm = ChatGroq(model="llama-3.1-8b-instant", temperature=0)
 
-    def recuperar_contexto(self, pergunta: str) -> str:
-        """Busca no regimento os trechos mais relevantes para o morador."""
-        # K=10 para garantir que pegamos o contexto completo de artigos longos
-        docs = self.vectorstore.similarity_search(pergunta, k=10)
-        contexto = "\n\n".join([
-            f"[Página {d.metadata.get('page', 'S/N')}]: {d.page_content}" 
-            for d in docs
+    def _preprocess_local(self, text):
+        words = word_tokenize(text.lower())
+        return [self.stemmer.stem(w) for w in words if w.isalnum()]
+
+    def buscar(self, query, tenant_id):
+        results = self.vectorstore.get(where={"tenant_id": tenant_id})
+        docs_base = [Document(page_content=c, metadata=m) for c, m in zip(results['documents'], results['metadatas'])]
+        
+        if not docs_base: 
+            return []
+
+        # 1. Busca Híbrida (BM25 + Vetorial)
+        bm25 = BM25Retriever.from_documents(docs_base, preprocess_func=self._preprocess_local)
+        bm25.k = 30
+        docs_bm25 = bm25.invoke(query)
+
+        vector_retriever = self.vectorstore.as_retriever(search_kwargs={"k": 30, "filter": {"tenant_id": tenant_id}})
+        docs_vetoriais = vector_retriever.invoke(query)
+
+        # 2. Deduplicação
+        todos = docs_bm25 + docs_vetoriais
+        docs_unicos = []
+        vistos = set()
+        for d in todos:
+            if d.page_content not in vistos:
+                docs_unicos.append(d)
+                vistos.add(d.page_content)
+
+        # 3. Reranking (Trilha B do edital)
+        passages = [{"id": i, "text": d.page_content} for i, d in enumerate(docs_unicos)]
+        ranked = self.reranker.rerank(RerankRequest(query=query, passages=passages))
+
+        final = []
+        for item in ranked[:5]: # Top 5 conforme boas práticas de RAG
+            idx = item.get("id")
+            doc = docs_unicos[idx]
+            final.append(doc)
+        
+        return final
+
+    def responder(self, pergunta, tenant_id):
+        docs = self.buscar(pergunta, tenant_id)
+        if not docs: 
+            return "Informação não localizada no regimento enviado."
+        
+        # 1. Contexto formatado como "Base de Dados"
+        contexto_lista = []
+        for i, d in enumerate(docs):
+            doc_id = d.metadata.get('doc_id', f'doc_{tenant_id}')
+            ref_id = f"[{doc_id}#chunk_{i}]"
+            contexto_lista.append(f"REGRA_TECNICA {ref_id}:\n{d.page_content}")
+        
+        contexto_string = "\n\n".join(contexto_lista)
+        
+        # 2. Prompt de "Engenharia de Precisão"
+        prompt_template = ChatPromptTemplate.from_messages([
+            ("system", """Você é um extrator de dados jurídico chamado Severino. 
+            Sua saída deve ser estritamente no formato: [Resposta Curta] [Código da Fonte].
+
+            REGRAS DE FORMATAÇÃO:
+            1. Proibido iniciar com "De acordo com" ou "O regimento diz".
+            2. Cada afirmação deve ser seguida pela sua fonte no formato [chunk_X].
+            3. Use APENAS a REGRA_TECNICA fornecida.
+            
+            EXEMPLO DE RESPOSTA:
+            'Não é permitido barulho após as 22h [doc_001#chunk_4].'"""),
+            ("human", """CONTEXTO:
+            {context}
+
+            PERGUNTA:
+            {question}
+
+            RESPOSTA (Obrigatório conter o código entre colchetes ao final):""")
         ])
-        return contexto
 
-    def registrar_log_sindico(self, pergunta: str):
-        """Classifica a intenção via ML local e salva no CSV para o Dashboard."""
-        categoria = self.classifier.classificar(pergunta)
-        log_file = "dashboard_sindico.csv"
+        log_debug("DEBUG_PROMPT_ENVIADO", {"corpo": contexto_string})
+
+        chain = prompt_template | self.llm | StrOutputParser()
         
-        file_exists = os.path.isfile(log_file)
-        with open(log_file, "a", newline="", encoding="utf-8") as f:
-            writer = csv.writer(f)
-            if not file_exists:
-                writer.writerow(["Data", "Pergunta", "Categoria"])
-            writer.writerow([datetime.now().strftime("%d/%m/%Y %H:%M"), pergunta, categoria])
-        
-        print(f"📡 [LOG] Assunto identificado: {categoria}")
-        return pergunta
+        return chain.invoke({
+            "context": contexto_string, 
+            "question": pergunta, 
+            "condominio": self.tenants_map.get(tenant_id, "Condomínio")
+        })
 
-    def criar_chain(self):
-        """Pipeline de Processamento (RAG + Agentic Logging)."""
-        template = """
-        Você é o {nome_ia}, o assistente virtual do Condomínio {nome_condominio}.
-        Sua missão é ajudar os moradores com base estrita no Regimento Interno fornecido.
-
-        ### REGRAS DO REGIMENTO ENCONTRADAS:
-        {context}
-
-        ### PERGUNTA DO MORADOR:
-        {question}
-
-        ### ORIENTAÇÕES PARA SUA RESPOSTA:
-        1. Seja cordial e cite o número da página ou artigo encontrado.
-        2. Responda apenas o que estiver no texto. Se não souber, oriente a falar com a administração.
-        3. Se o morador pedir "transcrição" ou "cópia", forneça o texto literal do regimento.
-
-        RESPOSTA DO {nome_ia}:
-        """
-        prompt = ChatPromptTemplate.from_template(template)
-        
-        return (
-            {
-                "context": RunnableLambda(self.recuperar_contexto),
-                "question": RunnableLambda(self.registrar_log_sindico),
-                "nome_ia": lambda x: self.config["nome_ia"],
-                "nome_condominio": lambda x: self.config["nome_condominio"]
-            }
-            | prompt
-            | self.llm
-            | StrOutputParser()
-        )
-
-# --- EXECUÇÃO DO SISTEMA ---
 if __name__ == "__main__":
-    severino = SeverinoIA()
-    chain = severino.criar_chain()
+    ia = SeverinoIA()
     
-    print("\n" + "="*40)
-    print(f"🏢 {severino.config['nome_ia']} ONLINE | CONDOMÍNIO {severino.config['nome_condominio']}")
-    print("="*40)
+    while True: # Loop do Menu Principal
+        limpar_console()
+        console.print(Panel.fit("SEVERINO IA - SELECIONE UM CONDOMÍNIO", style="bold blue"))
+        for id, nome in ia.tenants_map.items():
+            console.print(f"[bold cyan]{id}[/bold cyan] - {nome}")
+        console.print("\n[dim]Digite 'sair' para encerrar o programa.[/dim]")
 
-    while True:
-        entrada = input("\nMorador: ")
-        if entrada.lower() in ["sair", "tchau", "encerrar"]:
+        tenant = input("\nID do Condomínio: ").strip()
+        
+        if tenant.lower() == 'sair':
             break
+        if tenant not in ia.tenants_map:
+            console.print("[red]ID inválido![/red]")
+            time.sleep(1)
+            continue
+
+        # Loop da Conversa
+        limpar_console()
+        nome_condo = ia.tenants_map[tenant]
+        console.print(Panel(f"CONECTADO: {nome_condo}", style="bold green"))
+        console.print("[dim]Comandos: 'voltar' para o menu ou 'sair' para encerrar.[/dim]\n")
+
+        while True:
+            pergunta = input(f"Morador ({nome_condo}): ").strip()
             
-        try:
-            inicio = time.time()
-            resposta = chain.invoke(entrada)
-            fim = time.time() - inicio
-            
-            print(f"\n{severino.config['nome_ia']}: {resposta}")
-            print(f"\n[🕒 Tempo de processamento: {fim:.2f}s]")
-        except Exception as e:
-            print(f"⚠️ Erro ao processar solicitação: {e}")
+            if pergunta.lower() == 'voltar':
+                break
+            if pergunta.lower() == 'sair':
+                exit()
+            if not pergunta:
+                continue
+
+            with console.status("[bold yellow]Consultando..."):
+                inicio = time.time()
+                resposta = ia.responder(pergunta, tenant)
+                tempo = time.time() - inicio
+
+            console.print(f"\n[bold yellow]Severino:[/bold yellow]\n{resposta}")
+            console.print(f"[dim]Tempo: {tempo:.2f}s | Log gerado em {LOG_FILE}[/dim]\n")
