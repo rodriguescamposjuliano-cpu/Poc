@@ -105,7 +105,8 @@ class SeverinoIA:
         ranked = self.reranker.rerank(RerankRequest(query=query, passages=passages))
 
         final = []
-        for item in ranked[:1]: # Top 3 conforme boas práticas de RAG
+        # Pegamos os 3 melhores após o rerank
+        for item in ranked[:3]:
             idx = item.get("id")
             doc = docs_unicos[idx]
             final.append(doc)
@@ -174,8 +175,10 @@ class SeverinoIA:
         → NÃO reescreva
         → NÃO resuma o trecho
         → Inclua o artigo completo (ex: "Art. 5º") quando existir
+        → SEMPRE inclua o parágrafo único ou parágrafos numerados (§) se eles existirem logo após o artigo citado.
         → NÃO traga apenas itens isolados como "a)" ou "b)"
         → Se houver lista, inclua o cabeçalho junto
+       
 
         FORMATO OBRIGATÓRIO (JSON):
         {{

@@ -1,118 +1,191 @@
 import os
 import shutil
 import re
-import fitz
-from pdf2image import convert_from_path
+import cv2
+import numpy as np
+import fitz  # PyMuPDF
 import pytesseract
-
+from PIL import Image
 from langchain_core.documents import Document
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 
+# Silenciar warnings técnicos
+os.environ["HF_HUB_OFFLINE"] = "1"
+import logging
+logging.getLogger("transformers").setLevel(logging.ERROR)
+logging.getLogger("huggingface_hub").setLevel(logging.ERROR)
+
 # CONFIGURAÇÕES
-POPPLER_PATH = "/opt/homebrew/bin"  # Ajuste conforme seu sistema
 CHROMA_DIR = "chroma_db"
 PASTA_REGIMENTOS = "./regimentos_input"
 
 # 1. Correção de Erros Comuns de OCR
 mapa_correcao_ocr = {
-    r"(?i)intemo": "Interno", r"(?i)intimo": "Interno",
-    r"(?i)iniração": "infração", r"(?i)muita": "multa",
-    r"(?i)peia": "pela", r"(?<=[\s\n])[8S]\s+(?=\d+º)": "§ ",
-    r"(?i)regimento": "Regimento"
+    r"(?i)intemo": "Interno", 
+    r"(?i)intimo": "Interno",
+    r"(?i)iniração": "infração", 
+    r"(?i)muita": "multa",
+    r"(?i)peia": "pela", 
+    r"(?i)\bArm\b\.?": "Art.",
+    r"(?i)\bAr\b\.?": "Art.",
+    r"(?i)\bAnt\b\.?": "Art.",
+    r"(?i)\bAst\b\.?": "Art.",
+    r"(?i)\bAt\b\.?": "Art."
+    
+     
 }
 
 # -------------------------------
-# LIMPEZA E NORMALIZAÇÃO
+# 1. TRATAMENTO DE IMAGEM (ANTI-ASSINATURA)
 # -------------------------------
-def limpar_texto(texto):
-    if not texto: return ""
+def tratar_imagem_para_ocr(pix):
+    """Remove assinaturas leves e carimbos usando técnicas de OpenCV."""
+    # Converte o pixmap para array numpy (formato OpenCV)
+    img = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.h, pix.w, pix.n)
+    img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR) if pix.n == 3 else cv2.cvtColor(img, cv2.COLOR_RGBA2BGR)
+
+    # Escala de cinza
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+    # Thresholding: Transforma o que é claro (assinaturas azuis/carimbos) em branco 
+    # e o que é escuro (texto impresso) em preto puro.
+    _, thresh = cv2.threshold(gray, 155, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
     
-    # Remove ruídos de cabeçalho e rodapé comuns (Página X, Nome do Condomínio)
-    texto = re.sub(r'(?i)Regimento Interno.*|Residencial Wish.*|Pág\w*\.?\s*\d+', '', texto)
-    
-    # Corrige erros de OCR em símbolos jurídicos
-    texto = re.sub(r'\$(\d+º)', r'§\1', texto)
-    texto = re.sub(r'\b8(\d+º)', r'§\1', texto)
-    
-    # Remove quebras de linha no meio de frases (hifenização)
-    texto = re.sub(r'(\w)-\n(\w)', r'\1\2', texto)
-    
-    # Normaliza espaços múltiplos e quebras excessivas
-    texto = re.sub(r'[ \t]+', ' ', texto)
-    return texto.strip()
+    return thresh
 
 # -------------------------------
-# DIVISOR INTELIGENTE HÍBRIDO
+# 2. FILTRO DE SANIDADE (ANTI-LIXO OCR)
+# -------------------------------
+def linha_e_valida(linha):
+    """Verifica se a linha extraída faz sentido gramatical ou é ruído visual."""
+    texto = linha.strip()
+    if len(texto) < 4: return False
+    
+    # Se a linha tiver muitos símbolos e poucos caracteres alfanuméricos, é ruído
+    letras = re.findall(r'[a-zA-ZÀ-Úà-ú]', texto)
+    if len(texto) > 0:
+        proporcao = len(letras) / len(texto)
+        if proporcao < 0.45: # Menos de 45% de letras? Provavelmente um rabisco.
+            return False
+
+    # Filtro de palavras sem vogais (OCR de assinaturas gera coisas como 'SbrOLTT')
+    palavras = texto.split()
+    for p in palavras:
+        if len(p) > 5 and not re.search(r'[aeiouAEIOUÀ-Úà-ú]', p):
+            return False
+            
+    return True
+
+# -------------------------------
+# 3. LIMPEZA E NORMALIZAÇÃO
+# -------------------------------
+def limpar_texto(texto):
+    if not texto: 
+        return ""
+    
+    linhas = texto.split('\n')
+    linhas_validas = []
+    
+    for linha in linhas:
+        l = linha.strip()
+        
+        # --- PROTEÇÃO PARA ARTIGOS ---
+        # Se a linha começa com "Art", ela é SAGRADA. Não aplicamos filtros de data/ruído nela.
+        if re.match(r'(?i)^Art\b', l):
+            linhas_validas.append(l)
+            continue
+
+        # Filtro de Sanidade padrão
+        if not l or not linha_e_valida(l):
+            continue
+
+        # Filtro de Cabeçalho/Rodapé
+        if re.fullmatch(r'(?i)\s*(Regimento Interno|Pág\w*\.?\s*\d+|Página\s*\d+)\s*', l):            
+            continue
+        
+        # Filtro de Protocolo: Refinado para não confundir horários (HH:MM) com datas (DD/MM)
+        # Verificamos se tem a barra '/' especificamente.
+        if "/" in l and re.search(r'\d{2}/\d{2}/\d{2,4}', l) and len(l) < 35:
+            continue
+
+        linhas_validas.append(l)
+    
+    texto_final = '\n'.join(linhas_validas)
+    
+    # --- CORREÇÕES GLOBAIS ---
+
+    # A) Parágrafo Único
+    texto_final = re.sub(r'(?i)\b(8|S|B)\s+Único\b', 'Parágrafo Único', texto_final)
+    
+    # B) Símbolos de parágrafo
+    texto_final = re.sub(r'(?m)^[8\$S]\s*(\d+)', r'§ \1', texto_final)
+
+    # C) União de palavras (Letra + Hífen + Quebra + Letra)
+    texto_final = re.sub(r'([a-zA-ZÀ-Úà-ú])-\s*\n([a-zA-ZÀ-Úà-ú])', r'\1\2', texto_final)
+    
+    # D) Normalização de Travessões e Hifens de Artigos
+    # Agora incluímos o travessão longo '—' que aparece no seu Art. 28
+    texto_final = re.sub(r'(\d+)\s*[\-–—]\s*', r'\1 - ', texto_final)
+    
+    # E) Espaços duplos (preservando quebras de linha importantes)
+    texto_final = re.sub(r'[ \t]+', ' ', texto_final)
+    
+    return texto_final.strip()
+
+# -------------------------------
+# 4. DIVISÃO E EXTRAÇÃO
 # -------------------------------
 def dividir_documento(texto):
     blocos = []
     
+    # Este regex ignora se tem 1 espaço, 5 espaços, ponto ou hífen após o número
+    padrao_artigos = r'(?i)(?:^|\n)\s*((?:Art(?:igo)?\.?)\s+\d+[\s.\-–—]*[º°ª]?)'
+
     for erro, correcao in mapa_correcao_ocr.items():
         texto = re.sub(erro, correcao, texto)
-    
-    # PADRÃO 1: Seções Numeradas (ex: 5. DA ADMINISTRAÇÃO ou 22. ANIMAIS)
-    # Procura: Início de linha + Número + Ponto + Espaço + Título em Maiúsculas
-    padrao_topicos = r'(?:\n|^)(\d+\.\s+[A-ZÀ-Ú\s]{5,})'
-    
-    # PADRÃO 2: Artigos (ex: Art. 1º ou Artigo 22)
-    padrao_artigos = r'(?:\n|^)(Art\.?\s*\d+º?)'
 
-    # Verifica qual padrão é predominante no documento
-    if len(re.findall(padrao_topicos, texto)) > 5:
-        # Divisão por Tópicos/Assuntos
-        partes = re.split(padrao_topicos, texto)
-        i = 1
-        while i < len(partes):
-            titulo = partes[i].strip()
-            conteudo = partes[i+1].strip() if (i+1) < len(partes) else ""
-            
-            texto_bloco = f"--- {titulo} ---\n{conteudo}"
-            if len(texto_bloco) > 50:
-                blocos.append({"tipo": "topico", "id": titulo, "conteudo": texto_bloco})
-            i += 2
-            
-    elif len(re.findall(padrao_artigos, texto)) > 3:
-        # Divisão por Artigos
-        partes = re.split(padrao_artigos, texto)
-        i = 1
-        while i < len(partes):
-            num_art = partes[i].strip()
-            conteudo = partes[i+1].strip() if (i+1) < len(partes) else ""
-            
-            texto_bloco = f"{num_art} {conteudo}"
-            if len(texto_bloco) > 30:
-                blocos.append({"tipo": "artigo", "id": num_art, "conteudo": texto_bloco})
-            i += 2
+    matches = list(re.finditer(padrao_artigos, texto))
     
-    # Fallback se não encontrar estrutura clara
+    if len(matches) > 0:
+        for i in range(len(matches)):
+            inicio = matches[i].start()
+            fim = matches[i+1].start() if i+1 < len(matches) else len(texto)
+            
+            trecho = texto[inicio:fim].strip()
+            # Captura o ID limpo (ex: "Art. 32")
+            id_ref = matches[i].group(1).strip()
+            # Limpa hifens ou pontos extras que sobraram no ID
+            id_ref = re.sub(r'[\s.\-–—]+$', '', id_ref)
+            
+            if len(trecho) > 20:
+                blocos.append({
+                    "tipo": "artigo",
+                    "id": id_ref,
+                    "conteudo": trecho
+                })
+    
+    # Se não achar nada, faz o corte padrão por tamanho
     if not blocos:
-        # Divide por tamanho fixo com sobreposição (overlap)
-        tamanho = 1000
+        tamanho = 1200
         for i in range(0, len(texto), tamanho - 200):
-            chunk = texto[i:i+tamanho]
-            blocos.append({"tipo": "chunk", "id": str(i), "conteudo": chunk})
+            blocos.append({"tipo": "chunk", "id": "bloco", "conteudo": texto[i:i+tamanho]})
             
     return blocos
 
-# -------------------------------
-# PROCESSAMENTO DE PDF (TEXTO + OCR)
-# -------------------------------
 def extrair_texto_pdf(pdf_path):
     doc = fitz.open(pdf_path)
     texto_completo = ""
     
     for page in doc:
-        # Tenta extrair texto nativo
         texto_pag = page.get_text().strip()
         
-        # Se a página estiver vazia ou for imagem (muito pouco texto), usa OCR
-        if len(texto_pag) < 100:
-            pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
-            img_path = "temp.png"
-            pix.save(img_path)
-            texto_pag = pytesseract.image_to_string(img_path, lang="por")
-            if os.path.exists(img_path): os.remove(img_path)
+        # Se for imagem ou tiver pouco texto, aplica OCR com tratamento de imagem
+        if len(texto_pag) < 150:
+            pix = page.get_pixmap(matrix=fitz.Matrix(3, 3)) # Zoom de 3x
+            img_limpa = tratar_imagem_para_ocr(pix)
+            pil_img = Image.fromarray(img_limpa)
+            texto_pag = pytesseract.image_to_string(pil_img, lang="por", config='--psm 3')
             
         texto_completo += "\n" + texto_pag
         
@@ -120,51 +193,42 @@ def extrair_texto_pdf(pdf_path):
     return limpar_texto(texto_completo)
 
 # -------------------------------
-# CORE: INDEXAÇÃO NO CHROMA
+# 5. MAIN
 # -------------------------------
 def main():
     if os.path.exists(CHROMA_DIR):
         shutil.rmtree(CHROMA_DIR)
-        print(f"Limpando banco anterior em {CHROMA_DIR}...")
+        print("Limpando banco anterior...")
 
-    # Modelo excelente para busca semântica em Português
     embeddings = HuggingFaceEmbeddings(
-        model_name="sentence-transformers/paraphrase-multilingual-mpnet-base-v2"
+        model_name="sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+        model_kwargs={'device': 'cpu'}
     )
 
     documentos_para_indexar = []
 
     if not os.path.exists(PASTA_REGIMENTOS):
-        print(f"Erro: Pasta {PASTA_REGIMENTOS} não encontrada."); return
+        os.makedirs(PASTA_REGIMENTOS); return
 
     for arquivo in os.listdir(PASTA_REGIMENTOS):
         if arquivo.lower().endswith(".pdf"):
+            print(f"Processando: {arquivo}...")
             path_completo = os.path.join(PASTA_REGIMENTOS, arquivo)
-            print(f"Lendo: {arquivo}...")
-            
-            # 1. Extrai ID do arquivo (ex: 001_wish.pdf -> 001)
             tenant_id = arquivo.split("_")[0]
             
-            # 2. Extrai e limpa texto
             texto_bruto = extrair_texto_pdf(path_completo)
-            
-            # 3. Divide em blocos lógicos (Artigos ou Tópicos)
             blocos = dividir_documento(texto_bruto)
             
-            # 4. Converte para objetos LangChain Document
             for indice, b in enumerate(blocos):
-
-                chunk_id = f"{indice+1:02d}"
-
                 documentos_para_indexar.append(
                     Document(
                         page_content=b["conteudo"],
                         metadata={
                             "tenant_id": tenant_id,
                             "tipo": b["tipo"],
-                            "origem": arquivo,
                             "referencia": b["id"],
-                            "chunk_id": f"chunk_{chunk_id}"
+                            "doc_id": f"doc_{tenant_id}",
+                            "chunk_id": f"chunk_{indice+1:02d}"
                         }
                     )
                 )
@@ -176,8 +240,6 @@ def main():
             persist_directory=CHROMA_DIR
         )
         print(f"✅ Sucesso! {len(documentos_para_indexar)} blocos indexados.")
-    else:
-        print("⚠️ Nenhum documento PDF processado.")
 
 if __name__ == "__main__":
     main()

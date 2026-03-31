@@ -1,6 +1,15 @@
 import os
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
+import logging
+import warnings
+
+os.environ["HF_HUB_OFFLINE"] = "1" # Força modo offline
+os.environ["TOKENIZERS_PARALLELISM"] = "false" # Evita outro warning comum
+
+logging.getLogger("transformers").setLevel(logging.ERROR)
+logging.getLogger("huggingface_hub").setLevel(logging.ERROR)
+warnings.filterwarnings("ignore", category=UserWarning) # Ignora avisos de versão
 
 def gerar_arquivos_validacao():
     # 1. Configuração do Banco (Use o mesmo modelo do seu indexador!)
