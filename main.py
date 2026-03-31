@@ -16,6 +16,8 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.documents import Document
 from langchain_community.retrievers import BM25Retriever
 from flashrank import Ranker, RerankRequest
+from rich.text import Text
+import sys
 
 # Recursos NLTK
 try:
@@ -31,6 +33,15 @@ LOG_FILE = "severino_debug.log"
 
 def limpar_console():
     os.system('cls' if os.name == 'nt' else 'clear')
+
+    import sys
+
+def escrever_com_efeito(texto, delay=0.01):
+    for char in texto:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(delay)
+    print()
 
 def log_debug(titulo, data):
     if not DEBUG: return
@@ -94,7 +105,7 @@ class SeverinoIA:
         ranked = self.reranker.rerank(RerankRequest(query=query, passages=passages))
 
         final = []
-        for item in ranked[:5]: # Top 5 conforme boas práticas de RAG
+        for item in ranked[:1]: # Top 3 conforme boas práticas de RAG
             idx = item.get("id")
             doc = docs_unicos[idx]
             final.append(doc)
@@ -103,48 +114,119 @@ class SeverinoIA:
 
     def responder(self, pergunta, tenant_id):
         docs = self.buscar(pergunta, tenant_id)
-        if not docs: 
+
+        # 🔒 Regra de recusa (mais segura)
+        if not docs or len(docs) == 0:
             return "Informação não localizada no regimento enviado."
-        
-        # 1. Contexto formatado como "Base de Dados"
+
+        # Montagem do contexto com IDs REAIS
         contexto_lista = []
-        for i, d in enumerate(docs):
-            doc_id = d.metadata.get('doc_id', f'doc_{tenant_id}')
-            ref_id = f"[{doc_id}#chunk_{i}]"
-            contexto_lista.append(f"REGRA_TECNICA {ref_id}:\n{d.page_content}")
-        
+        for d in docs:
+            doc_id = d.metadata.get("doc_id", f"doc_{tenant_id}")
+            chunk_id = d.metadata.get("chunk_id", "unknown")
+
+            ref_id = f"[{doc_id}#_{chunk_id}]"
+
+            for i, d in enumerate(docs):
+                doc_id = d.metadata.get("doc_id", f"doc_{tenant_id}")
+                chunk_id = d.metadata.get("chunk_id", "unknown")
+
+                ref_id = f"[{doc_id}#{chunk_id}]"
+
+                texto = d.page_content
+
+                # 👇 tenta puxar contexto anterior se parecer item de lista
+                if texto.strip().startswith(("a)", "b)", "c)", "d)")) and i > 0:
+                    texto = docs[i-1].page_content + "\n" + texto
+
+                contexto_lista.append(f"Fonte {ref_id}:\n{texto}")
+
         contexto_string = "\n\n".join(contexto_lista)
-        
-        # 2. Prompt de "Engenharia de Precisão"
+
+        # Prompt forte (anti-alucinação + força citação)
         prompt_template = ChatPromptTemplate.from_messages([
-            ("system", """Você é um extrator de dados jurídico chamado Severino. 
-            Sua saída deve ser estritamente no formato: [Resposta Curta] [Código da Fonte].
+            ("system", """
+        Você é um assistente virtual especializado em regimento interno de condomínio.
 
-            REGRAS DE FORMATAÇÃO:
-            1. Proibido iniciar com "De acordo com" ou "O regimento diz".
-            2. Cada afirmação deve ser seguida pela sua fonte no formato [chunk_X].
-            3. Use APENAS a REGRA_TECNICA fornecida.
-            
-            EXEMPLO DE RESPOSTA:
-            'Não é permitido barulho após as 22h [doc_001#chunk_4].'"""),
-            ("human", """CONTEXTO:
-            {context}
+        Responda APENAS com base no CONTEXTO.
 
-            PERGUNTA:
-            {question}
+        CONTEXTO:
+        {context}
 
-            RESPOSTA (Obrigatório conter o código entre colchetes ao final):""")
+        PERGUNTA:
+        {question}
+
+        REGRAS:
+        - Seja cordial e educado.
+        - NÃO invente informações.
+        - Use apenas o contexto fornecido.
+        - Cite fontes obrigatoriamente.
+        - Responda de forma lógica e coerente.
+
+        REGRAS ESPECIAIS:
+        - Se a pergunta for "Posso...", "É permitido...", etc:
+        → Responda começando com "Sim," ou "Não," corretamente
+        → Nunca contradiga a resposta
+
+        - SEMPRE inclua um TRECHO LITERAL do regimento:
+        → Copie exatamente como está no CONTEXTO
+        → Preserve quebras de linha
+        → NÃO reescreva
+        → NÃO resuma o trecho
+        → Inclua o artigo completo (ex: "Art. 5º") quando existir
+        → NÃO traga apenas itens isolados como "a)" ou "b)"
+        → Se houver lista, inclua o cabeçalho junto
+
+        FORMATO OBRIGATÓRIO (JSON):
+        {{
+        "resposta": "explicação clara e direta",
+        "trecho": "trecho literal copiado exatamente do contexto com quebras de linha",
+        "citacoes": ["doc_id#chunk_id"]
+        }}
+
+        Se não encontrar resposta:
+        {{
+        "resposta": "Informação não localizada no regimento enviado.",
+        "trecho": "",
+        "citacoes": []
+        }}
+        """)
         ])
-
-        log_debug("DEBUG_PROMPT_ENVIADO", {"corpo": contexto_string})
+                
+        # Log para auditoria (ótimo pro professor)
+        log_debug("DEBUG_PROMPT_ENVIADO", {
+            "pergunta": pergunta,
+            "contexto": contexto_string
+        })
 
         chain = prompt_template | self.llm | StrOutputParser()
-        
-        return chain.invoke({
-            "context": contexto_string, 
-            "question": pergunta, 
-            "condominio": self.tenants_map.get(tenant_id, "Condomínio")
-        })
+
+        resposta = chain.invoke({
+            "context": contexto_string,
+            "question": pergunta
+        }).strip()
+
+        try:
+            data = json.loads(resposta)
+
+            resposta = data.get("resposta", "")
+            trecho = data.get("trecho", "")
+            citacoes = data.get("citacoes", [])
+
+            citacoes_formatadas = " ".join([f"[{c}]" for c in citacoes])
+
+            resposta_final = f"""{resposta}
+                📄 Trecho do regimento:
+                {trecho}
+
+                📎 Fontes:
+                {citacoes_formatadas}
+                """.strip()
+
+            return resposta_final
+
+        except:
+            return "Informação não localizada no regimento enviado."
 
 if __name__ == "__main__":
     ia = SeverinoIA()
@@ -183,8 +265,45 @@ if __name__ == "__main__":
 
             with console.status("[bold yellow]Consultando..."):
                 inicio = time.time()
-                resposta = ia.responder(pergunta, tenant)
+                resposta_final = ia.responder(pergunta, tenant)
                 tempo = time.time() - inicio
 
-            console.print(f"\n[bold yellow]Severino:[/bold yellow]\n{resposta}")
-            console.print(f"[dim]Tempo: {tempo:.2f}s | Log gerado em {LOG_FILE}[/dim]\n")
+            # --- APRESENTAÇÃO ORGANIZADA ---
+            console.print("\n" + "━" * 50, style="yellow")
+            console.print(f"[bold yellow]Severino[/bold yellow] [dim](em {tempo:.2f}s)[/dim]")
+            
+            # Separação das partes para estilização individual
+            partes = resposta_final.split("📄 Trecho do regimento:")
+            resposta_principal = partes[0].strip()
+
+            # 1. Resposta da IA (Texto principal)
+            escrever_com_efeito(f"\n{resposta_principal}", 0.01)
+
+            if len(partes) > 1:
+                trecho_e_fontes = partes[1].split("📎 Fontes:")
+                
+                # 2. Caixa para o Trecho do Regimento (Grounding)
+                trecho_texto = trecho_e_fontes[0].strip()
+                console.print(
+                    Panel(
+                        trecho_texto, 
+                        title="📄 Trecho do Regimento", 
+                        border_style="green", 
+                        padding=(1, 2)
+                    )
+                )
+
+                # 3. Exibição das Fontes (Requisito doc_XXX#chunk_YYY)
+                if len(trecho_e_fontes) > 1:
+                    fontes_raw = trecho_e_fontes[1].strip()
+                    
+                    # Criamos um objeto de texto para evitar conflito de markup
+                    linha_fontes = Text()
+                    linha_fontes.append("\n📎 Fontes: ", style="bold magenta")
+                    
+                    # Adicionamos a fonte literal. O style "italic" será aplicado 
+                    # sem tentar processar os colchetes dentro de 'fontes_raw'
+                    linha_fontes.append(fontes_raw, style="italic cyan") 
+                    
+                    console.print(linha_fontes)
+
