@@ -1,0 +1,273 @@
+=== RELATÓRIO DE AUDITORIA DE INDEXAÇÃO ===
+CONDOMÍNIO (TENANT): 005
+TOTAL DE CHUNKS: 38
+============================================================
+
+📍 ID DO CHUNK: 01
+📜 REFERÊNCIA: Art. 1º
+📝 CONTEÚDO:
+Art. 1º - Reger-se-á o CONDOMINIO RESIDENCIAL MONTE FUJI, para todos os Civil Brasileiro) e demais legislação aplicável, pela Convenção do Condomínio e pelo presente Regimento Interno, a cujo estrito cumprimento estão obrigados todos os proprietários, promitentes compradores, cessionários de direitos, locatários e moradores.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 02
+📜 REFERÊNCIA: Art. 2º
+📝 CONTEÚDO:
+Art. 2º - O Condomínio destina-se exclusivamente a fins residenciais, sendo expressamente proibido usá-los para fins de qualquer outra natureza.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 03
+📜 REFERÊNCIA: Art. 3º
+📝 CONTEÚDO:
+Art. 3º - Das 20:00 às 07:00 horas da manhã, cumpre aos moradores guardar silêncio, evitando a produção de ruídos, sons ou odor que possam perturbar o sossego é o bem estar dos demais moradores, inclusive nas escadas, hall de entrada dos apartamentos, corredores entre os blocos, área de convivência dos moradores.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 04
+📜 REFERÊNCIA: Art. 4º
+📝 CONTEÚDO:
+Art. 4º - O uso de rádios, aparelhos de som ou qualquer instrumento de música, deverá ser feito de modo a não perturbar os vizinhos, observadas as posturas municipais sobre o assunto.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 05
+📜 REFERÊNCIA: Art. 5º
+📝 CONTEÚDO:
+Art. 5º - É expressamente proibido:
+a) fracionar a respectiva unidade autônoma para fins de alienação ou locação; bj guardar ou depositar substâncias inflamáveis ou explosnvas em qualquer dependência do Edifício; c) colocar anúncios, placas, avisos ou letreiros na parte externa ou interna do Edifício; d) estender, bater ou secar tapetes roupas, lençóis, tênis, sapatos, etc, nas janeias ou em quaisquer outros lugares visíveis do exterior, assim como executar serviços domésticos fora dos apartamentos; e) colocar antenas ou quaisquer outros objetos na janela, onde estejam expostos ao risco de caiírem.
+f) lançar quaisquer objetos, como papéis, cinzas, pontas de cigarros, líquidos ou quaisquer outros detritos pela janela, seja na via pública, corredores, áreas comuns ou em qualquer outro loca! do Edifício; g) manter, nos apartamentos ou nas áreas comuns, animais de qualquer espécie, quando estes possam comprometer a saúde, o sossego, e/ou a segurança dos demais condôminos e moradores; h) manter, nas unidades autônomas e partes comuns do Edifício, comércio, representação comercial, facção, ou qualquer outro tipo de procedimento mercantil.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 06
+📜 REFERÊNCIA: Art. 6º
+📝 CONTEÚDO:
+Art. 6º - Os serviços de limpeza das unidades autônomas e de seus móveis não poderão atingir ou prejudicar as partes comuns e as unidades autônomas dos demais condôminos.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 07
+📜 REFERÊNCIA: Art. 7º
+📝 CONTEÚDO:
+Art. 7º - O lixo e outras varreduras deverão ser acondicionados em sacos plásticos resistentes e colocados no local recomendado pelo Síndico, para posterior coleta.
+Os vidros e garrafas devem ser acondicionados em separado. A remoção de pó de tapetes, cortinas e similares, deve ser realizada com aspiradores dotados de dispositivos que impeçam a sua dispersão.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 08
+📜 REFERÊNCIA: Art. 8º
+📝 CONTEÚDO:
+Art. 8º - Só será permitido o uso de fogões a gás ligados na central de gás, sendo expressamente proibido manter botijões de gás nas unidades autônomas;
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 09
+📜 REFERÊNCIA: Art. 9º
+📝 CONTEÚDO:
+Art. 9º - Obras de reforma ou modificação interna nos apartamentos não poderão prejudicar a estrutura do prédio, e deverão ser realizadas de Segunda a Sexta-feira nos horários das 8h às 18h e aos Sábados das 8h às 12 h, salvo as de natureza emergencial e imprescindível.
+Parágrafo único. Qualquer obra a ser realizada na unidade, deverá ser autorizada pelo Síndico, mediante a apresentação do projeto, do nome do Engenheiro ou Arquiteto responsável e demais documentos exigidos pela legislação municipal.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 10
+📜 REFERÊNCIA: Art. 10
+📝 CONTEÚDO:
+Art. 10 - É expressamente proibida a prática de qualquer ato que possa prejudicar a boa ordem e a reputação do Edifício.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 11
+📜 REFERÊNCIA: Art. 11
+📝 CONTEÚDO:
+Art. 11 - É expressamente vedado transitar pelas áreas comuns em trajes inadequados que possam configurar atentado ao pudor.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 12
+📜 REFERÊNCIA: Art. 12
+📝 CONTEÚDO:
+Art. 12 — As entradas do prédio, halls, passagens, escadas, áreas do pilotis e outras dependências comuns deverão permanecer livres de quaisquer objetos e veículos.
+Os objetos que forem encontrados nestes locais serão removidos e restituídos ao seu legítimo proprietário.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 13
+📜 REFERÊNCIA: Art. 13
+📝 CONTEÚDO:
+Art. 13 - É proibido o trânsito de bicicletas, uso de patins e similares no hall de entrada do prédio ou em qualquer outra área do Condomínio que não se destine à prática destes esportes.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 14
+📜 REFERÊNCIA: Art. 14
+📝 CONTEÚDO:
+Art. 14 - Os moradores deverão manter devidamente fechadas as portas de acesso a seus apartamentos.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 15
+📜 REFERÊNCIA: Art. 15
+📝 CONTEÚDO:
+Art. 15 - O conserto ou substituição de qualquer peça ou aparelho de uso comum danificado, correrá por conta do causador do dano.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 16
+📜 REFERÊNCIA: Art. 16
+📝 CONTEÚDO:
+Art. 16 - O morador ou seu preposto que causar danos ou prejuízos materiais a outros moradores, ou a terceiros, responderá civilmente pela ação ou omissão havida, cabendo-lhe indenizar os danos, quando verificada a sua responsabilidade.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 17
+📜 REFERÊNCIA: Art. 17
+📝 CONTEÚDO:
+Art. 17 - As mudanças deverão ser realizadas de Segunda a Sexta-feira no horário das 8h às 18h e aos Sábados das 8h às 12h. À realização no horário diferente do aqui previsto deverá ter anuência do Síndico (a). É proibida a permanência de volumes de qualquer espécie nas dependências de uso comum do prédio.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 18
+📜 REFERÊNCIA: Art. 18
+📝 CONTEÚDO:
+Art. 18 - Para que possa ser observado o rigoroso cumprimento deste Regimento e da Convenção, ou quando as circunstâncias o exigirem, os moradores facilitarão o acesso do Sindico ou de seu preposto aos respectivos apartamentos quando houver motivo justificado.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 19
+📜 REFERÊNCIA: Art. 19
+📝 CONTEÚDO:
+Art. 19 - Todos os contratos de locação deverão ser obrigatoriamente acompanhados de exemplares deste Regimento, ao qual deverá rigorosamente obedecer o(s) locatário(s).
+Parágrafo único — Quaisquer despesas que não forem pagas pelo locatário, serão de inteira responsabilidade do proprietário/locador da respectiva unidade autônoma.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 20
+📜 REFERÊNCIA: Art. 20
+📝 CONTEÚDO:
+Art. 20 - Em caso de moléstia infecto-contagiosa, os moradores do Edifício ficam obrigados a notificar imediatamente o Síndico.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 21
+📜 REFERÊNCIA: Art. 21
+📝 CONTEÚDO:
+Art. 21 - O acesso de pessoas às dependências do condomínio e aos apartamentos somente poderá ser permitido mediante identificação aos porteiros.
+S 1º - No caso de acesso de pessoas aos apartamentos deverá ser obtida a aquiescência do morador, através de interfones, ou mediante autorização verbal.
+$ 2º - O porteiro do turno manterá um registro do movimento diário, de entrada e saída, em livro próprio.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 22
+📜 REFERÊNCIA: Art. 22
+📝 CONTEÚDO:
+Art. 22 - Uso das Garagens: Os moradores do Edifício devem observar as seguintes condições para uso das garagens:
+a) utiizar no estacionamento somente os boxes das respectivas unidades autônomas, tendo como limite a faixa demarcada no piso; b) manter os veículos trancados e com os vidros levantados; c) não lavar veículos ou outros aparelhos e equipamentos nas garagens e outras áreas comuns; d) é permitida a locação de garagens entre os moradores do condomínio, sendo expressamente vedada a locação a terceiro; e) o uso de áreas de propriedade comum, na garagem, terá o mesmo tratamento previsto na Convenção para as área da espécie; f) não buzinar ao entrar ou sair da garagem. A abertura do portão da garagem deverá ser acionada com o controle remoto; g) manter o volume dos rádios dos veículos a nível que não perturbe o sossego dos demais condôminos; h) certifique-se da não entrada de estranhos pelo portão da garagem, quando acioná-lo. Comunicar o porteiro qualquer irregularidade notada.
+$ 1º - O veiculo estacionado em local impróprio, como a área de circulação, deverá ser removido de imediato. Caso o Condomínio tenha que fazer tal remoção, será cobrado do responsável a despesa efetuada com tal medida através do documento de cobrança da taxa de condomínio.
+$ 2º - O Condomínio não será responsável por qualquer tipo de acidentes, colisão ou outro evento ocorrido nos veículos estacionados na garagem ou corredor de acesso à mesma, cabendo ao seu proprietário, única e exclusivamente, arcar com reparos deles advindos.
+&8 3º É proibida a locação da área destinada à garagem, bem como a cessão, mesmo gratuita, para pessoas que não sejam moradores do condomínio, não incluído os períodos de curta permanência ou estadias de eventuais hóspedes.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 23
+📜 REFERÊNCIA: Art. 23
+📝 CONTEÚDO:
+Art. 23 - As taxas do condomínio ou rateios deverão ser pagos nos prazos constantes nos documentos de cobrança.
+t ilis6sig
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 24
+📜 REFERÊNCIA: Art. 24
+📝 CONTEÚDO:
+Art. 24 - As reclamações deverão ser dirígidas por escrito ao Síndico (a), ou ao Conselho Fiscal, se aquele se omitir.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 25
+📜 REFERÊNCIA: Art. 25
+📝 CONTEÚDO:
+Art. 25 - É vedado aos moradores utilizarem-se dos empregados do Edifício para serviços particulares, durante o respectivo horário de trabalho.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 26
+📜 REFERÊNCIA: Art. 26
+📝 CONTEÚDO:
+Art. 26 - Os empregados do Edifício são subordinados diretamente e exclusivamente ao Síndico (a).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 27
+📜 REFERÊNCIA: Art. 27
+📝 CONTEÚDO:
+Art. 27 - Incumbe ao Síndico, administrador, porteiros ou auxiliar de serviços gerais, na qualidade de preposto do Síndico, fiscalizar o fiel cumprimento deste Regimento.
+de acordo com orientação do Síndico (a).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 28
+📜 REFERÊNCIA: Art. 29
+📝 CONTEÚDO:
+Art. 29 - Os funcionários de Edifício deverão estar uniformizados e com boa aparência.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 29
+📜 REFERÊNCIA: Art. 30
+📝 CONTEÚDO:
+Art. 30 - É facultado a utilização, por parte dos moradores do prédio, do salão de festas, para promoção de reuniões e comemorações particulares, desde que obedecidas as seguintes normas:
+a) o interessado deverá solicitar, por escrito, reserva do salão de festas ao Síndico (a), com antecedência mínima de 7 (sete) dias. Havendo coincidência de datas, terá preferência aquele que houver se manifestado primeiro; b) as atividades festivas que impliquem em execução de músicas, discursos, aplausos ou qualquer manifestação ruidosa devem se restringir de Segunda a Quinta-feira até as 22h e nas Sextas, Sábados e vésperas de feriado até as 24h, de forma a não gerar reclamações dos demais moradores; c) o trânsito de mesas e cadeiras não pode ser realizado pela portaria social do prédio; d) o condômino responsável deverá firmar um termo de compromisso, se responsabilizando por quaisquer danos causados ao prédio e a seus equipamentos, inclusive aqueles causados pelos seus convidados, por ocasião do evento; e) pagamento de uma taxa equivalente a 40% (quarenta por cento) da taxa de condomínio, a ser recolhida juntamente com a taxa de condomínio do mês subsequente.
+Parágrafo único — fica terminantemente proibido o aluguel do salão de festas e das churrasqueiras aos domingos feriados.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 30
+📜 REFERÊNCIA: Art. 31
+📝 CONTEÚDO:
+Art. 31 - É facultado a utilização, por parte dos moradores do prédio, das piscinas, desde que obedecidas as seguintes normas:
+a) O uso das piscinas é privativo dos proprietários e inquilinos, podendo entretanto, através de solicitação prévia por escrito ao Síndico ser permítido seu uso por hóspedes, desde que os mesmos sejam seus ascendentes, descendentes ou irmãos, e seus respectivos cônjuges. O condômino é responsável pelas atitudes de seus convidados.
+b) É vedado o uso da piscina a funcionários ou a qualquer outra pessoa diferente do acima enunciado.
+c) É proibido nas áreas das piscinas a colocação e utilização de qualquer equipamento tais como: churrasqueiras, mesas, aparelhos de som, ressalvadas apenas: cadeiras, esteiras, guarda-sol e ainda aqueles existentes na área de propriedade do Condomínio.
+d) É proibido na área das piscinas, o jogo de bola, uso de , patinetes, bicicletas, skates e afins.
+e) Para uso da piscina, o Síndico poderá exigir atestado médico de sanidade física, renovável semestralmente.
+N) Fica terminantemente proibido banhar-se fazendo uso de óleo para bronzear, descolorantes, ou de qualquer outro produto que possa sujar a água da piscina ou prejudicar o funcionamento das bombas e filtros das mesmas.
+g) É proibido na área das piscinas, o trânsito ou permanência de menores de 8 (oito) anos, quando desacompanhados de seus país ou responsáveis, exceto quando tiverem autorização prévia por escrito dos mesmos.
+h) É proibido cenas amorosas ou simíilares, nas partes em comum da piscina.
+i) É proibido na área das piscinas, almoçar, jantar ou fazer lanches. É também proibido o uso de garrafas, copos e objetos de vidro.
+j) As piscinas funcionarão durante toda semana, exceto nos dias destinados à limpeza, podendo ser utilizada das 08:00 às 22:00 hs.
+k) O Condomínio não é responsável pelas consequências oriundas do uso das piscinas.
+I) O Síndico e seus prepostos tem poderes para tomarem medidas apropriadas a fim de manter a boa conduta e ordem na área das piscinas.
+m) É proibido o uso de roupas não adequadas para banhos tais como jeans, calças, camisetas, etc.
+o) É proibido o trânsito ou a permanência de animais nas áreas das piscinas designados pela Administração.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 31
+📜 REFERÊNCIA: Art. 32
+📝 CONTEÚDO:
+Art. 32 - É facultado a utilização, por parte dos moradores do prédio, o uso das churrasqueiras, desde que obedecidas as seguintes normas:
+a) Os procedimentos de reserva e utilização das churrasqueiras serão os mesmos dos salões de festas, não havendo troca de utilização. A taxa de utilização é de 20% (vinte por cento) do valor atual da taxa de condomínio.
+b) A utilização das churrasqueiras não compreende a área da piscina por parte dos usuários daquela.
+c) as atividades festivas devem se restringir de Segunda a Quinta-feira até as 22h e nas Sextas, Sábados e vésperas de feriado até as 24h, de forma a não gerar reclamações dos demais moradores;
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 32
+📜 REFERÊNCIA: Art. 33
+📝 CONTEÚDO:
+Art. 33 — Os proprietários de animais deverão transportá-los pelas escadas, conduzidos nos braços de seu responsável e mantidos em coleiras apropriados quando transitarem pelas áreas comuns e não poderão ser deixados desacompanhados, respondendo o seu proprietário pelos danos e transtornos causados pelo animal.
+$ 1º - Não será permitida a permanência de animais de grande ou médio porte no condomínio; sendo permitido apenas animais de pequeno porte, salvo se este vir a ser ofensivo aos demais condôminos.
+S 2º - Não será permitida a exposição de animais nas janelas.
+& 3º - Todos os proprietários de animais deverão apresentar atestado de vacinação do mesmo, semestralmente.
+8 4º - Fica proibido a criação de mais de um animail por apartamento.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 33
+📜 REFERÊNCIA: Art. 34
+📝 CONTEÚDO:
+Art. 34 - É facultativo a utilização de Art. condicionado, desde que colocado em local devidamente padronizado e estabelecido pelo sindico.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 34
+📜 REFERÊNCIA: Art. 35
+📝 CONTEÚDO:
+Art. 35 - Para que ninguém venha alegar desconhecimento das normas estabelecidas no presente REGIMENTO INTERNO, deverão ser reproduzidas cópias do mesmo, que serão entregues a cada um dos moradores, mediante recibo.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 35
+📜 REFERÊNCIA: Art. 36
+📝 CONTEÚDO:
+Art. 36 - Os casos não previstos neste regimento serão resolvidos pela Assembléia Geral.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 36
+📜 REFERÊNCIA: Art. 37
+📝 CONTEÚDO:
+Art. 37 — Fica estipulada a multa por infração ao presente Regimento Interno em 100% (cem por cento) da taxa de condomínio do mês anterior, devendo o (a) Síndico (a) aplicar a sanção, segundo a porcentagem retro e ponderada a gravidade da infração. Em caso de reincidência, a multa será cobrada em dobro. As multas ora mencionadas poderão ser incluídas no documento de cobrança da Taxa de Condomínio.
+Parágrafo único — Antes de decidir pela aplicação da multa por infração ao presente Regimento Interno, o Condomínio deverá encaminhar uma notificação ao condômino, dando-lhe o prazo de 7 (sete) dias para se defender através de documento escrito.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 37
+📜 REFERÊNCIA: Art. 38
+📝 CONTEÚDO:
+Art. 38 — A alteração do presente Regimento Interno depende da aprovação de dois terços dos votos dos condôminos presentes na Assembléia Geral especialmente convocada.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 38
+📜 REFERÊNCIA: Art. 39
+📝 CONTEÚDO:
+Art. 39 - Todo litígio ou controvérsia originário ou decorrente deste instrumento será definitivamente decidido por arbitragem. À arbitragem será administrada pela SEGUNDA CORTE DE CONCILIAÇÃO E ARBITRAGEM DE GOIÂNIA-GO.
+Goiânia-GO, eleita pelas partes e indicada nesta cláusula, cujo ' Estatuto' e Regimento Interno, registrado no Cartório de Títulos e Documentos, as partes adotam e declaram conhecer, concordar e integrar este instrumento. Qualquer das partes que desejar instaurar o procedimento arbitral, manifestará sua intenção a 2º CCA-GO , indicando a matéria que será objeto da arbitragem, o seu valor, o nome e qualificação completa da parte contrária, anexando cópia do  contrato/convenção. AÀA  controvérsia será  dirimida or árbitro referencialmente único, indicado dentre a lista dos nomeados pela 2º CCA- GO. A arbitragem processar-se-á na sede da 2a CCA-GO e o árbitro decidirá 23 de setembro de 1996. O idioma oficial da arbitragem será o portuquês.
+Goiânia, Oõ de M_Ld 01 20ÍM Qlmiahau M,ÁM N.º do Apto. Neme do Condôming N.º do Apto. / Nome do Condômino Assmatu ra
+------------------------------------------------------------
+

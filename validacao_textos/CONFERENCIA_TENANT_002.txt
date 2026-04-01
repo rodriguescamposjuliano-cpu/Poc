@@ -1,0 +1,502 @@
+=== RELATÓRIO DE AUDITORIA DE INDEXAÇÃO ===
+CONDOMÍNIO (TENANT): 002
+TOTAL DE CHUNKS: 28
+============================================================
+
+📍 ID DO CHUNK: 01
+📜 REFERÊNCIA: 1.  DAS NORMAS GERAIS
+📝 CONTEÚDO:
+1.  DAS NORMAS GERAIS
+1.1- Todos os condôminos, seus inquilinos e respectivos familiares, seus prepostos e os empregados do condomínio são obrigados a cumprir, respeitar e, dentro de sua competência, a fazer cumprir e respeitar as disposições deste regulamento.
+1.2 - Fica estabelecido que, conforme a convenção do condomínio, no período das 22:00 hs às 08:00 hs cabe aos moradores guardarem silêncio, evitando-se ruídos ou sons que possam perturbar o sossego e o bem-estar dos demais moradores. Exemplos: barulho de salto, móveis arrastando, som e tv com volume acima do permitido, conversando e cantando alto, crianças brincando e correndo. ( I -  Notificação Escrita ou Verbal ) Multa (B)
+1.3- Durante as 24:00 hs, o uso de aparelhos que produzem som ou instrumentos musicais deve ser feito de modo a não perturbar qualquer morador, observadas as disposições legais vigentes, salvo em ocasiões especiais devidamente comunicadas com antecedência ao Síndico, mas respeitado o horário estabelecido no item 1.2.
+1.4- Os jogos e/ou brincadeiras infantis somente poderão ser praticada em locais expressamente determinados, na forma e condições previstas neste Regulamento Interno, ou definidas previamente pelo Síndico. ( I -  Notificação Escrita ou Verbal ) Multa (C)
+1.5- No caso de locação das unidades autônomas, os condôminos e seus familiares transferem automaticamente para os inquilinos e seus familiares o direito ao uso das garagens, piscinas, sauna, salão de festas e outras dependências comuns, enquanto perdurar a locação. Ficam ainda obrigados a fazer constar do contrato cópia do presente Regulamento Interno.
+1.6- Na hipótese de venda ou transferência da propriedade ou de posse direta ou indireta, ou da constituição de direitos reais sobre as unidades autônomas, os novos adquirentes, quer da propriedade, quer da posse, ficam automaticamente obrigados a respeitar as disposições deste Regulamento, ainda que nenhuma referência a este parágrafo seja feita em documento pelo qual se efetivar a venda, transferência ou constituição acima.
+1.7 -Constituí direito   dos   condôminos,   seus inquilinos respectivos   familiares (entendidos   como  tais os   que   com  eles habitarem) usar, gozar e dispor da respectiva unidade autônoma e das partes comuns do Condomínio como melhor lhes aprouver, desde que respeitadas   as   determinações   legais que abrangem as relações condominiais.
+1.8  - Os condôminos serão responsáveis pelos danos e prejuízos que pessoalmente, seus dependentes, visitantes e prepostos 
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 02
+📜 REFERÊNCIA: 1.  DAS NORMAS GERAIS
+📝 CONTEÚDO:
+[1.  DAS NORMAS GERAIS - CONTINUAÇÃO]
+pectiva unidade autônoma e das partes comuns do Condomínio como melhor lhes aprouver, desde que respeitadas   as   determinações   legais que abrangem as relações condominiais.
+1.8  - Os condôminos serão responsáveis pelos danos e prejuízos que pessoalmente, seus dependentes, visitantes e prepostos venham a causar em qualquer área comum do Prédio, ficando obrigados a indenizar o Condomínio, pelo valor do dano causado a ser apurado pela Administração e exigido do Condômino responsável, cujo pagamento deverá ser efetuado no prazo máximo de 30 (trinta) dias a contar da apuração do seu valor, sob pena de cobrança judicial, tudo acrescido dos ônus legais em decorrência de sua inadimplência.
+1.9   - A Infração a qualquer norma prevista neste Regimento Interno acarretará aplicação  de multa, além das demais sanções previstas neste Regimento, Convenção e nas demais leis do País.
+1.10   -  Para o fechamento da sacada será utilizado como padrão o Blindex preto fume proteção das janelas, ficando desaprovada a instalação de cortinas de vidros na sacada.
+Obs.: Necessário Autorização do Síndico.
+1.11 - De acordo com informações passadas pela construtora somente poderá ser instalado uma unidade de Art.-Condicionado por apartamento sendo que o ponto correto já destinado pela construtora é na suíte no modelo ACJ. Caso o morador instale o modelo split na suíte ele deverá fazer a drenagem interna da água que sai da condensadora para o banheiro (unidades finais 02 e 03). Para as unidades finais 01 e 04 a instalação do modelo Split deverá ser realizada na Sacada conforme projeto aprovado.
+A instalação elétrica neste caso deverá ser refeita com laudo emitido por um engenheiro elétrico, uma vez que a sala/sacada não existe ponto de próprio para o Art.-Condicionado.
+No caso da retirada do Art.-Condicionado, fica obrigatório o proprietário fechar os buracos para evitar infiltração em época de chuva. Prazo de 30 dias após a notificação.
+(B)  Necessário Autorização e a Solicitação do Projeto de instalação junto ao Síndico.
+1.12 – Fica proibido a retirada da viga de cima de sustentação da porta da sacada, pois ela compromete a estrutura do prédio. (D)
+1.13 – A Rede de Proteção instalada nas janelas e sacada devem ser de cor branca. (A)
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 03
+📜 REFERÊNCIA: 1.  DAS NORMAS GERAIS
+📝 CONTEÚDO:
+[1.  DAS NORMAS GERAIS - CONTINUAÇÃO]
+s janelas e sacada devem ser de cor branca. (A)
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 04
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+2. DO USO DAS ÁREAS COMUNS
+2.1 - É permitido aos moradores usar e usufruir das partes comuns do Condomínio, desde que não impeçam idêntico uso e fruição por parte dos demais condôminos.
+2.2  - É vedado a qualquer título ceder ou alugar as partes comuns do edifício, no todo ou em parte, a pessoa que não residir no mesmo, para grupos, agremiações ou entidades de qualquer natureza, com ou sem fins lucrativos.(D)
+2.3 - É proibida a permanência de empregados nos halls, escadas sociais e de serviço, garagens ou áreas externas, exceto quando a serviço.(B)
+2.4 - Não é permitida a entrada no prédio de pessoas estranhas ao condomínio, exceto quando autorizadas por algum morador pessoalmente ou por interfone. Neste caso, o ingresso e a permanência dessas pessoas ficarão sob total responsabilidade do respectivo condômino que os autorizou.
+2.5  É proibido o uso de bicicletas, skates. patins e similares nas áreas  comuns. (A)
+2.6   A  troca  ou  raspagem  de   assoalhos,   polimento   de mármores, uso de furadeiras e demais obras nos apartamentos que possam produzir ruídos suscetíveis de incomodar os demais vizinhos deverão ser previamente comunicados à Administração e só serão só serão permitidas obras de emergência após a devida autorização da Administração.
+2.7   Qualquer obra que haja destruição de paredes ou troca de piso, o  Condômino deverá informar ao Síndico Projeto Aprovado assinado por um Engenheiro Civil,
+2.8  É proibido guardar ou depositar em qualquer parte do Condomínio substâncias explosivas ou inflamáveis, bem como agentes biológicos, químicos ou emissores de radiações ionizantes e/ou susceptíveis de afetar a saúde, segurança ou tranquilidade dos moradores, bem como provocar o aumento da taxa de seguro. (D).
+2.9    São proibidos os jogos ou qualquer prática esportiva fora dos locais destinados para tal fim (A).
+2.10    É proibido aos moradores e visitantes entrar nas dependências reservadas aos equipamentos e instalações do Condomínio tais como: terraço do prédio, casa de máquinas dos elevadores, bombas de incêndio, exaustores, bombas de água, medidores de luz e gás, hidrômetros. (B)
+2.11    É proibido atirar fósforos, pontas de cigarro, detritos ou quaisquer objetos pelas portas, janelas e varandas, bem como nas áreas de serviço, elevadores e demais partes comuns do Prédio. (B)
+2.12   Cabe á Administração ou ao funcionário designado por esta entender-se, quando necessário, com os condôminos a fim de que seja dirimida dúvidas bem como no sentido de que seja tomada providências vi
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 05
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+las e varandas, bem como nas áreas de serviço, elevadores e demais partes comuns do Prédio. (B)
+2.12   Cabe á Administração ou ao funcionário designado por esta entender-se, quando necessário, com os condôminos a fim de que seja dirimida dúvidas bem como no sentido de que seja tomada providências visando à segurança do prédio e/ou moradores.
+2.13   As portas corta-fogo deverão ser mantidas permanentemente fechadas.
+2.14  A preferência de entrada de veículos no condomínio é sempre a de quem entra.
+2.15   Proibido a permanência de menores de 18 anos na área comum do prédio após as 22 horas, somente acompanhado de um responsável.  (A)
+2.16   Fica obrigatório o uso de máscaras pelos condôminos em situações epidemiológicas, por visitantes, prestadores de serviço e funcionários nas áreas comuns, inclusive para ir até a garagem, receber encomendas, levar o lixo, nos elevadores, enfim, fora da unidade privativa, sob pena de aplicação de penalidades  (conforme artigo 1336, IV do Código Civil) em caso de descumprimento. (B)
+2.17  Somente serão permitidas cargas e entregas de mercadoria, móveis, mudanças e
+2.18   É vetado o trânsito de pedestres pelos portões de entrada e saída de veículos.
+Estes deverão transitar pela entrada principal da portaria, salvo quando os condôminos estiverem portando objetos de difícil locomoção. (A)
+2.19   É  proibido se  locomover  de bicicletas pelo portão de veículos.  Essa locomoção deve ser feita pelo portão de pedestre. (A)
+2.20   Ao sair do condomínio, priorize a entrada de outros veículos. Dê preferência àqueles que estão aguardando para entrar. Lembre-se: quem ocupa a via pública tem prioridade na manobra.. (A)
+2.21   Crianças menores de 12 anos não são permitidas nas áreas comuns, como piscinas, elevadores e áreas de recreação, sem a supervisão de um adulto responsável.
+Conforme o Estatuto da Criança e do Adolescente (ECA), *crianças nessa faixa etária devem estar sempre acompanhadas por um responsável.* (A)
+2.21   Não é permitido brincar ou consumir alimentos no hall principal. Este espaço deve ser preservado para a circulação e recepção de moradores e visitantes. (A) 3 – DOS ELEVADORES
+3.1    É proibido utilizar os elevadores sem camisa, e/ou roupas de banho (biquínis e afins), de forma venha a causar constrangimento aos moradores. (D)
+3.2 E proibido o uso dos elevadores por crianças menores de 8 anos, desacompanhadas.
+3.3   É proibido manter as portas dos elevadores abertas além do tempo necessário para a entrada e saída de p
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 06
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+misa, e/ou roupas de banho (biquínis e afins), de forma venha a causar constrangimento aos moradores. (D)
+3.2 E proibido o uso dos elevadores por crianças menores de 8 anos, desacompanhadas.
+3.3   É proibido manter as portas dos elevadores abertas além do tempo necessário para a entrada e saída de pessoas, exceto em caso de limpeza ou manutenção por parte das pessoas credenciadas pela Administração do Condomínio.(B)
+3.4  É proibido pular dentro dos elevadores.(A)
+3.5  As mudanças e/ou entregas que obrigarem a utilização excepcional dos elevadores e das áreas de acesso e de circulação do Condomínio só poderão ser efetuadas nos dias e dentro dos horários estipulados para esse fim, ficando essa utilização restrita àquele que atender diretamente à unidade visada e devendo ser feita no menor tempo possível, intercalando, se necessário, viagens de interesse de outros moradores pelo respectivo elevador.(C)
+3.6   Na hipótese de ocorrência de danos aos elevadores e outras partes comuns do condomínio, durante a mudança, fica o condômino ou inquilino, proprietário dos objetos transportados,   responsável perante o condomínio pelo custeio dos reparos necessários.
+4 - DAS VAGAS DE GARAGEM E SUA UTILIZAÇÃO
+4.1  As garagens do Condomínio destinam-se exclusivamente a guarda de veículos e motos pertencentes aos moradores  e/ou locatários.
+4.2   Poderão também ser guardadas na garagem do Condomínio bicicletas de propriedade  dos condôminos,  ficando expressamente entendido que o Condomínio não será de forma alguma responsável pelas referidas bicicletas, em razão de eventual furto ou da ocorrência de danos às mesmas, onde ocuparão o mesmo espaço físico da(s) vaga(s) de garagem de cada apartamento, estacionando por inteiro dentro dos limites da vaga respectiva, de modo que não prejudiquem as condições do estacionamento, circulação e manobra de garagem. Seu funcionamento não deverá pôr em risco outros veículos e/ou pessoas no interior da garagem, nem causar ruído prejudicial à tranquilidade dos edifícios. (A)
+4.3  As motocicletas/veículos ocuparão o mesmo espaço físico da(s) vaga(s) de garagem de cada apartamento, estacionando por inteiro dentro dos limites da respectiva vaga, de modo que não prejudiquem as condições do estacionamento, circulação e manobra de garagem. Seu funcionamento não  deverá pôr em risco  outros veículos  e/ou pessoas no  interior  da  garagem,   nem  causar ruído  prejudicial à tranquilidade dos edifícios.
+4.4  Em caso de locação dos apartamentos, os lo
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 07
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+do que não prejudiquem as condições do estacionamento, circulação e manobra de garagem. Seu funcionamento não  deverá pôr em risco  outros veículos  e/ou pessoas no  interior  da  garagem,   nem  causar ruído  prejudicial à tranquilidade dos edifícios.
+4.4  Em caso de locação dos apartamentos, os locatários terão salvo  disposição contratual  em contrário,  direito  à(s) vaga(s) respectiva(s), devendo o proprietário transferir ao locatário as obrigações constantes deste regulamento e da Convenção do Condomínio.
+4.5  Fica proibida a guarda de animais, embrulhos, volumes, peças, acessórios ou qualquer outro tipo de material nas garagens. (A)
+4.6  Não é permitida a velocidade superior a 10 km/h. nem o uso de buzinas, em toda a área do condomínio.(C)
+4.7  É expressamente proibida a lavagem ou jogar água nos veículos no interior da garagem. Essa ação causa alagamento do piso, respingo de água e produtos químicos em outros veículos e garagem. (B)
+4.8  Qualquer dano causado por um veículo a outro será de inteira e exclusiva responsabilidade do proprietário do veículo causador do dano, devendo ele ressarcir o prejuízo causado em entendimento direto com o prejudicado. Exceto no caso onde o veículo estiver estacionado fora da vaga.
+4.9  É proibido  o  uso  das  garagens  para a execução de qualquer serviço (montagem de móveis, pintura, troca de peças em automóveis,   lanternagem   e   teste   de   motores e   de   buzinas), executando-se troca de pneus quando absolutamente necessários, e socorro mecânico visando à retirada do veículo do interior das garagens.(C)
+4.10  É expressamente proibida a permanência de pessoas estranhas e crianças nas dependências das garagens, salvo para os casos de embarque e desembarque destas últimas.   (B)
+4.11  Não será imputado ao Condomínio e/ou a qualquer pessoa a ele vinculada qualquer dano, avaria ou furto de veículo e/ou objetos eventualmente deixados no interior do mesmo.
+4.12  Ao morador/condômino que possuir veículos estacionados nas garagens, sem direito à vaga ou em qualquer área comum do Condomínio, será imputada multa sem notificação. (B)
+4.13 Salvo quando em trânsito, é proibido o uso de bicicletas e motocicletas nas dependências das garagens. Fica também proibido o uso de skates, patins e etc, além de jogos de qualquer natureza, nas dependências das garagens.(B)
+4.14   É proibido o uso das garagens para guardar móveis, utensílios, motores, pneus, ferramentas ou quaisquer outros objetos, inclusive entulho.(B)
+4.15   Os Con
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 08
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+s das garagens. Fica também proibido o uso de skates, patins e etc, além de jogos de qualquer natureza, nas dependências das garagens.(B)
+4.14   É proibido o uso das garagens para guardar móveis, utensílios, motores, pneus, ferramentas ou quaisquer outros objetos, inclusive entulho.(B)
+4.15   Os Condôminos ficam inteiramente cientes de que nenhuma responsabilidade poderá ser imputada ao Condomínio ou a qualquer pessoa a ele vinculado em decorrência de prejuízos de qualquer natureza provenientes de furto, roubo, e incêndio de veículos, ou outras avarias que porventura venham a sofrer no interior do edifício, tal como não terá nenhuma responsabilidade civil ou criminal por acidentes que venham a ocorrer com automóveis ou contra terceiros, ficando esta responsabilidade por conta exclusiva do proprietário do veículo causador do acidente.
+4.16  É obrigatória a comunicação à Administração das placas dos automóveis e motocicletas a serem guardados no interior das garagens, visando facilitar a identificação e comunicação pela Administração de irregularidades que porventura estiverem praticando ou prevenir danos.  Em caso de furto, roubo e/ou venda de automóvel/motocicleta, o condômino ficará  obrigado   a  comunicar  e/ou requerer a baixa do veículo cadastrado junto à administração.(A)
+4.17 Fica terminantemente proibida a cessão da vaga na área da garagem a pessoas não moradoras do Condomínio a título de aluguel ou empréstimo.(D)
+4.18   É permitida a locação de garagem entre os moradores do Condomínio, sendo expressamente vedada a locação para terceiros. (B)
+4.19    Não é permitido transito de veículos infantis nas garagens.
+4.20    É proibido experimentar buzinas e, desde que possam perturbar o sossego de moradores e usuários, rádio, equipamentos de som, e motores ou quaisquer equipamentos que causem poluição sonora, etc. nas dependências da(s) garagem(s).(A)
+4.21  Aquele que não obedecer à sinalização, às indicações de trânsito na garagem ou ocasionar quaisquer prejuízos ou transtornos a terceiros ficará sujeito às penas de lei aplicáveis ao caso, eximindo-se o Condomínio ou qualquer pessoa a ele vinculado de qualquer ônus relativo à ocorrência.  O Condomínio não terá nenhuma responsabilidade civil ou criminal por acidentes que venham a ocorrer com automóveis ou contra terceiros, ficando esta responsabilidade por conta exclusiva do proprietário do veículo causador do acidente.(A)
+4.22  As bicicletas deverão ser guardadas nas garagens, no suporte ou na grade, ocu
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 09
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+ nenhuma responsabilidade civil ou criminal por acidentes que venham a ocorrer com automóveis ou contra terceiros, ficando esta responsabilidade por conta exclusiva do proprietário do veículo causador do acidente.(A)
+4.22  As bicicletas deverão ser guardadas nas garagens, no suporte ou na grade, ocupando exclusivamente o espaço físico correspondente à vaga de cada apartamento, sempre estacionadas integralmente dentro dos limites da respectiva vaga, de modo a não prejudicar as condições de estacionamento, circulação e manobra no local.
+Alternativamente, poderão ser guardadas no suporte coletivo disponível no muro.
+Não será permitida a permanência de bicicletas nas áreas comuns do condomínio, sob pena de aplicação das sanções previstas. (A) 5 – DA BRINQUEDOTECA E SUA UTILIZAÇÃO
+5.1  O uso e acesso às dependências da Brinquedoteca e Exclusivo aos Condôminos e Locatários.
+5.3 A utilização da brinquedoteca é permitida somente por crianças de até 06 anos, devidamente acompanhadas por seus pais ou responsável maiores de 18 anos.
+5.4  É proibida a permanência de pessoas com trajes de banho.(A)
+5.5   Não é permitida a presença de animais domésticos nas dependências da Brinquedoteca.(A)
+5.6   O Morador que desejar usar a Brinquedoteca deverá retirar a chave na Portaria e após utilização da mesma todas as luzes deverão ser apagadas, a porta trancada e a chave devolvida na Portaria.
+5.7. O Condômino responsável por danos às dependências da Brinquedoteca obriga-se a pagar o valor apurado pela Administração, sujeitando-se, em caso de recusa, à cobrança judicial e multa prevista na Convenção.
+5.8.  Nenhuma outra área fechada além das citadas nesse item deve ser destinada a brincadeiras infantis. (C) 6 – DOS COLETORES DE LIXO
+6.1   O Condomínio possui coletores de lixo próximo a entrada dos Halls. Cabe aos moradores ou aos seus serviças usarem os coletores de lixo de modo que os detritos, que neles deverão ser lançados, estejam devidamente acondicionados em sacos plásticos.(B)
+6.2   É proibido lançar nas lixeiras objetos tais como: produtos químicos, munições, explosivos, pilhas, baterias, latas, vidros, garrafas, caixas, caixotes, entulhos, materiais sólidos.(B)
+6.3 É proibido deixar moveis de grande porte na lixeira do Condomínio, tais como: sofá, geladeira, fogão e outros moveis, e entulho de obras. É responsabilidade do Condômino despachar esse tipo de lixo.(B)
+6.4   Os empregados domésticos devem ser instruídos no sentido do fiel cumprimento destas recomendações; bem
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 10
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+ deixar moveis de grande porte na lixeira do Condomínio, tais como: sofá, geladeira, fogão e outros moveis, e entulho de obras. É responsabilidade do Condômino despachar esse tipo de lixo.(B)
+6.4   Os empregados domésticos devem ser instruídos no sentido do fiel cumprimento destas recomendações; bem como para que evitem sujar as paredes e o piso dos corredores ao transportarem o lixo.(B)
+6.5   É proibido lançar quaisquer objetos, lixo ou líquidos sobre a via pública, área ou pátio interno.(B)
+6.6   É proibido lançar quaisquer materiais, objetos, resíduos, restos ou detritos nas partes comuns do conjunto, ficando responsáveis pelas consequências dessa infração os que assim procederem. (B)
+6.7 É proibido deixa lixo nas escadas ou Hall dos Elevadores. Todo lixo Orgânico e Reciclável deve ser deixado nas lixeiras que ficam no estacionamento do Condomínio, que será levada posteriormente pelo funcionário de limpeza para o Deposito de Lixo. ( I -  Notificação Escrita ou Verbal ) Reincidência: Multa (A)
+6.8   Visando atender as exigências de segurança impostas pelo Corpo de Bombeiros, que o Condomínio não possui em suas escadarias, Halls, Rotas de Fuga, lixeiras para receber tanto lixo reciclável quando o comum, ficado estas disponíveis no Térreo para que os moradores e seus colaboradores depositem nestes locais os lixos Orgânicos e Recicláveis devidamente acondicionados.  (D) 7 - DAS ÁREAS E ATIVIDADES DE RECREAÇÃO O Condomínio é provido de áreas especiais destinadas às atividades sócio recreativas, onde serão admitidos todos os residentes, condôminos ou não, e seus respectivos convidados.
+IMPORTANTE : Em situações epidemiológicas toda área comum e atividades recreativas ficarão  fechadas de acordo com os Decretos Municipais, Estaduais ou Federais, salvo as decisões tomadas em assembleia ou administração.
+7.1 – DO SALÃO DE JOGOS E SUA UTILIZAÇÃO
+7.1.1  -O uso e acesso às dependências do salão de jogos é exclusivo aos condôminos/locatários, e cada condômino terá direito a 2 convidados.(A)
+7.1.2 Horário de funcionamento 08:00 hs  as 22:00 hs
+7.1.3  É proibido o uso, porte e consumo de cigarros, cigarrilhas, charutos ou de qualquer outro produto fumígeno, bebidas e alimentos dentro do Salão de Jogos. (A)
+7.1.4  É proibido o uso da Sinuca por menores de 16 anos. (A)
+7.1.5  É proibida a permanência de pessoas com trajes de banho. (A)
+7.1.6   É proibida a permanência de crianças desacompanhadas no Salão de Jogos. (A)
+7.1.7   Não é permitida a presença de animais domést
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 11
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+tos dentro do Salão de Jogos. (A)
+7.1.4  É proibido o uso da Sinuca por menores de 16 anos. (A)
+7.1.5  É proibida a permanência de pessoas com trajes de banho. (A)
+7.1.6   É proibida a permanência de crianças desacompanhadas no Salão de Jogos. (A)
+7.1.7   Não é permitida a presença de animais domésticos nas dependências do Salão de Jogos. (A)
+7.1.8   O condômino/locatário será responsável por quaisquer danos causados aos jogos, ou outro material integrante do Salão, por sua culpa, dependentes ou seu convidado
+7.1.9   O material do Salão de Jogos deverá ser retirado na portaria.
+item implicará em multa no valor de 25 % da taxa de condomínio do mês vigente.
+7.2 – DA PISCINA E SUA UTILIZAÇÃO
+7.2.1   Não será permitido o ingresso de animais de qualquer espécie na área da piscina.
+7.2.2   Os danos causados por convidados quando da utilização da piscina serão de responsabilidade dos respectivos condôminos.
+7.2.3   Fica proibido o uso da piscina por portadores de moléstia infecto-contagiosa ou transmissível, podendo a Administração, quando entender necessário, exigir atestado médico dos usuários.
+7.2.4   Os usuários da piscina que se comportarem de forma atentatória à moral e aos bons costumes serão retirados da mesma. (D)
+7.2.5   É proibido o uso da piscina por pessoas untadas com óleo de bronzear ou qualquer produto similar que possa prejudicar o correto funcionamento das bombas e filtro nelas existentes. (B)
+7.2.6  É proibido fazer refeições no interior e bordas da piscina.(B)
+7.2.7   Fica Proibido o uso de aparelhos sonoros e/ou instrumentos musicais na área da piscina. ( I -  Notificação Escrita ou Verbal ) Reincidência: Multa (B)
+7.2.8   E proibida a utilização da piscina para a promoção de festas de qualquer natureza, salvo quando promovidas pela Administração do Condomínio, ou autorizadas pelo Síndico, desde que não prejudiquem os demais moradores. É expressamente vedada a utilização de garrafas e/ou outros utensílios de vidro nas dependências da piscina e/ou suas imediações.(D) É também proibido o uso de pranchas e bóias que apresentem perigo aos demais usuários, aparelhos de mergulho e/ou acessórios, como nadadeiras etc.( I - Notificação Escrita ou Verbal ) Reincidência: Multa (A) desacompanhados de pais ou responsáveis.( I -  Notificação Escrita ou Verbal ) Reincidência: Multa (A) proibida a permanência de pessoas na área da piscina após esse horário.  Sendo dos demais condôminos. (A) funcionamento da piscina, devendo afixar nos quadros de aviso as alt
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 12
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+eincidência: Multa (A) desacompanhados de pais ou responsáveis.( I -  Notificação Escrita ou Verbal ) Reincidência: Multa (A) proibida a permanência de pessoas na área da piscina após esse horário.  Sendo dos demais condôminos. (A) funcionamento da piscina, devendo afixar nos quadros de aviso as alterações realizadas.
+Condomínio, ficando sob a guarda e responsabilidade do empregado designado para tal função.
+convenientes para a manutenção da ordem no uso da piscina.
+nem utilizados para fins diversos daqueles a que se destinam de suas imediações.( I - Notificação Escrita ou Verbal ) Reincidência: Multa (A) piscina.( I -  Notificação Escrita ou Verbal ) Reincidência: Multa (A) -  Notificação Escrita ou Verbal ) Reincidência: Multa (A) Piscina para controle do fluxo de pessoas.  (B) molhar o espaço em excesso e, assim, evitar colocar em risco à segurança de outros frequentadores.  (A) da área comum e elevadores fiquem molhados, evitando assim acidentes.  (A)
+7.3 – DA SAUNA E SUA UTILIZAÇÃO
+7.3.1 O Condomínio possui uma saunas de uso misto, sendo exclusivas de moradores, seus dependentes e convidados.
+7.3.2 O uso das saunas é privativo dos moradores e seus convidados quando acompanhados pelos mesmos.
+7.3.3 É terminantemente proibido o uso das saunas por menores de 12 anos quando desacompanhados de seus pais ou responsáveis, ficando o Condomínio isento de qualquer responsabilidade quando as saunas forem indevidamente usadas pelos menores acima indicados, em desconformidade com a vedação prevista neste regulamento.
+durante os períodos de limpeza e manutenção. É obrigatório o agendamento prévio, assim como, ao término do uso, o morador deve solicitar o desligamento do equipamento (B)
+7.3.5   Os danos causados por convidados quando da utilização das saunas serão de responsabilidade dos respectivos condôminos.
+7.3.6   É proibido fumar, beber e se barbear-se ou ensaboar-se dentro da Sauna. (B)
+7.3.7    O Condomínio não  será  responsável por  quaisquer ocorrências com menores nas saunas, sendo proibida a presença de menores de 12 (doze) anos desacompanhados de seus responsáveis,(B)
+7.3.8    Os usuários da sauna que se comportarem de forma atentatória à moral e aos bons costumes serão retirados da mesma. (D)
+7.3.9 Cada condômino de unidade terá direito a levar à Sauna até 2 (dois) convidados.
+7.4   DO SALÃO DE FESTAS E CHURRASQUEIRA
+7.4.1    No salão de festas e na área da churrasqueira o uso de aparelhos sonoros será observância à Lei do  Silêncio, sujeitando-se às 
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 13
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+stumes serão retirados da mesma. (D)
+7.3.9 Cada condômino de unidade terá direito a levar à Sauna até 2 (dois) convidados.
+7.4   DO SALÃO DE FESTAS E CHURRASQUEIRA
+7.4.1    No salão de festas e na área da churrasqueira o uso de aparelhos sonoros será observância à Lei do  Silêncio, sujeitando-se às sanções penais, civis e administrativas.
+7.4.2    A requisição do Salão de Festas ou Churrasqueira só poderá ser feita por condôminos ou inquilinos para promoção de pequenas atividades sociais, festas, recepção ou aniversários, sendo vedada a cessão do salão ou churrasqueira para atividades políticas ou partidárias, religiosas, mercantis e jogos considerados de azar pela legislação pertinente.
+subsequente ao evento, sendo que o uso da área externa do salão de festas é permitido pessoas na área interna do salão de festa até as 01:00 hs. Já a Churrasqueira por se tratar
+7.4.4     Em caso de desistência e a não comunicação com antecedência máxima de 15 dias, será cobrado o valor da locação vigente no período, exceto em caso de força maior a ser analisado e aprovado pelo conselho.
+7.4.5  Para realizar reserva dos dias e horários para o uso do salão de festas e churrasqueira, os proprietários ou inquilinos deverão procurar o Zelador. A reserva deve ser feita com antecedência mínima de 07 (sete) dias. Havendo mais de uma solicitação de reserva para o mesmo dia. A preferência será para o primeiro solicitante.
+7.4.6   O condômino inadimplente junto ao Condomínio não poderá reservar as áreas do salão de festas e churrasqueira.
+Inadimplentes, ficam responsáveis por quaisquer ocorrências. Multa Sem Notificação
+7.4.7  A cessão de uso do salão de festas e da churrasqueira está condicionada à adimplência do condômino na data da solicitação e à prévia assinatura, por parte do condômino, de um termo de responsabilidade,  onde ficará expressamente consignado haver recebido as referidas dependências e utensílios cedidos pelo Condomínio para tal fim em perfeitas condições de uso. Assumindo integralmente o ônus de qualquer dano que venha ser registrado desde a entrega do salão ou churrasqueira, inclusive os causados por familiares, convidados, prepostos, pessoal contratado e serviçais. O condômino ficará responsável ainda pelo pagamento da taxa estipulada pela Administração.
+7.4.8  Fica proibido manter o som numa altura que perturbe a tranquilidade dos moradores, como por exemplo caixa de som desproporcional ao ambiente, assim como sua instalação fora do salão de festas. O horário 
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 14
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+ condômino ficará responsável ainda pelo pagamento da taxa estipulada pela Administração.
+7.4.8  Fica proibido manter o som numa altura que perturbe a tranquilidade dos moradores, como por exemplo caixa de som desproporcional ao ambiente, assim como sua instalação fora do salão de festas. O horário previsto para utilização será até 01:00 h.( I -  Notificação Verbal ) Reincidência: Multa (D)
+7.4.9  Durante o período de uso, o salão de festas e/ou churrasqueira ficarão sob a responsabilidade de seus usuários, que deverão assinar o Termo de Responsabilidade.
+fixação de arranjos decorativos, ficando os reparos de eventuais danos a cargo dos usuários infratores.(A) decibéis indicados pelas normas legais, sobretudo nos horários noturnos.
+Condomínio, para tal designado pela Administração, efetuará uma conferência das instalações e equipamentos das áreas utilizadas.
+por parte do requisitante, será feita através de coleta de preços entre firmas, habilitadas à execução dos serviços de reparo ou reposição das instalações e de utensílios.
+reparação dos danos causados acarretará além de incidência de correção monetária o acréscimo de 20% (vinte por cento) no montante dos danos apurados e a cobrança judicial do débito, com o pagamento de custos e honorários advocatícios, bem como a perda do direito de requisição do salão de festas e churrasqueira até o cumprimento das obrigações.
+convidados no sentido de que não utilizem outras áreas comuns do Condomínio que não façam parte do salão ou churrasqueira, especialmente piscinas, saunas, salão de jogos e brinquedoteca.(A) manutenção do respeito e das boas normas de conduta e convivência social no decorrer das atividades, comprometendo-se a reprimir abusos e excessos e a afastar pessoas cuja presença sejas considerada inconveniente.(B) são moradores do Condomínio.(D) os decretos Municipais, Estaduais e Federais. Nos casos de liberação o locatário se compromete a seguir as normas sanitárias conforme orientação da autoridade sanitária e Administração. No caso de descumprimento, será aplicado multa conforme Termo de Responsabilidade e Contrato de Locação.
+7.5    DA ACADEMIA E SUA UTILIZAÇÃO A academia é uma área comum a todos os condôminos, destinada à prática de atividades físicas, para uso exclusivo de moradores, sendo vedado o uso por visitantes. ( B ) Parágrafo único: Existem  câmeras de monitoramento no local.
+manutenção e limpeza, sendo obrigatório o agendamento. (A)
+7.5.1  O morador interessado em fazer uso do espaço dever
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 15
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+inos, destinada à prática de atividades físicas, para uso exclusivo de moradores, sendo vedado o uso por visitantes. ( B ) Parágrafo único: Existem  câmeras de monitoramento no local.
+manutenção e limpeza, sendo obrigatório o agendamento. (A)
+7.5.1  O morador interessado em fazer uso do espaço deverá retirar a chave na portaria, ficando responsável por equipamentos e instalações durante o uso.
+Parágrafo primeiro: Após o término do uso, a sala deverá ser trancada, as janelas fechadas, os equipamentos desligados (inclusive a luz) e a chave devolvida na portaria pelo último usuário a sair.
+Parágrafo segundo: É recomendável a realização de exames médicos para verificar a aptidão antes da prática de atividades físicas, pois cada usuário que utilizar o espaço, em especial para esforços físicos, o fará por sua conta e risco.
+7.5.2   Os usuários deverão utilizar roupas adequadas à prática de atividades, não sendo permitido o uso de sungas, maiôs ou biquínis para a prática de qualquer modalidade dentro da academia. Deverão, também, utilizar calçados apropriados, não sendo permitido utilizar sapatos ou chinelos dentro do espaço. (A)
+7.5.3   Se houver mais de um interessado para utilização de um mesmo equipamento, o tempo de utilização de cada usuário deverá ser de 30 minutos para cada um, de forma intercalada. Não havendo mais de um usuário para o mesmo equipamento, o uso é livre.
+7.5.4   Na utilização da academia, os usuários deverão observar os seguintes itens:
+a) Colocar no devido lugar as anilhas, halteres, elásticos, bolas, colchonetes, caneleiras e outros equipamentos que venham a ser removidos do lugar de origem; b) A presença de menores de 16 (dezesseis) anos somente será permitida com autorização dos pais ou responsáveis, por escrito .
+c) Não é permitido levar alimentos à academia; (A) d) Manter o ambiente limpo, higienizando os equipamentos e acessórios após cada utilização; e) Não passar álcool no painel das esteiras, bicicleta e elíptico, pois isso danifica os contatos eletrônicos; f)  É proibida a presença de animais no espaço; (A) g)  O condomínio não se responsabilizará por objetos pessoais deixados na academia ou qualquer local da área comum; h)  É vedado o uso de copos, garrafas ou outros recipientes de vidro, sendo permitido somente materiais de plástico para ingestão de líquidos. É vedado o uso de bebidas alcoólicas; (A) i)  Em caso de danos, o causador ou responsável providenciará, no prazo estabelecido pelo síndico, as obras ou consertos necessá
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 16
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+o uso de copos, garrafas ou outros recipientes de vidro, sendo permitido somente materiais de plástico para ingestão de líquidos. É vedado o uso de bebidas alcoólicas; (A) i)  Em caso de danos, o causador ou responsável providenciará, no prazo estabelecido pelo síndico, as obras ou consertos necessários. Do contrário, as despesas decorrentes do dano serão lançadas na taxa condominial do responsável; j) Não jogar ou soltar pesos no chão, tendo cuidado ao manusear os aparelhos.
+l) Se houver dano em algum equipamento ou outras irregularidades, os moradores deverão informar ao zelador ou porteiro para averiguação nas câmeras.
+l) Respeitar a capacidade máxima de 4 pessoas no local.
+7.5.5   A academia é monitorada por circuito interno 24 horas por dia. Constatada qualquer infração, o causador ou condômino responsável será penalizado com multa e arcará com o custo do reparo ou com a troca do bem danificado. ( A )
+7.5.6   A academia do condomínio é de uso exclusivo dos condôminos e moradores.
+NÃO é permitido uso por Convidados/Visitantes. (A)
+7.5.7   Fica obrigatório o agendamento para o uso da Academia para controle do fluxo de pessoas.  (A)
+7.6     DO PLAYGROUND E SUA UTILIZAÇÃO
+7.6.1    O playground destina-se à recreação infantil e é de uso exclusivo dos moradores e de seus visitantes. Os pais ou responsáveis deverão orientar as crianças no sentido de preservar a área e aos brinquedos.
+7.6.2    Não será permitida a prática de jogos ou brincadeiras que possam dificultar o uso da área aos demais frequentadores.
+7.6.3    O uso do brinquedo é para crianças de 02 a 10 anos de idade sob supervisão de 01 adulto. É expressamente proibido subir no brinquedo com material perfurante. O peso limite para o uso do brinquedo é ilimitado desde que seja para criança até 10 anos.
+7.6.4    Defeitos nos brinquedos devem ser imediatamente comunicados ao zelador ou ao corpo diretivo do condomínio.
+7.6.5   A Brinquedoteca é monitorada por circuito interno 24 horas por dia. Constatada qualquer infração, o causador ou condômino responsável será penalizado com  multa e arcará com o custo do reparo ou com a troca do bem danificado. ( A )
+7.6.6   Fica estabelecido o horário das 8h às 20 h para a sua utilização;(A)
+7.7    DA QUADRA ESPORTIVA E SUA UTILIZAÇÃO
+7.7.1    A quadra poliesportiva é de uso dos moradores e visitantes.
+7.7.2    A quadra destina-se à prática de esportes específicos, tais como tênis, vôlei, basquete, futebol de salão e handebol, sendo também permitido o uso de patins
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 17
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+ a sua utilização;(A)
+7.7    DA QUADRA ESPORTIVA E SUA UTILIZAÇÃO
+7.7.1    A quadra poliesportiva é de uso dos moradores e visitantes.
+7.7.2    A quadra destina-se à prática de esportes específicos, tais como tênis, vôlei, basquete, futebol de salão e handebol, sendo também permitido o uso de patins, skate, carrinhos e similares. (A)
+7.7.3    Fica estabelecido o horário das 08h00 às 20h00 para a sua utilização, sendo O cronograma abaixo estabelece os horários de uso da quadra diariamente:
+✅ 20h00 às 22h00 (Sabado): Uso livre para atividades gerais.
+7.7.4    Não será permitido levar à quadra frascos, copos, garrafas, gêneros alimentícios etc., em vidro, porcelana, metal ou qualquer material que possa atentar contra a segurança dos frequentadores. Não será permitido o uso da quadra quando estiver molhada, podendo ocasionar acidentes, ela será fechada.
+7.7.5    Defeitos e problemas estruturais devem ser imediatamente comunicados ao zelador ou ao corpo diretivo do condomínio.
+7.7.6   A Quadra de Esporte é monitorada por circuito interno 24 horas por dia.
+Constatada qualquer infração, o causador ou condômino responsável será penalizado com multa e arcará com o custo do reparo ou com a troca do bem danificado. ( A ) 8 - DOS DIREITOS E DEVERES DOS CONDÓMINOS
+8.1 -DOS DIREITOS Constituem direitos dos condôminos, seus inquilinos e respectivos familiares (entendidos como tais os que com ele coabitarem):
+8.1.1 Usar, gozar e dispor das respectivas unidades autônomas, bem como das vagas- garagem vinculadas a seu apartamento e às partes comuns do Condomínio como melhor lhe aprouver, desde que não prejudiquem a segurança e solidez do edifício, que não causem danos, não  comprometam  a  boa  ordem,   a  moral,   a  higiene  e a tranquilidade dos demais condôminos e não infrinjam as normas legais e/ou as disposições da convenção, do Regimento Interno e das Normas de Procedimento.
+8.1.2 Usar e gozar das partes comuns da edificação, desde que não impeçam idêntico uso e gozo por parte dos demais condôminos com as mesmas restrições da alínea anterior.
+8.1.3  Examinar  a  qualquer  tempo  os  livros  e  arquivos  da administração e pedir esclarecimento ao Síndico.
+8.1.4  Comparecer às Assembleias e nelas discutir, votar e ser votado, sendo que com
+8.1.5  Utilizar os serviços da portaria, desde que não perturbem a sua ordem nem desviem os empregados do Condomínio para serviços de suas unidades autônomas.
+8.1.6   Denunciar ao Síndico ou à Administração qualquer irregularidade obs
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 18
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+s Assembleias e nelas discutir, votar e ser votado, sendo que com
+8.1.5  Utilizar os serviços da portaria, desde que não perturbem a sua ordem nem desviem os empregados do Condomínio para serviços de suas unidades autônomas.
+8.1.6   Denunciar ao Síndico ou à Administração qualquer irregularidade observada, bem como sugerir alguma medida administrativa.
+8.1.7   Utilizarem-se das partes comuns do Condomínio, bem assim ter acesso às áreas de recreação nos horários estipulados e segundo as regras deste Regulamento e/ou outras que venham a ser baixadas.
+8.2 - DOS DEVERES Constituem deveres dos condôminos, seus inquilinos e respectivos familiares (entendidos como tais que com eles coabitarem);
+8.2.1  Cumprir e fazer cumprir a Convenção e o  presente Regimento  Interno   e   as normas   de  Procedimento  editadas  pela administração.
+8.2.2   Contribuir  para   as  despesas   comuns   do   edifício   na proporção   constante na  Convenção  do  Condomínio,   efetuando  o recolhimento nas ocasiões oportunas.
+8.2.3  Guardar decoro e respeito no uso das coisas e partes comuns, não as usando nem permitindo que as usem. bem como as unidades autônomas, para fins diversos daqueles a que se destinem.(B)
+8.2.4  É dever de todos os morados ou ocupantes a qualquer título, observar nas áreas do condomínio, seja no comportamento, seja no trajar, os mais elevados princípios da moral, bons costumes e respeito mútuo. (B)
+8.2.5  Evitar todo e qualquer ato ou fato que possa prejudicar o bom nome do Condomínio e o bem-estar de seus ocupantes, tomando, se necessário  for,   sob   sua exclusiva  responsabilidade,   inclusive financeira, as providências para desalojar o locatário ou cessionário que se tornar inconveniente. (B)
+8.2.6  Não usar as respectivas unidades autônomas nem as alugar ou cedê-las para atividades   ruidosas, ou para instalação   de qualquer atividade ou depósito de objeto capaz de causar dano ao prédio ou incômodo aos demais moradores.(B)
+8.2.7  Não alugar ou ceder as unidades e, ou autorizar a pessoas de vida duvidosa ou de maus costumes, nestes  compreendidos  a embriaguez  e  a  toxicomania,   em  qualquer de   suas  formas.   Nos respectivos contratos de locação os proprietários se obrigam a inserir uma cláusula a esse respeito.(B)
+8.2.8   Não alugar ou ceder as unidades para clubes de jogo, de dança, carnavalescos, ou quaisquer outros agrupamentos, inclusive os de fins políticos.(B)
+8.2.9   Fazer constar nos contratos de locação ou outros quaisquer em que forem
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 19
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+oprietários se obrigam a inserir uma cláusula a esse respeito.(B)
+8.2.8   Não alugar ou ceder as unidades para clubes de jogo, de dança, carnavalescos, ou quaisquer outros agrupamentos, inclusive os de fins políticos.(B)
+8.2.9   Fazer constar nos contratos de locação ou outros quaisquer em que forem cedidos a terceiros o uso de apartamentos, cláusula obrigando o cumprimento do disposto na Convenção, no presente Regulamento Interno e  Normas   de  procedimento   editadas pela Administração,    pelo    que    o    condômino    ficará    solidariamente responsável.
+unidade, fornecendo o endereço de sua residência e telefone, bem como nome e endereço da Administração da locação, quando houver.
+e/ou sublocação a mais de urna pessoa separadamente, sob qualquer forma, de quartos ou dependências de apartamentos. (B) as paredes, portas esquadrias ou quaisquer partes externas com cores ou tonalidades diversas das empregadas no edifício. Exemplo: Alterar a cor da parede e grade da sacada interna (B) placas, avisos ou letreiros de qualquer espécie nas áreas externas ou dependências internas do Edifício, salve os quadros de avisos do próprio Condomínio.(B) tapetes, cordas de roupas ou quaisquer outros objetos que prejudiquem a estética do Edifício ou que possam representar risco à segurança de pessoas e bens.(B) proteção ou grade da sacada.(B) Administração poderá dispor de chaves para ter acesso à respectiva unidade em caso de urgência comprovada. Se isto não ocorrer, poderá a Administração tomar as providências necessárias para o ingresso no apartamento, com a contratação de chaveiro para abertura das portas, cujas despesas serão suportadas pelo condômino que não comunicar o local onde possa ser localizado com facilidade.
+instalação perigosa ou que produza incômodo, ou que importe majoração do prêmio de seguro.(D) diversas das empregadas no edifício.(D) ou maquinismos de grande porte, bem assim utilizar aparelhos de qualquer natureza que não tenham sido aprovados pelas  autoridades competentes  e que possam afetar as condições residenciais do edifício.(B) privativas nas partes   comuns   do condomínio. Igualmente nas unidades autônomas quando nessas possam causar interferências nos equipamentos existentes no edifício ou.
+de alguma forma, prejudicar as condições residenciais dos mesmos, inclusive  no aspecto estético.(B) previstos na construção, bem como fios e condutores de qualquer espécie nas paredes comuns dos edifícios.(D) publicidade, inclusive propaganda eleito
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 20
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+ncias nos equipamentos existentes no edifício ou.
+de alguma forma, prejudicar as condições residenciais dos mesmos, inclusive  no aspecto estético.(B) previstos na construção, bem como fios e condutores de qualquer espécie nas paredes comuns dos edifícios.(D) publicidade, inclusive propaganda eleitoral, nas janelas das fachadas, portas, escadas ou em quaisquer outros lugares.(B) perturbador, que exceda a medida normal de tolerância, acima do número de  decibéis indicado por especialistas ou pelas normas  legais,  sobretudo  nas  horas  destinadas  ao moradores por qualquer outro modo dentro de tais horas. Exemplos:  barulho de salto, móveis arrastando, crianças brincando e correndo no andar de cima( I -  Notificação Escrita ou Verbal ) Multa (B) sirva a cada unidade autônoma, assim como de infiltrações em paredes/pisos e goteiras de Art. condicionado, sendo de responsabilidade do condômino os danos que venham a ocorrer em partes comuns ou em outros apartamentos.(B) Administração da execução de obras em seus apartamentos com antecedência mínima de 15(dez) dias.
+furadeiras e demais obras nos apartamentos que possam produzir ruídos suscetíveis de incomodar os demais vizinhos deverão ser previamente comunicados à Administração e só serão permitidos quando realizados de segunda a sexta-feira, exceto feriado, das deste período, só serão permitidas obras de emergência após a devida autorização da Administração. (B) somente até às linhas troncos, sendo de responsabilidade do proprietário os gastos oriundos do trabalho.
+consentimento da Administração, desde que não afetem a segurança de edifício.
+apartamentos em caso de ausência ou mudança de moradores, sem autorização prévia da Administração, e, caso ocorra, o Condomínio não responderá por qualquer prejuízo causado ou alegado pelo morador, sendo de sua inteira responsabilidade a entrega das chaves de sua unidade ao funcionário.
+solúveis nos aparelhos sanitários ou ralos dos apartamentos, respondendo o condômino pelo entupimento de tubulações e demais danos causados ao edifício.(B) responsável o Condomínio por furtos que venham a ocorrer, tanto nas unidades autônomas quanto nas partes comuns, por inobservância desta determinação.
+competente de ocorrência de qualquer moléstia infectocontagiosa em morador do edifício.
+balões e pipas na respectiva unidade autônoma ou nas dependências comuns.(D) recíprocos.
+serviço  de  reparação  e  verificação  do  que for necessário, para fins de inspeção ou realização de trabalhos 
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 21
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+rminação.
+competente de ocorrência de qualquer moléstia infectocontagiosa em morador do edifício.
+balões e pipas na respectiva unidade autônoma ou nas dependências comuns.(D) recíprocos.
+serviço  de  reparação  e  verificação  do  que for necessário, para fins de inspeção ou realização de trabalhos relativos à estrutura geral do Edifício, sua segurança e solidez, bem como a realização de reparos em instalações, serviços e tubulações de unidades vizinhas, ou para evitar-se vazamentos em torneiras, sifões, caixa de descarga ou chuveiros, em evidente desperdício de água, cujos reparos realizados serão cobrados do condômino no mês subsequente.(B) modo, bem como retirar plantas ou mudas dos mesmos ou atingi-los com atos predatórios.(D) inquilinos, comodatários ou sucessores:
+a)   Descumprir as boas normas no uso do respectivo apartamento, bem como no uso das coisas e partes comuns, ou usar ou permitir que sejam usadas para fins diversos daqueles a que se destinam.(D) b) Remover o pó de tapetes ou de cortinas, ou de partes dos apartamentos, senão por meios que impeçam a sua dispersão.(B) c)  Estender roupas, tapetes ou quaisquer outros objetos nas janelas ou e grade das sacadas, ou de onde estejam expostos com riscos de cair.(B) d) Colocar vasos nas janelas e sacadas.(B) e) Manter nos respectivos apartamentos substâncias, instalações ou aparelhos que causem perigo à segurança e à solidez do edifício, ou incômodo aos demais condôminos.(B) f) Deixar de contribuir para as despesas comuns para o rateio de déficit orçamentário, para as cotas extras.
+g) Deixar de contribuir para o custeio de obras determinadas pela Assembleia Geral, na forma e na proporção que vier a ser estabelecida.
+h) A utilização de botijões de gás nas unidades autônomas e nas áreas de uso comum.
+i)  Cobrir janelas com jornal ou papel alumínio.(A) j)  Colocar toldos na varanda ou janelas, nem instalar aparelhos de Art.-condicionado fora do local previamente destinado para tal finalidade. (D) j)  Lavar quaisquer partes das janelas e sacadas, utilizando, mangueiras ou vasilhames, permitindo que os apartamentos dos andares inferiores sejam atingidos pela água; (A) qualquer tipo originário de sua unidade, inclusive de tubulações colocadas abaixo do piso   do   próprio   apartamento, responsabilizando-se por danos causados a outros apartamentos ou a coisas comuns, no caso de não serem efetuados tais serviços.
+Qualquer vazamento que ocorra no telhado do prédio para os apartamentos de baixo será  corrigi
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 22
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+nclusive de tubulações colocadas abaixo do piso   do   próprio   apartamento, responsabilizando-se por danos causados a outros apartamentos ou a coisas comuns, no caso de não serem efetuados tais serviços.
+Qualquer vazamento que ocorra no telhado do prédio para os apartamentos de baixo será  corrigido  pelo  Condômino,   cabendo  ao  Síndico  ou  à Administração mandar reparar por conta do Condomínio também os estragos causados nos apartamentos prejudicados.
+motivo de segurança da estrutura do prédio, de qualquer modificação a ser feita internamente nos apartamentos ou coberturas do Condomínio, devendo a autorização da Administração também ser dada por escrito para efeito da comprovação.(D) recomendações de segurança das concessionárias de serviço público serão de responsabilidade exclusiva do condômino que as realizar, ficando responsável inclusive por quaisquer multas que venham a ser aplicadas   ao Condomínio  com base  nas referidas alterações.(D) nos casos em que o problema for na Rede Externa que é responsabilidade do Condomínio. (B) A Sala de medição e Sala Técnica é de responsabilidade do condomínio e não é permitido o acesso de moradores ou terceiros. Mesmo que a conta estiver paga, não podemos autorizar a religação pelo morador ou terceiros, somente a concessionaria pode realizar esse serviço. (D) garagem para os locais determinados pela Administração, não sendo permitido deixá-los nos corredores e elevadores. (A) mudanças, móveis, e itens pesados. (A) dos respectivos veículos, mencionando a marca e a placa para que possa ser efetuada a devida identificação, quando de seu ingresso na garagem. Caso o veículo seja substituído, o condômino deverá solicitar a atualização na Portaria.  Veículos de terceiros somente serão permitidos a entrada após cadastramento na Portaria. (A) excessivos que perturbam a ordem e sossego dos vizinhos, durante o dia e/ou durante a noite. (B) tênis ou moveis de qualquer natureza que venha atrapalhar as passagens e circulação das pessoas. Os objetos que forem encontrados nestes locais serão removidos. (A) nem permitindo que as usem, bem como as respectivas unidades autônomas, para fins diversos daqueles a que se destinem; (A) 9 - DAS PENALIDADES
+9.1  Os condôminos são responsáveis pelos danos e prejuízos que, pessoalmente, seus dependentes, visitantes e prepostos venham a causar em qualquer área comum do prédio, ficando obrigado a indenizar o Condomínio, pelo valor do dano causado a ser apurado pela Administração e exigido
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 23
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+- DAS PENALIDADES
+9.1  Os condôminos são responsáveis pelos danos e prejuízos que, pessoalmente, seus dependentes, visitantes e prepostos venham a causar em qualquer área comum do prédio, ficando obrigado a indenizar o Condomínio, pelo valor do dano causado a ser apurado pela Administração e exigido do condômino responsável, cujo pagamento deverá ser efetuado no prazo máximo de 30 (trinta) dias a contar da apuração do seu valo, sob pena de cobrança judicial acrescida dos ônus legais em decorrência de sua inadimplência.
+9.2  O Condomínio punirá os infratores, condôminos, familiares, visitantes ou prepostos, com as sanções previstas na Convenção e neste Regulamento Interno.
+9.3   A disciplina estatuária é decorrente do interesse comum, sobrepondo-se, obviamente, ao particular, desde que não viole o direito básico de propriedade.
+9.4   Caberá à Administração do Condomínio aplicar as sanções previstas na Convenção, em caso de transgressão das normas do presente Regulamento Interno,   as quais   serão   graduadas   de conformidade com sua importância, sendo no mínimo de 25% (dez por cento) do valor da cota condominial, para cada infração praticada, as quais reverterão para investimento no Condomínio, podendo chegar ao valor equivalente a 100% da Taxa de Condomínio, pela reiteração dos atos ou pelo comportamento anti-social. por deliberação do síndico.
+9.5  As multas poderão ser aplicadas diariamente, em caso de infração continuada, ficando o condômino proibido de dar continuidade em caso de obras ou instalações.
+9.6  Em caso de necessidade de procedimento judicial, todas as despesas correspondentes às custas e honorários advocatícios ocorrerão por conta do Condomínio responsável, que ficará também obrigado a efetuar os reparos necessários ou reembolso ao Condomínio de despesas ocorridas com a reposição de objetos ou áreas danificadas.
+9.7  Se o infrator depois de aplicada a penalidade, não cessar a infração, ficará passível de novas penalidades e assim sucessivamente, sempre em valor crescente como vier a ser disciplinado pelo Regimento Interno, até decisão judicial.
+9.8   As multas serão impostas e cobradas pelo Síndico.
+9.9   Sem prejuízo da atualização monetária das multas, poderá o interessado interpor recurso à Assembleia Geral, o que deverá ser feito em até 30 (trinta) dias do conhecimento do fato interessado.
+9.10  Quando o Síndico se omitir, caberá a qualquer condômino solicitar ao Conselho Consultivo as providências exigidas.
+9.11   As custas e despesa
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 24
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+as multas, poderá o interessado interpor recurso à Assembleia Geral, o que deverá ser feito em até 30 (trinta) dias do conhecimento do fato interessado.
+9.10  Quando o Síndico se omitir, caberá a qualquer condômino solicitar ao Conselho Consultivo as providências exigidas.
+9.11   As custas e despesas em processos judiciais, assim como honorários de advogados, serão sempre pagos por quem for condenado no processo.
+9.12   Em ação proposta pelo Condomínio que for julgada improcedente, as despesas que houver serão consideradas como despesas extraordinárias de Condomínio.
+9.13  As penalidades poderão ser aplicadas a qualquer tempo e, quando não forem na ocasião oportuna, não serão canceladas, salvo por deliberação expressa de Assembleia Geral, em grau de recurso.
+9.14  As importâncias devidas a título de multas que não forem pagas até 30 dias após a data em que vier a ser fixada ficarão sujeitas, desde a ocorrência e até o efetivo pagamento, à incidência de multa de 2% e juros que se fixam em 3% (três por cento) ao mês, à atualização monetária de acordo com o IGP-DI .
+9.15  As despesas resultantes de ação ou omissão da Administração do Condomínio e/ou de seus empregados serão custeadas pelo Condomínio, cabendo ao Conselho Consultivo, conforme o caso, aplicar aos responsáveis as penalidades cabíveis.
+9.16  As penalidades previstas neste Regulamento são:
+I -  Notificação Escrita ou Verbal A notificação será de competência do Síndico, Porteiro ou Zelador dirigida ao infrator.
+Obs.: No caso de NÃO cumprimento da notificação será aplicado MULTA.
+II-  Multas terão por base de cálculo o valor da taxa de condomínio de acordo com o percentual previsto nos itens deste regulamento:
+a) Infrações catalogadas na letra “A” – 25% (Vinte e cinco por cento) b) Infrações catalogadas na letra “B” –50% (Cinquenta por cento) c) Infrações catalogadas na letra “C” – 75% (Setenta e cinco por cento) d) Infrações catalogadas na letra “D” – 100% (Cem por cento) III -  A aplicação e qualquer penalidade pelo Condomínio não afastam nem impede que o infrator venha a sofrer medidas de ordem judicial, quando o seu ato configurar ilícito civil ou penal.
+IV – No caso da segunda ocorrência na mesma infração o valor da multa será cobrado em dobro e no caso novas ocorrências na mesma infração o valor da multa será quadruplicado, nos termos do Código Civil.
+IV – Caso o morador receba uma multa do condomínio que considere abusiva ou injusta, ele tem o direito de recorrer. Após receber a notificação, o
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 25
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+ação o valor da multa será cobrado em dobro e no caso novas ocorrências na mesma infração o valor da multa será quadruplicado, nos termos do Código Civil.
+IV – Caso o morador receba uma multa do condomínio que considere abusiva ou injusta, ele tem o direito de recorrer. Após receber a notificação, o morador pode entrar em contato com o síndico pessoalmente ou através de uma carta para recorrer da multa de condomínio. O direito de defesa deve ser realizado por escrito junto ao conselho consultivo do condomínio. Prazo de 7 (sete) dias para recorrer.
+10 - DAS DISPOSIÇÕES ESPECIAIS Não poderão ser instalados aparelhos alimentados por gás engarrafado nas partes comuns e/ou privativas dos edifícios.
+11 - DOS CONVIDADOS, ENTREGADORES E PRESTADORES DE SERVIÇO
+11.1 Cada condômino tem direito a receber tantos convidados quanto deseje em sua unidade, respeitados a segurança, bem-estar e tranquilidade dos demais condôminos.
+11.2  A entrada de convidado(s) no edifício somente ocorrerá após o respectivo condômino ter sido consultado pelo interfone a respeito ou quando previamente autorizado pelo mesmo, através de comunicação à segurança do Condomínio, na entrada do prédio e aos porteiros, devendo o nome do visitante ser anotado em livro próprio, onde constarão o nome do visitado, a pessoa que autorizou o ingresso do convidado, o horário da entrada e saída do(s) mesmo(s).
+11.3 Cada condômino de unidade terá direito a levar à piscina e às saunas até 3 (Tres) convidados.(B)
+11.4  A utilização das quadras de esportes e salão de jogos por convidados está condicionada à presença do respectivo condômino anfitrião, conforme normas estatuídas para tal fim.
+levar  a  entrega  até  a  unidade,  exceto  entregadores  de  aplicativo,  por  medida  de segurança. Para situações autorizadas, tais como: farmácia, água e supermercado, é necessário que o entregador apresente um documento de identificação na Portaria. Tais restrições não se aplicam aos idoso, deficientes físicos, gestantes e puérperas, ou casos excepcionais que serão analisados pela Administração.
+11.6  Não será permitido a entrada de menores de 18 anos no condomínio após as 22 horas sem o acompanhamento do responsável. (B)
+11.7 Em  situações  epidemiológicas  o  Condômino  deverá  buscar  a  sua entrega/encomenda na Portaria. Entregadores não estão autorizados a realizar a entrega nas unidades, exceto os casos de compras de Supermercado, farmácia e entrega de água ou casos excepcionais aprovados pela Administração.
+11.8  
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 26
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+ Em  situações  epidemiológicas  o  Condômino  deverá  buscar  a  sua entrega/encomenda na Portaria. Entregadores não estão autorizados a realizar a entrega nas unidades, exceto os casos de compras de Supermercado, farmácia e entrega de água ou casos excepcionais aprovados pela Administração.
+11.8  Só serão permitidas Instalação e Manutenção de Internet, TV a Cabo, Telefone proibidas aos domingos e feriados.
+12- DOS ANIMAIS DOMÉSTICOS
+12.1 É permitida a permanência de até 02 (dois) animais de pequeno porte, devidamente vacinados, dentro de sua unidade. (D)
+12.2 Não é permitida a permanência dos referidos animais domésticos dentro de sua unidade que atentem contra a segurança, bem-estar e tranquilidade dos demais condôminos. (D)
+12.3 Não é permitida a permanência dos referidos animais domésticos nas áreas comuns do Condomínio, salvo para entrada e saída deles do prédio, devendo o animal ser conduzido no colo ou coleira em todas as circunstâncias, se o animal estiver na coleira e o dono deve assegurar que não haja sujeira ou comportamento inadequado. (B)
+12.4   Os animais só poderão descer no elevador como cita o artigo específico, ou escada, acompanhados do seu responsável no colo ou coleira até a saída do Condomínio, se o animal estiver na coleira e o dono deve assegurar que não haja sujeira ou comportamento inadequado. (B)
+12.5    Limpar os dejetos do animal nas áreas comuns do condomínio ou na rua, se ocorrer. Sempre limpe a sujeira do seu cão – na rua ou no condomínio. É dever do tutor deixar o local limpo, como encontrou. (B)
+12.6    Zelar pela higiene do apartamento e das áreas comuns, principalmente hall e elevadores. Não basta recolher os dejetos do animal e impedi-lo de urinar nas áreas comuns. É dever do tutor manter o ambiente residencial limpo para evitar odores desagradáveis aos vizinhos e preservar o bem-estar do próprio animal.  (B) 13 – PORTARIA
+13.1    Todo visitante deve se identificar na Portaria. Primeira visita necessário fazer o cadastro com documento de identificação com foto. Durante o processo de identificação os portões ficarão fechados.
+13.2   Será feito contato como morador informando-o sobre a presença do visitante e conveniência da sua entrada ou não.
+13.3   Porteiro não está autorizado a abrir o portão de veículos. Obrigatória a aquisição do Controle do portão pelo morador conforme modelo recomendado pelo condomínio.
+13.4  É proibido a qualquer funcionário do Condomínio aceitar chaves dos apartamentos em caso de ausência ou mu
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 27
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+ua entrada ou não.
+13.3   Porteiro não está autorizado a abrir o portão de veículos. Obrigatória a aquisição do Controle do portão pelo morador conforme modelo recomendado pelo condomínio.
+13.4  É proibido a qualquer funcionário do Condomínio aceitar chaves dos apartamentos em caso de ausência ou mudança de moradores, sem autorização prévia da Administração, e, caso ocorra, o Condomínio não responderá por qualquer prejuízo causado ou alegado pelo morador, sendo de sua inteira responsabilidade a entrega das chaves de sua unidade ao funcionário.
+13.5   Não será permitido a entrada qualquer pessoa a unidade sem uma autorização previa do proprietário ou inquilino, mesmo se essa pessoa estiver de posse da chave do apartamento.
+13.6   O Porteiro está autorizado a receber somente encomendas registradas. Para outras situações o morador deverá se encaminhar até a portaria para o recebimento.
+14 – PROCEDIMENTO DE MUDANÇA b)  A mudança ou a retirada de moveis de grande porte deverá ser agendada/comunicada junto à Administração (Síndico, Subsíndica ou Zelador), e somente dará início após entrega via Checklist do estado do elevador e escadaria a serem utilizadas, a fim de garantir ao condomínio posterior ressarcimento caso haja dano. (A) c)  É vedada a entrada de veículos de qualquer porte para entrega/retirada de materiais de obra ou transportando mudanças. Os veículos deverão ficar do lado de fora do Condomínio. (A) d)   O Inquilino/Proprietário deve preencher a Ficha de Cadastro, fazer a Biometria e entregar o Contrato de Aluguel ou de Compra e Venda do Imóvel no ato da mudança. NÃO será permitido a mudança sem o cadastro da Biometria e o preenchimento da Ficha de Cadastro. (A) e)  Fica obrigatória a compra do Controle do Portão pelo Inquilino/Proprietário.
+NÃO será permitido a abertura do portão para moradores que não tenham o controle do portão. (A) f) Será cobrado taxa de mudanças equivalente a 50% da Taxa de Condomínio para toda e qualquer mudança.  A mudança deverá ser previamente agendada com o Zelador, sempre obedecendo aos horários previstos.
+g) Mudança de um apartamento para outro segue as mesmas regras.
+15 - DAS DISPOSIÇÕES FINAIS
+15.1 Constitui dever de condôminos, moradores e usuários do prédio cumprir o presente Regulamento Interno, levando ao conhecimento da Administração qualquer transgressão de que tenha conhecimento.
+15.2 Aos condôminos cabe a obrigação de, nos contratos de locação, alienação ou cessão de uso de suas unidades a terceiros, fazer incl
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 28
+📜 REFERÊNCIA: 2. DO USO DAS ÁREAS COMUNS
+📝 CONTEÚDO:
+[2. DO USO DAS ÁREAS COMUNS - CONTINUAÇÃO]
+nos, moradores e usuários do prédio cumprir o presente Regulamento Interno, levando ao conhecimento da Administração qualquer transgressão de que tenha conhecimento.
+15.2 Aos condôminos cabe a obrigação de, nos contratos de locação, alienação ou cessão de uso de suas unidades a terceiros, fazer incluir cláusula que obrigue ao fiel cumprimento das normas do presente Regulamento, sob pena de responder pessoalmente pela omissão no contrato de locação, pelo valor das multas aplicadas ao inquilino que transgredir as normas da Convenção deste Regulamento Interno do prédio.
+15.3 É obrigatório o preenchimento correto da ficha de registro de moradores, a fim de que o Condomínio possa manter sempre atualizadas as fichas de cadastro policial.
+15.4 Quaisquer sugestões e/ou reclamações deverão ser dirigidas à Administração do prédio por escrito, as quais serão registradas era livro próprio.
+15.5 Ficam o Síndico e/ou Administração autorizados a, obedecidos Convenção do Condomínio e este Regulamento, baixar todas as instruções complementares que entenderem necessárias à aplicação das normas do presente.
+15.6  Fica proibido fumar cigarrilhas, charutos, cachimbos, narguilés e outros produtos em locais de uso coletivo, públicos ou privados, como hall, corredores e nas áreas comuns do condomínio. (B)
+15.7  Fica proibido fazer uso de cigarros, charutos, narguilés e congêneres para fumo nas sacadas e janelas.  (B)
+15.8  A taxa de condomínio deverá ser paga, obrigatoriamente até o dia 10 (dez) de cada mês. Caso haja atraso no pagamento será cobrada do condômino ou inquilino faltosa multa de 2% mais juros e 3% ao mês pro-rata die.
+Parágrafo Único: A taxa de condomínio em aberto por 01 (mês) será encaminha para cobrança judicial.
+15.9 Todos os casos omissos neste regulamento serão resolvidos pelo Conselho do Condomínio e/ou em Assembleia Geral de Condôminos.
+15.10  Todas as questões eventualmente oriundas da Convenção e do Regimento Interno do “Condomínio” serão resolvidas na Segunda Corte de Conciliação Arbitral do SECOVI, Estado de Goiás Goiânia, 30 de Maio de 2025 RESIDENCIAL REALITY BURITIS Síndico (a)
+------------------------------------------------------------
+

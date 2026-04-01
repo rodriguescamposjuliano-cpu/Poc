@@ -1,0 +1,728 @@
+=== RELATÓRIO DE AUDITORIA DE INDEXAÇÃO ===
+CONDOMÍNIO (TENANT): 003
+TOTAL DE CHUNKS: 108
+============================================================
+
+📍 ID DO CHUNK: 01
+📜 REFERÊNCIA: Artigo 1º
+📝 CONTEÚDO:
+Artigo 1º — O Residencial América Tower reger-se-á pela Lei nº 4.591 de 16 de Dezembro de 1964 (Lei do Condomínio), pelo Código Civil e pela Convenção do Condomínio e, observadas as leis municipais pertinentes, por este Regimento Interno a cujo estrito cumprimento se obriga a todos os proprietários, condôminos, moradores, funcionários do condomínio, prestadores de serviço e visitantes.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 02
+📜 REFERÊNCIA: Artigo 2º
+📝 CONTEÚDO:
+Artigo 2º — O presente Regimento Interno tem por objetivo explicar as normas que devem ser obedecidas por todos os citados no artigo anterior de acordo com as disposições contidas na Convenção.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 03
+📜 REFERÊNCIA: Artigo 3º
+📝 CONTEÚDO:
+Artigo 3º — O cumprimento das regras abaixo possibilitará uma convivência harmônica e confortável para todos os moradores DOS DIREITOS E DEVERES DOS CONDÔMINOS
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 04
+📜 REFERÊNCIA: Artigo 4º
+📝 CONTEÚDO:
+Artigo 4º — Os DIREITOS dos proprietários, condôminos e moradores estão descritos na Cláusula 18º da Convenção do Condomínio Residencial América Tower.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 05
+📜 REFERÊNCIA: Artigo 5º
+📝 CONTEÚDO:
+Artigo 5º — Os DEVERES dos proprietários, condôminos e moradores estão descritos na Cláusula 19º da Convenção do Condomiínio Residencial América Tower DOS DIREITOS E DEVERES : DOS EMPREGADOS-DO CONDOMÍNIO
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 06
+📜 REFERÊNCIA: Artigo 6º
+📝 CONTEÚDO:
+Artigo 6º — São DIREITOS dos empregados do Condomínio:
+|. Ser tratado com devido respeito, decência e moralidade pela administração do condomínio, assim como pelos proprietários, condôminos, moradores e visitantes
+2. Demais direitos previstos nas relações de trabalho;
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 07
+📜 REFERÊNCIA: Artigo 7º
+📝 CONTEÚDO:
+Artigo 7º — São DEVERES dos empregados do Condomínio:
+l. Manter supervisão permanente da Portaria e vigilância contínua do edifício;
+2. Manter em perfeitas condições de asseio, conservação e segurança as partes comuns do condomínio;
+3. Evitar comentários que por natureza fujam da alçada de seus serviços relativos ao Edifício;
+4. Ligar e desligar as luzes das partes comuns do Edifício, exercendo controle sobre o funcionamento da iluminação de modo a mantê-la regular e sem desperdício de energia, inclusive promovendo a substituição de lâmpadas danificadas ou queimadas;
+5. Inspecionar diariamente as partes comuns de todos os pavimentos do edifício, anotando as deficiências observadas e comunicando o(a) Síndico(a), mas resolvendo imediatamente aquelas cuja solúção esteja ao seu alcance;
+6. Comunicar imediatamente o(a) Síndico(a) quaisquer irregularidades havidas no edifício, preferencialmente por escrito, inclusive quanto à sua utilização por condôminos ou moradores, bem como qualquer circunstância que lhe pareça anormal;
+7. Cumprir fielmente as ordens recebidas do(a) Síndico(a) e auxiliálo na administração do Condomínio, exceto nas disposições contidas na Convenção;
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 08
+📜 REFERÊNCIA: Artigo 8º
+📝 CONTEÚDO:
+Artigo 8º — Os empregados do Condomínio devem tratar com urbanidade e cortesia os Moradores e visitantes do Edifício, devendo receber dos mesmos, igual tratamento, visto serem os responsáveis diretos pelo cumprimento do disposto na Convenção e neste Regimento Interno. Os condôminos devem reclamar ao Síndico(a), preferencialmente por escrito, sobre qualquer irregularidade cometida pelos funcionários do condomínio, evitando atrito pessoal com os mesmos;
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 09
+📜 REFERÊNCIA: Artigo 9º
+📝 CONTEÚDO:
+Artigo 9º — O condomínio orienta os empregados para não guardarem as chaves de apartamentos ou veículos, bem como, não fazer manobras para estacionamento de veículos, sendo o Condomínio inteiramente isento de responsabilidade por danos ou prejuízos advindos do descumprimento desta orientação, já que o empregado estaria atendendo solicitação ou ordem de Condômino ou morador, sem concordância do Condomínio. O condômino que solicitar ao empregado as atividades descritas acima estará automaticamente responsabilizado pelas consegqitências advindas do ato;
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 10
+📜 REFERÊNCIA: Artigo 10º
+📝 CONTEÚDO:
+Artigo 10º — Os empregados do Condomínio usarão, em serviço, uniforme ou jaleco e crachá que contenha seu nome e função, sendo as despesas respectivas custeadas pelo Condomínio ou pela empresa terceirizada que foi contratada para execução dos serviços no condomínio;
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 100
+📜 REFERÊNCIA: Artigo 100º
+📝 CONTEÚDO:
+Artigo 100º — As obras/reformas só poderão ocorrer de segunda a sexta das 08h30min às 12h00min e das 14h00min às 17h30min horas e aos sábados das O8hO00min às 12h00min, não sendo permitidas nos domingos e feriados (A). zã ª
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 101
+📜 REFERÊNCIA: Artigo 101º
+📝 CONTEÚDO:
+Artigo 101º — Fica obrigado o condômino ou outro a este equiparado ou ainda o responsável pela unidade (inquilino comodatário, etc.) a destinar o entulho de sobras de obras/reformas (madeira, concreto, tijolos, carpetes, etc.) de sua unidade para fora das dependências do condomínio. Os custos provenientes da retirada pela Administração serão cobrados na taxa condominial da respectiva unidade, adicionando-se uma multa de 10% do salário mínimo vigente, além das demais penalidades pertinentes.
+$ 1º - Os entulhos deverão ser sempre transportados pelo elevador de serviço, ensacados, retirados do condomínio pelas garagens do subsolo e colocados em "containers" na área externa do condomínio de forma a não causar incômodos aos outros moradores (AÀA); $ 2º - Fica proibida a colocação de entulhos e restos de obras e reformas nas lixeiras internas e externas do condomínio (B).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 102
+📜 REFERÊNCIA: Artigo 102º
+📝 CONTEÚDO:
+Artigo 102º — Todo e qualquer dano decorrente dos serviços de reforma, nas dependências do prédio ou a terceiros, serão de inteira responsabilidade do proprietário do apartamento em reforma, devendo o mesmo ressarcir os prejuízos que causar.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 103
+📜 REFERÊNCIA: Artigo 103º
+📝 CONTEÚDO:
+Artigo 103º — É de responsabilidade do condômino manter o hall dos apartamentos limpo e organizado durante a realização de sua obra/reforma, uma vez que a limpeza é feita pelo condomínio apenas uma vez ao dia (A).
+DAS PENALIDADES.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 104
+📜 REFERÊNCIA: Artigo 104º
+📝 CONTEÚDO:
+Artigo 104º — O descumprimento das normas estabelecidas neste Regimento Interno sujeitará o infrator às seguintes penalidades:
+1. Advertência por escrito;
+2. Multa; 8 1º - As multas por infrações deste Regimento Interno serão calculadas com base no Salário Mínimo Vigente, e seus valores serão fixados de acordo com a seguinte tabela catalogada em letras conforme descrição abaixo:
+a) Letra“A”: Multa de 10%; b) Letra “B”: Multa de 20%; c) Letra “C”: Multa de 40%; d) Letra “D”: Multa de 50%; $ 2º — No caso do condômino ser reincidente na mesma infração, a multa duplicará de valor em relação à aplicada anteriormente.
+$ 3º — O pagamento da multa não isenta o condômino/morador das despesas efetuadas para cobrir eventuais danos causados por ele ao patrimônio do condomínio
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 105
+📜 REFERÊNCIA: Artigo 105º
+📝 CONTEÚDO:
+Artigo 105º — A multa/advertência será aplicada pelo Conselho Consultivo, após este ser convocado pelo(a) Síndico(a) para tratar do assunto em questão e será incluída na taxa mensal de condomínio do mês subseqiiente à infração.
+$ 1º - Sendo o infrator primário na iníração cometida a multa poderá ser convertida em advertência por escrito; $ 2º - O infrator será notificado, antes da aplicação da penalidade e tem o direito de apresentar defesa/justificativa por escrito ao Conselho Consultivo no prazo máximo de 05 (cinco) dias úteis. O Conselho Consultivo se resguarda o direito de acatar ou não a defesa/Justificativa apresentada e não sendo aceita será aplicada penalidade.
+-DAS DISPOSIÇÕES FINAIS.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 106
+📜 REFERÊNCIA: Artigo 106º
+📝 CONTEÚDO:
+Artigo 106º — Este Regimento Interno entrará em vigor na data de seu registro;
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 107
+📜 REFERÊNCIA: Artigo 107º
+📝 CONTEÚDO:
+Artigo 107º — Este Regimento Interno sujeita a todos os Condôminos, familiares, herdeiros e sucessores, bem como aqueles que a qualquer título ocupem as unidades €/ou as partes comuns do Edifício, ao seu fiel cumprimento.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 108
+📜 REFERÊNCIA: Artigo 108º
+📝 CONTEÚDO:
+Artigo 108º — Fica eleito o foro de Goiânia, capital do Estado de Goiás, para quaisquer medidas judiciais diretas ou indiretas relacionadas ao Condomínio do Edifício Residencial América Tower.
+: Xalle Redugun Drum arílíúoºjásé dos Éantos ' Kelte Rodrigues Alves Síndico Subsmdlca Paulo Andre Tavares Segur Arlon Gombs Santana Conselheiro Conselheiro - 2? TABELIONATO DE PROTESTO E REGISTRO DE PESSOAS JURÍDICAS, TÍTULOS E DOCUMENTOS DE GOIÂNIA-BOIÁS Fiij Bel. Marconi da Farla Castro mamaro Thaise Oliveira Resende Conselheiro rotocolizado: g htto: //extrª]u:hc'laT tigo. jus.br/selo ; Taxa Judiciarh 1;,00 Tota'l : ULI5,77 lamó daFada Castro 0Ml Cehristane C 08 daCastroNetos -OfeilSubsítuta — — ChrandeFaria Casira-Ofcil Sutattrio EHuga Alaxanéra C$. d Caviro - Ofilol Substinto EVilber Borges Madho - Escrevecto ÉS Cotei sa Garia - En )an Anme F Golrbra Da>et - Escrevecta
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 11
+📜 REFERÊNCIA: Artigo 11º
+📝 CONTEÚDO:
+Artigo 11º — AÀ manutenção do telhado deverá ser realizada no mínimo duas vezes ao ano, nos meses de abril/maio depois das chuvas c nos meses de setembro/outubro antes das chuvas, ou sempre, que houver necessidade.
+$ Único — Esta manutenção tem o intuito de prevenir problemas de infiltrações/ vazamentos — provenientes do telhado, sendo verificadas também as condições estruturais do mesmo e dos equipamentos instalados ali instalados.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 12
+📜 REFERÊNCIA: Artigo 12º
+📝 CONTEÚDO:
+Artigo 12º — O acesso ao telhado é feito por duas portas. Uma está localizada na parte da frente do prédio junto à escada que leva ao barrilete e dá acesso ao telhado que cobre parte do hall dos elevadores e os apartamentos 2401 e 2402. De acordo com o projeto do prédio esta porta só deve ser utilizada para acesso à manutenção do telhado. À outra porta está localizada na parte de traz do prédio, em frente à porta da sala de máquinas dos elevadores, e dá acesso ao telhado dos apartamentos 2403 e 2404, escadas de acesso a laje da casa de máquinas dos elevadores, caixa de água, ponto de instalação de antenas, para raios e luz piloto. De acordo com o projeto do prédio esta porta deve ser utilizada para acesso à manutengão do telhado, caixa de água, para raios, luz piloto e instalação de antenas $ Único — Estas portas ficarão trancadas. Só poderá ter acesso a estas saídas pessoas autorizadas pelo(a) Síndico(a). As pessoas que irão realizar a instalação e manutenção de antenas deverão ser acompanhadas por uma pessoa indicada pelo(a) Síndico(a) que tenha conhecimento do local, para evitar danos ao telhado ou qualquer outra estrutura do prédio localizada naquela região.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 13
+📜 REFERÊNCIA: Artigo 13º
+📝 CONTEÚDO:
+Artigo 13º — Fica estabelecido como único local para instalação de antenas, a parte superior da caixa de água em sua respectiva laje.
+$ 1º — É definitivamente proibida a instalação de antenas em outros lugares como as paredes externas da estrutura da caixa de água, em cima do telhado e em toda área envolta do mesmo, laje e parcdes externas da casa de maquinas dos elevadores e paredes externas em volta do prédio. As antenas instaladas fora da área indicada serão removidas imediatamente pelo condomínio e o responsável arcará com os custos advindos desta remoção.
+$ 2º — O prejuízo causado a terceiros e/ou ao condomínio pela instalação de uma antena fora da área indicada será de responsabilidade do condômino que contratou a empresa responsável pela instalação.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 14
+📜 REFERÊNCIA: Artigo 14º
+📝 CONTEÚDO:
+Artigo 14º — Devido ao pequeno espaço da área destinada a instalações de antenas e ao pequeno diâmetro do cano que leva os cabos até as mesmas em relação ao grande número de apartamentos neste prédio, fica estabelecido que serão instalados no telhado apenas sistemas coletivos de recepção e distribuição.
+$ 1º — É importante ressaltar que o espaço destinado à instalação de antenas deste prédio não suporta a instalação de um número de antenas correspondente ao numero de apartamentos existentes. Por isso fica definitivamente proibida a instalação de sistemas individuais de recepção/antenas individuais que permitem a captação dos sinais de radiodifusão sonora e televisiva por uma única unidade autônoma/apartamento.
+$ 2º — Será de responsabilidade do condomínio a instalação de sistemas coletivos de recepção e distribuição/antenas coletivas que permitam a captação e distribuição dos sinais de radiodifusão sonora e televisiva pelas unidades autônomas/apartamentos, quer se trate de emissões por via hertziana terrestres, por via de satélites de radiodifusão direta ou por satélites de serviço fixo.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 15
+📜 REFERÊNCIA: Artigo 15º
+📝 CONTEÚDO:
+Artigo 15º — Fica proibida a instalação de antena de radioamadorismo (radioamador) por não existir um lugar no telhado projetado para receber este tipo especifico de instalação e pelas limitações do espaço destinado as antenas de televisão que Já é muito pequeno para as próprias.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 16
+📜 REFERÊNCIA: Artigo 16º
+📝 CONTEÚDO:
+Artigo 16º — Fica proibida a colocação de antenas de telefonia celular.
+DO USO DA PORTARIA E DA GARAGEM l
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 17
+📜 REFERÊNCIA: Artigo 17º
+📝 CONTEÚDO:
+Artigo 17º — À portaria cabe o controle de entrada e saída de moradores e visitantes, cabendo-lhes as providências de abertura do portão de entrada de pedestres e aos moradores as da abertura dos portões das garagens do prédio através de seu controle remoto, recorrendo ao porteiro somente em caso excepceional de pane total no sistema.
+$ Unico — À dependência da portaria do prédio somente deverá abrigar os seus funcionários, sendo vedado o ingresso e permanência na mesma de qualquer outra pessoa, adulta ou criança, morador ou visitante (A).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 18
+📜 REFERÊNCIA: Artigo 18º
+📝 CONTEÚDO:
+Artigo 18º - O porteiro só poderá autorizar a entrada e subida de visitantes/fornecedores/prestadores de serviços após ter obtido autorização do morador do apartamento a ser visitado, devendo identificar e anotar o nome e número de $ 1º - Não será permitida a entrada de entregadores (água mineral, pizza, farmácia, supermercado, lavanderia, sanduíches, etc..) no condomínio, devendo o morador se dirigir até a portaria para fazer o recebimento, salvo nos casos onde o morador após descer até a portaria acompanhar o entregador até sua saída do condomínio (B).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 19
+📜 REFERÊNCIA: Artigo 19º
+📝 CONTEÚDO:
+Artigo 19º — O interfone da portaria é de uso do pessoal em serviço, não podendo ser usado por morador para bate-papo com os demais apartamentos, salvo em casos especiais (A).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 20
+📜 REFERÊNCIA: Artigo 20º
+📝 CONTEÚDO:
+Artigo 20º — A portaria deverá ter em seu poder as chaves dos portões elétricos de entrada das garagens do Condomínio para a eventualidade de que ocorra pane no equipamento elétrico dos portões ou que o mesmo só possa ser movimentado manualmente.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 21
+📜 REFERÊNCIA: Artigo 21º
+📝 CONTEÚDO:
+Artigo 21º — À abertura dos portões eletromecânicos das garagens deverá ser precedida pelo condômino/morador via seu aparelho remoto, não estando os porteiros autorizados a fazê-lo, exceção a algum caso de emergência ou pane no sistema eletromecânico, conforme cláusula anterior.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 22
+📜 REFERÊNCIA: Artigo 22º
+📝 CONTEÚDO:
+Artigo 22º — O condomínio não se responsabiliza pelo mau uso do equipamento ou negligência de seu usuário e que, por este motivo, seja seu veículo ou o portão avariado de alguma forma, sendo, ainda, de sua total responsabilidade qualquer avaria que o portão venha a sofrer.
+d NAÍ MA —
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 23
+📜 REFERÊNCIA: Artigo 23º
+📝 CONTEÚDO:
+Artigo 23º — É expressamente proibido o uso do controle remoto por pessoa não autorizada devendo seu proprietário evitar deixá-lo dentro do veículo quando nas dependências do condomínio.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 24
+📜 REFERÊNCIA: Artigo 24º
+📝 CONTEÚDO:
+Artigo 24º — É terminantemente proibido depositar nos boxes, nas áreas comuns, nas áreas de estacionamento ou de circulação de veículos, qualquer material como lixo, detritos, móveis, restos de obras, ferramentas, peças, pneus, qualquer outro material ou equipamento, exceto quando por motivo de reforma ou obra no apartamento, por tempo limitado, até sua retirada para o exterior, mediante prévia comunicação ao Síndico (B).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 25
+📜 REFERÊNCIA: Artigo 25º
+📝 CONTEÚDO:
+Artigo 25º — À velocidade máxima permitida para a circulação de veículos na garagem do prédio é de 10 km por hora, devendo circular a qualquer hora com as luzes baixas acesas e na mão de direção correta, a fim de evitar acidentes. Após as 18:00 hs é obrigatória a circulação do veículo com as luzes acesas (D).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 26
+📜 REFERÊNCIA: Artigo 26º
+📝 CONTEÚDO:
+Artigo 26º — Os danos pessoais e materiais causados a terceiros ou a bens do condomiínio pelos veículos em razão de manobras ou circulação, são de exclusiva responsabilidade civil e criminal dos seus proprietários e de seus condutores.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 27
+📜 REFERÊNCIA: Artigo 27º
+📝 CONTEÚDO:
+Artigo 27º — Cada proprietário deverá cuidar a fim de manter seu veículo sem vazamentos de óleo, contribuindo para a limpeza do estacionamento (A).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 28
+📜 REFERÊNCIA: Artigo 28º
+📝 CONTEÚDO:
+Artigo 28º — É expressamente proibida a permanência de crianças brincando no estacionamento ou nas áreas das garagens, ficando seus pais/responsáveis, responsabilizados pelos danos causados pelos mesmos aos veículos ou por acidentes que venham eventualmente sofrer (D).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 29
+📜 REFERÊNCIA: Artigo 29º
+📝 CONTEÚDO:
+Artigo 29º — Quando houver coincidência de dois veículos pretendendo usar o mesmo âácesso ao mesmo tempo, um saindo e outro entrando na garagem, a preferência será sempre do veículo que esteja entrando na garagem.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 30
+📜 REFERÊNCIA: Artigo 30º
+📝 CONTEÚDO:
+Artigo 30º - Ao entrar ou sair da garagem o motorista deve aguardar o fechamento total do portão para só depois acionar novamente o dispositivo.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 31
+📜 REFERÊNCIA: Artigo 31º
+📝 CONTEÚDO:
+Artigo 31º — Não é permitido acionar a buzina para chamar a atenção do porteiro ou de alguma pessoa do condomínio, ou que seja para solicitar abertura do portão ou para se comunicar com alguém no interior do prédio, nem buzinar dentro da Bgaragem ou manter aceleração do carro em alta rotação (A).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 32
+📜 REFERÊNCIA: Artigo 32º
+📝 CONTEÚDO:
+Artigo 32º — É proibido promover lavagem de veículo ou acessórios nos boxes de Bgaragem e nas áreas de circulação e estacionamento (B).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 33
+📜 REFERÊNCIA: Artigo 33º
+📝 CONTEÚDO:
+Artigo 33º — É vedada a circulação de bicicletas, velocípedes, patins, skates, carrinhos de rolemans, patinetes ou qualquer outro veículo/brinquedo nas dependências das garagens, salvo o tempo necessário para retirá-los dos carros, estacioná-los ou guardá- los (A).
+$ 1º - O estacionamento de bicicletas, motocicletas ou qualquer outro veículo individual deverá ser feito no boxe de garagem da respectiva unidade ou em locais e áreas previamente demarcadas e preparadas, caso venham a ser criadas (A).
+$ 2º - O veículo estacionado em local impróprio, como a área de circulação, deverá ser removido de imediato. Caso o Condomínio tenha que fazer tal remoção, será cobrada do responsável a despesa efetuada com tal medida através do documento de cobrança da taxa de condomínio, além da respectiva multa por descumprimento deste regimento (A).
+$ 3º - É vedado a qualquêr condômino estacionar seu veículo em garagem que não seja de sua propriedade, salvo o disposto na Cláusula 5º, Parágrafos 1º a 3º da Convenção
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 34
+📜 REFERÊNCIA: Artigo 34º
+📝 CONTEÚDO:
+Artigo 34º — É expressamente vedada a construção de paredes divisórias ou a utilização de quaisquer meios visando separar ou delimitar os boxes de garagem (D).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 35
+📜 REFERÊNCIA: Artigo 35º
+📝 CONTEÚDO:
+Artigo 35º — É vedada a permanência de motorista particular, dentro ou fora do veículo, na garagem, devendo aguardar na portaria (A).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 36
+📜 REFERÊNCIA: Artigo 36º
+📝 CONTEÚDO:
+Artigo 36º — Com objetivo de conservar o piso e a própria laje das garagens, somente veículos de passeio ou de carga leve deverão transitar ou estacionar nesse local, ficando terminantemente proibida a entrada de caminhões (C);
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 37
+📜 REFERÊNCIA: Artigo 37º
+📝 CONTEÚDO:
+Artigo 37º — Manter o volume dos rádios dos veículos a nível que não perturbe o sossego dos demais condôminos (C);
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 38
+📜 REFERÊNCIA: Artigo 38º
+📝 CONTEÚDO:
+Artigo 38º — Certificar-se da não entrada de estranhos pelo portão da garagem, quando acioná-lo. Comunicar o porteiro qualquer irregularidade notada.
+' * DO USO DO ESCANINHO sE |
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 39
+📜 REFERÊNCIA: Artigo 39º
+📝 CONTEÚDO:
+Artigo 39º — O escaninho destina-se à guarda de objetos do condômino, no entanto, este não deve manter no mesmo, aparelhos, instalações ou substâncias que causem perigo à segurança e à solidez do edifício ou incômodo aos demais condôminos e moradores:; “ DO USO DO SALÃO DE FESTAS :
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 40
+📜 REFERÊNCIA: Artigo 40º
+📝 CONTEÚDO:
+Artigo 40º — O salão de festas só poderá ser utilizado para reuniões da administração, para assembléia dos condôminos e para realização de festividades em geral, vedado o seu uso para qualquer atividade/pessoa estranha à vida social do Condomínio (D). (NR
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 41
+📜 REFERÊNCIA: Artigo 41º
+📝 CONTEÚDO:
+Artigo 41º — Para o uso do salão de festas será limitada a quantidade de pessoas ao máximo de 50 (cinqienta), tolerando-se uma variação a mais de 10% (dez por cento)
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 42
+📜 REFERÊNCIA: Artigo 42º
+📝 CONTEÚDO:
+Artigo 42º — Os moradores devem registrar na agenda à disposição na Portaria, com antecedência mínima de 48 (quarenta e oito) horas, a solicitação de uso do salão de festas, mencionando a finalidade, data e horário, sujeitando-se às seguintes l. Para solicitações feitas em um mesmo dia, prevalecerá a ordem cronológica de recebimento das mesmas;
+2. Os condôminos responderão por quaisquer desmandos, abusos ou danos ao salão de festas, devendo fazer vistoria antes e depois de sua utilização (NR — Assembléia
+3. À relação de convidados estranhos ao Condomínio deverá ser entregue na Portaria, com antecedência mínima de 24 horas, para a fiscalização do acesso, cabendo ao promotor do evento a responsabilidade pela fiscalização na portaria, caso o
+4. Os convidados do condômino deverão permanecer na área restrita do salão de festas e seus acessos, não sendo permitido o trânsito nas demais áreas comuns do
+5. Execução de músicas, aplausos ou qualquer manifestação ruidosa devem se restringir de domingo a quinta-feira até 22h, e nas sextas, sábados e vésperas de feriado até às 24h, de forma a não gerar reclamações dos demais moradores. Não será permitida a execução de som profissional, inadequado a um ambiente com destinação exclusivamente residencial (C);
+6. Sempre que solicitado pelo Síndico ou seu preposto, face reclamação justificada de moradores, o usuário do salão de festas ou churrasqueira deverá reduzir o volume de seu equipamento de som;
+7. O(a) Síndico(a) podcrá requisitar a presença de autoridade policial caso seja observada distorção moral no comportamento dos fregilentadores do salão por excesso de consumo de bebidas ou caso haja suspeita do uso de drogas, facilitando a entrada de seus agentes para apuração dos fatos;
+8. O condomínio não se responsabiliza por qualquer dano físico e/ou moral causado aos convidados;
+9. Em caso de desistência da reserva, o pretendente deverá registrar no livro, com antecedência mínima de 24 (vinte e quatro) horas, a fim de que outro morador possa fazer o uso da mesma, mas desde que este último solicite a reserva de acordo com os trâmites citados acima; ?& É S Ader
+10. Qualquer infração ao disposto neste artigo implica ao infrator as penalidades descritas neste Regimento Interno e/ou proibição de utilização das áreas em questão por um período de 12 (doze) meses.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 43
+📜 REFERÊNCIA: Artigo 43º
+📝 CONTEÚDO:
+Artigo 43º — Mesmo com a reserva da(s) área(s) em questão, o condômino deverá tomar todas as providências para que seus convidados não perturbem o sossego dos demais moradores durante a reunião festiva, o usuário, sob pena de incorrer em multa conforme a infração se obriga a:
+a) Conteras manifestações ruidosas que perturbem o sossego ou causem incômodo aos demais moradores, principalmente originárias de aparelhos de som ou instrumentos sonoros (C); b) Responsabilizar-se pelo comportamento de seus convidados, não só no recinto utilizado, com o fim de preservar os bens e a área de lazer do Condomínio; c) Permanecer pessoalmente durante todo o tempo em que transcorrer o evento, não abandonando o local, salvo por curtíssimos períodos de tempo; d) Encerrado o evento, o condômino responsável deve comunicar à administração do condomínio, para que esta proceda a vistoria do local, juntamente com o condômino; e) Retirar do local todo o-material, de sua propriedade, utilizado para o evento, eximindo-se o Condomínio de qualquer responsabilidade por eventual abandono de objetos no recinto;
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 44
+📜 REFERÊNCIA: Artigo 44º
+📝 CONTEÚDO:
+Artigo 44º — À cessão do salão de festas será feita mediante o pagamento de taxa de 8 Unico — A taxa referente ao uso das áreas em questão será cobrada juntamente com a taxa de condomínio do mês subsequente ao evento.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 45
+📜 REFERÊNCIA: Artigo 45º
+📝 CONTEÚDO:
+Artigo 45º — Os danos causados ao salão de festas, mobílias, eletrodomésticos e demais pertences e utensílios correm por conta e responsabilidade do requisitante, que deverá ressarcir ao Condomínio os valores despendidos em reparos ou reposições, sem prejuízo
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 46
+📜 REFERÊNCIA: Artigo 46º
+📝 CONTEÚDO:
+Artigo 46º — O requisitante, acompanhado de um funcionário do Condomínio, deverá promover vistoria prévia no salão de festas, conferência de utensílios, relacionando o que está recebendo, bem como seu estado de conservação, procedendo da mesma forma
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 47
+📜 REFERÊNCIA: Artigo 47º
+📝 CONTEÚDO:
+Artigo 47º — Encerrado o uso das áreas em questão, o condômino que utilizou as mesmas e demais dependências, ficará obrigado a devolver as chaves até às 12h00min, do dia seguinte.
+$ Único — À não devolução das chaves, dentro do prazo supra estabelecido, implicará no débito, ao detentor da mesma, de taxa adicional de reserva, por dia excedente a contar das 12h00min.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 48
+📜 REFERÊNCIA: Artigo 48º
+📝 CONTEÚDO:
+Artigo 48º — Em hipótese alguma será permitido ao condômino requisitante locar o salão de festas ou cobrar ingresso dos frequentadores das festas que promover (B).
+DO USO DA CHURRASQUEIRA/FORNO DE PIZZA "
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 49
+📜 REFERÊNCIA: Artigo 49º
+📝 CONTEÚDO:
+Artigo 49º — À utilização da área da churrasqueira/fomo de pizza é exclusiva dos condôminos/moradores do condomínio que podem estar acompanhados de no máximo 02 (dois) convidados (A).
+$ 1º - Excepcionalmente, pessoas que estejam hospedadas no edifício, mediante prévia autorização do(a) Síndico(a) ou na ausência deste, do seu substítuto legal, poderão freqientar a churrasqueirã/forno (A).
+8 2º - Não será cobrada nenhuma taxa pela utilização da churrasqueira/forno de pizza, no entanto, os condôminos/moradores que estiverem utilizando a área ficam automaticamente responsáveis pelos danos causados às instalações, equipamentos e demais utensílios, ficando obrigado(s) a ressarcir ao Condomínio os valores despendidos em reparos ou reposições, sem prejuízo das demais penalidades porventura existentes neste regimento interno e/ou na convenção.
+$ 3º - O condômino/morador fica obrigado a retirar do local todo o material, de sua propriedade, ao término de sua utilização, eximindo o Condomínio de qualquer responsabilidade por eventual abandono de objetos no recinto (A); & 4º - Não será permitida a reserva da área da churrasqueira/forno de pizza, por nenhum condômino/morador, sendo que todos os usuários devem permitir o uso compartilhado do local.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 50
+📜 REFERÊNCIA: Artigo 50º
+📝 CONTEÚDO:
+Artigo 50º — A churrasqueira/forno de pizza poderá ser utilizada diariamente no horário das 08h00min às 22h00min hs, exceto às segundas-feiras, excluindo-se quando esta for feriado, ou em período(s) em que estiver sendo realizada qualquer outro serviço necessário ao seu bom funcionamento.
+DO USO DA PISCINA -
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 51
+📜 REFERÊNCIA: Artigo 51º
+📝 CONTEÚDO:
+Artigo 51º — A utilização das piscinas é exclusiva dos moradores do condomínio que podem estar acompanhados de no máximo 02 (dois) convidados. Os empregados e funcionários do condomínio não têm direito de utilizar as piscinas (A).
+$ 1º — Excepcionalmente, pessoas que estejam hospedadas no edifício, mediante prévia autorização do(a) Síndico(a) ou na ausência deste, do seu substituto legal, poderão freqiientar a piscina (À).
+$ 2º — As babás poderão permanecer no recinto da piscina em companhia das crianças, não podendo, todavia, entrar na piscina, salvo nos casos que seja necessário para a segurança da criança (A).
+$ 3º — As crianças com idade inferior a 10 (dez) anos deverão, obrigatoriamente, estar acompanhadas de um responsável, assim como se recomenda que as crianças que não souberem nadar estejam sempre acompanhadas de um adulto (D).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 52
+📜 REFERÊNCIA: Artigo 52º
+📝 CONTEÚDO:
+Artigo 52º — A piscina poderá ser utilizada diariamente no horário das 08hO00min às 22h00min, exceto às segundas-feiras, excluindo-se quando esta for feriado, ou em período(s) em que estiver sendo realizada sua limpeza ou qualquer outro serviço
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 53
+📜 REFERÊNCIA: Artigo 53º
+📝 CONTEÚDO:
+Artigo 53º — É expressamente proibido(a):
+a) Entrar nas piscinas após o uso de óleo e loções bronzeadoras, cremes ou similares, não adequados para utilização em piscinas (A); b) Entrar na área da piscina levando quaisquer objetos quebráveis que possam atentar contra a segurança dos demais frequentadores (D); c) Jogar detritos de quaisquer espécies, areia ou pedras na piscina (A); d) Entrar na piscina em dias em que esteja processando-se o tratamento da água e) Entrar na piscina com os pés ou outra parte do corpo sujo de areia, terra ou similares (A); f) A entrada na piscina de pessoas portadoras de moléstia infecto-contagiosa (D).
+s) É proibido a pratica de atividades esportivas como skate, patins e similares na área da piscina/sauna/churrasqueira/fomo de pizza, bem como na área externa do
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 54
+📜 REFERÊNCIA: Artigo 54º
+📝 CONTEÚDO:
+Artigo 54º — É obrigatório o uso da ducha antes de entrar na piscina (A).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 55
+📜 REFERÊNCIA: Artigo 55º
+📝 CONTEÚDO:
+Artigo 55º — É permitida a utilização das piscinas somente das pessoas que estejam” utilizando trajes completos e adequados ao banho (B);
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 56
+📜 REFERÊNCIA: Artigo 56º
+📝 CONTEÚDO:
+Artigo 56º — Não será exigido exame médico dos usuários para a utilização da piscina.
+"DOUSO DA SAUNA
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 57
+📜 REFERÊNCIA: Artigo 57º
+📝 CONTEÚDO:
+Artigo 57º — O uso da sauna é exclusivo para moradores com no máximo 02 (dois) convidados, sendo vedado a empregados do condomínio e a colaboradores que trabalhem nas unidades dos condôminos (À).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 58
+📜 REFERÊNCIA: Artigo 58º
+📝 CONTEÚDO:
+Artigo 58º — À sauna poderá ser utilizada diariamente no horário das O8h00min às 22h00min, exceto às segundas-fêiras, excluindo-se quando esta for feriado, ou em período(s) em que estiver sendo realizada sua limpeza ou qualquer outro serviço
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 59
+📜 REFERÊNCIA: Artigo 59º
+📝 CONTEÚDO:
+Artigo 59º — É proibido o uso da sauna por menores de 12 (doze) anos, desacompanhados dos país ou responsáveis (D).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 60
+📜 REFERÊNCIA: Artigo 60º
+📝 CONTEÚDO:
+Artigo 60º — É obrigatório a utilização de trajes completos e adequados para o uso da sauna (B).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 61
+📜 REFERÊNCIA: Artigo 61º
+📝 CONTEÚDO:
+Artigo 61º — Os equipamentos e demais pertences da sauna se constituirão em patrimônio do Condomínio e ficarão sob a guarda e responsabilidade de empregado especificamente designado pelo Condomínio.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 62
+📜 REFERÊNCIA: Artigo 62º
+📝 CONTEÚDO:
+Artigo 62º — É proibido fumar no interior da sauna, bem como praticar qualquer tipo de ginástica, por motivos de segurança (B).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 63
+📜 REFERÊNCIA: Artigo 63º
+📝 CONTEÚDO:
+Artigo 63º — É proibido barbear, depilar, usar sabonete, creme, lixa ou alicate de cutículas e qualquer outro instrumento de higiene e limpeza na sauna (B).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 64
+📜 REFERÊNCIA: Artigo 64º
+📝 CONTEÚDO:
+Artigo 64º — AÀ sauna somente poderá ser ligada por funcionário devidamente autorizado pela administração do condomínio (A).
+DO USO DA QUADRA POLTESPORTIVA
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 65
+📜 REFERÊNCIA: Artigo 65º
+📝 CONTEÚDO:
+Artigo 65º - À quadra é para uso gratuito e exclusivo da prática de jogos com bola, tais como futebol de salão, handebol, voleibol, basquetebol, tênis e etc. pelos moradores/condôminos.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 66
+📜 REFERÊNCIA: Artigo 66º
+📝 CONTEÚDO:
+Artigo 66º — O horário de funcionamento da quadra é das 9h (nove horas) às 22h (vinte e duas horas), de segunda a segunda.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 67
+📜 REFERÊNCIA: Artigo 67º
+📝 CONTEÚDO:
+Artigo 67º — O uso da quadra e a permanência no recinto a ela destinado é privativo dos condôminos/moradores, sendo vedado aos empregados e serviçais, com exceção de babás para acompanhar as crianças.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 68
+📜 REFERÊNCIA: Artigo 68º
+📝 CONTEÚDO:
+Artigo 68º — Os visitantes poderão eventualmente freqientar a quadra e/ou seu recinto, desde que estejam acompanhados pelo condômino/morador responsável.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 69
+📜 REFERÊNCIA: Artigo 69º
+📝 CONTEÚDO:
+Artigo 69º — O(a) Síndico(a) tem plenos poderes para tomar medidas que julgar conveniente para manter a boa ordem no uso da quadra, facultando-lhe aplicar pena de caráter disciplinar, solicitando que se retirem da quadra os usuários que não respeitem este regulamento.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 70
+📜 REFERÊNCIA: Artigo 70º
+📝 CONTEÚDO:
+Artigo 70º — A requisição da quadra é exclusiva dos moradores do Condomínio, que só poderão fazê-la para promoção de atividades esportivas, sendo vedada sua utilização para atividades político partidárias, religiosas profissionais, mercantis e jogos considerados “de azar” pela legislação pertinente (D).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 71
+📜 REFERÊNCIA: Artigo 71º
+📝 CONTEÚDO:
+Artigo 71º — À requisição da quadra deverá ser feita por escrito ao Condomínio, em livro próprio que fica na Portaria, com antecedência máxima de 03 (três) dias e mínima de 30 (trinta) minutos, mencionando data e horário, este limitado em, no máximo, 02 (duas) horas contínuas de uso. Havendo mais de uma solicitação de reserva para o mesmo dia e horário, a preferência será para a requisição do primeiro solicitante.
+$ 1º — Se não houver reserva para a quadra o condômino que assim desejar poderá utilizá-la de imediato, registrando no livro o horário de início das atividades.
+$ 2º — Caso a quadra já esteja sendo utilizada e outro condômino a deseje utilizar, este último deverá registrar sua solicitação no livro e aguardar o término do horário destinado ao uso do outro condômino;
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 72
+📜 REFERÊNCIA: Artigo 72º
+📝 CONTEÚDO:
+Artigo 72º — É expressamente proibida a utilização dos funcionários do Condomínio, para servirem, ajudarem, colaborarem ou prestarem qualquer favor durante a utilização da quadra (A).
+DO USO DA ACADEMIA DE GINÁSTICA -
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 73
+📜 REFERÊNCIA: Artigo 73º
+📝 CONTEÚDO:
+Artigo 73º - A sala de ginástica destina-se ao uso dos condôminos/moradores e seus hóspedes, sendo vetada a utilização por parte de visitantes (A).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 74
+📜 REFERÊNCIA: Artigo 74º
+📝 CONTEÚDO:
+Artigo 74º - O condômino/morador interessado em fazer uso da sala de ginástica deverá retirar a chave na portaria, deixando registrado no livro seu nome, apartamento e horário, ficando responsável pelos seus equipamentos e instalações. Ao terminar de utilizar a sala de ginástica, deverá fechá-la e devolver a chave na portaria, registrando no livro o horário de devolução da chave.
+$ Unico - O condômino/morador antes do início do uso da academia deverá realizar vistoria na mesma, comunicando imediatamente qualquer irregularidade constatada, sob pena de arcar com custos provenientes de danos causados às instalações e/ou aparelhos.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 75
+📜 REFERÊNCIA: Artigo 75º
+📝 CONTEÚDO:
+Artigo 75º - Havendo espera para a utilização dos aparelhos, o limite será de 45 (quarenta e cinco) minutos por morador (AÀ).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 76
+📜 REFERÊNCIA: Artigo 76º
+📝 CONTEÚDO:
+Artigo 76º - A sala de ginástica funcionará das 06 horas até as 23 horas. Seu uso será interrompido apenas para a limpeza da mesma.
+$ Único — O morador que for fazer uso da academia de ginástica e de seus aparelhos declara ter ciência de que o condomínio não será responsabilizado em caso de mal súbito que provoque seqiielas e/ou morte.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 77
+📜 REFERÊNCIA: Artigo 77º
+📝 CONTEÚDO:
+Artigo 77º - É proibido o uso da academia de ginástica por menores de 16 anos (dezesseis) anos desacompanhados de seus pais/responsáveis, salvo se com autorização por escrito dos mesmos, onde assumirão todas as responsabilidades inerentes (C).
+. DA UTILIZAÇÃO DO INTERFONE :-
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 78
+📜 REFERÊNCIA: Artigo 78º
+📝 CONTEÚDO:
+Artigo 78º — O interfone, de uso exclusivo dos moradores, poderá ser utilizado para a comunicação entre os condôminos, desde que rápidas e que não motivem sobrecarga do equipamento (A).
+DO USO DOS ELEVADORES
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 79
+📜 REFERÊNCIA: Artigo 79º
+📝 CONTEÚDO:
+Artigo 79º — O elevador social não deve ser usado para transporte de bagagens e/ou embrulhos de grande volume, carrinhos de feira e supermercado, animais, móveis e objetos de grande porte e pessoas em traje de banho, o que deverá ser feito sempre pelo elevador de serviço (A).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 80
+📜 REFERÊNCIA: Artigo 80º
+📝 CONTEÚDO:
+Artigo 80º — Os elevadores não devem transportar cargas ou passageiros que excedam o limite de peso ou a quantidade de pessoas fixadas pelo fabricante (ÀA).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 81
+📜 REFERÊNCIA: Artigo 81º
+📝 CONTEÚDO:
+Artigo 81º — É proibido fumar ou conduzir acessos cigarros, cachimbos ou charutos em qualquer um dos elevadores (ÀA).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 82
+📜 REFERÊNCIA: Artigo 82º
+📝 CONTEÚDO:
+Artigo 82º — É proibido apoiar os pés nas paredes dos elevadores (A).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 83
+📜 REFERÊNCIA: Artigo 83º
+📝 CONTEÚDO:
+Artigo 83º — As mudanças e a movimentação de profissionais e prestadores de serviços em geral, trabalhando no edifício devem sempre ser feitas pelo elevador de serviço.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 84
+📜 REFERÊNCIA: Artigo 84º
+📝 CONTEÚDO:
+Artigo 84º — É proibido o transporte de bicicletas e motocicletas pelo elevador social DA-POSSE DE ANIMAIS DE ESTIMAÇÃO S
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 85
+📜 REFERÊNCIA: Artigo 85º
+📝 CONTEÚDO:
+Artigo 85º — Fica permitida a posse de animais de estimação (cães, gatos, aves, peixes, etc..) pelos condôminos, satisfeitas as seguintes condições:
+a) Apenas um exemplar de qualquer espécie (A):
+b) Peso máximo de 05 (cindo) quilos (A); c) Usar sempre o elevador de serviço e ser transportado no colo do proprietário/condutor (A); d) Entrar ou sair do condomínio no colo do proprietário/condutor e sempre pela — e) Deverá apresentar anualmente atestado de saúde assinado por Médico Veterinário devidamente registrado no Conselho de Classe (C). (NR — Assembléia É) Fica proibida a circulação de animais domésticos pelas áreas comuns do “ DASMUDANÇAS :
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 86
+📜 REFERÊNCIA: Artigo 86º
+📝 CONTEÚDO:
+Artigo 86º — À entrada e saída de mudanças serão feitas através do portão da garagem do subsolo do condomínio (A).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 87
+📜 REFERÊNCIA: Artigo 87º
+📝 CONTEÚDO:
+Artigo 87º — O interessado deverá registrar em livro próprio à disposição na Portaria, dia e o horário de mudança, com antecedência de pelo menos 24 (vinte e quatro) horas, e efetuar o recolhimento prévio da taxa respectiva e comprovação do pagamento das taxas de condomiínio, caso esteja ingressando ou se retirando do condomínio.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 88
+📜 REFERÊNCIA: Artigo 88º
+📝 CONTEÚDO:
+Artigo 88º — As mudanças só poderão ser feitas de segunda a sexta das 08:00 às 12:00 e mudanças nos domingos e feriados (À).
+$ Único — Poderá o(a) Síndico(a), conforme as circunstâncias e em caráter excepcional, autorizar a realização de mudança em horários e dias diferentes dos estabelecidos neste artigo.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 89
+📜 REFERÊNCIA: Artigo 89º
+📝 CONTEÚDO:
+Artigo 89º — O pagamento da taxa de mudança é no valor de 20 % (vinte por cento) do salário mínimo e não isenta o responsável da obrigação de indenizar eventuais danos causados às partes físicas ou instalações do edifício durante a sua realização.
+DO RECOLHIMENTO DO LIXO
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 90
+📜 REFERÊNCIA: Artigo 90º
+📝 CONTEÚDO:
+Artigo 90º — O lixo deverá ser acondicionado em sacos plásticos, devidamente fechados e colocados em lixeira que fica no andar em local próprio e será recolhido pelos funcionários da limpeza.
+8 1º — Em hipótese alguma poderá o morador deixar seu lixo na porta de entrada do apartamento ou nas áreas comuns (A).
+$ 2º — O recolhimento do lixo se dará de segunda à sexta à partir das 14:00 e aos DO USO DO SALÃO DE JOGOS . :
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 91
+📜 REFERÊNCIA: Artigo 91º
+📝 CONTEÚDO:
+Artigo 91º — O salão de jogos destina-se ao uso dos condôminos/moradores, sendo permitida a presença de 04 (quatro) convidados sejam hóspedes ou visitantes (A).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 92
+📜 REFERÊNCIA: Artigo 92º
+📝 CONTEÚDO:
+Artigo 92º — O condômino/morador interessado em fazer uso do salão de jogos deverá retirar a chave na portaria, deixando registrado no livro seu nome, apartamento e horário, ficando responsável pelos seus equipamentos e instalações. Ao terminar de utilizar o salão de jogos, deverá fechá-lo e devolver a chave na portaria, registrando no livro o horário de devolução da mesma.
+$ 1º - O condômino/morador antes do início do uso do salão de jogos deverá realizar vistoria no mesmo, comunicando imediatamente qualquer irregularidade constatada, sob pena de arcar com custos provenientes de danos causados às instalações c/ou aparelhos/equipamentos; $ 2º - A retirada da chave impõe ao Condômino a obrigação de zelar pela ordem do salão de jogos e dos equipamentos retirados na portaria (bolinhas, raquetes, tacos, etc.), ficando responsável por eventuais danos causados ao recinto ou aos seus equipamentos; $ 3º - Ão término da utilização, havendo interesse de outro condômino em continuar com as chaves, o responsável pela chave deverá providenciar que o mesmo se responsabilize pela área, devendo ambos comparecer à portaria para que seja feita a anotação da devolução e da nova retirada da chave, mediante nova assinatura do termo.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 93
+📜 REFERÊNCIA: Artigo 93º
+📝 CONTEÚDO:
+Artigo 93º — O salão de jogos poderá ser utilizado das O8h00min até O0h00min.
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 94
+📜 REFERÊNCIA: Artigo 94º
+📝 CONTEÚDO:
+Artigo 94º — É proibida a permanência de menores de 08 (oito) anos no salão de jogos, desacompanhados dos pais ou responsáveis (À).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 95
+📜 REFERÊNCIA: Artigo 95º
+📝 CONTEÚDO:
+Artigo 95º — Ficam proibidos (as) no salão de jogos:
+$ 1º - Permanecer ou circular no salão de jogos com trajes de banho, sungas, maiôs, biquínis ou demais roupas que sejam incompatíveis com o ambiente familiar do condomínio (A).
+2º - Apostas em dinheiro ou qualquer espécie onerosa, sob qualquer hipótese (ÀA).
+p quaiq $ 3º - Subir, arrastar, desenhar, escrever, chutar, sentar, deitar e colocar quaisquer objetos como toalhas, chinelos, copos, garrafas, latinhas, salgadinhos e/ou similares sobre as mesas de jogos (A).
+$ 4º - O uso de bicicletas, skates, patins, patinetes e similares dentro do salão de jogos $ 5º - O uso e consumo de cigarros, cigarrilhas, charutos ou de qualquer outro produto similar no interior do salão de jogos (A).
+$ 6º - Brincadeiras que possam danificar os equipamentos e/ou instalações do salão de jogos (A).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 96
+📜 REFERÊNCIA: Artigo 96º
+📝 CONTEÚDO:
+Artigo 96º — A prioridade de uso dos equipamentos do salão de jogos é dos condôminos/moradores, desta forma o usuário deve priorizar as atividades em parceria (jogos em dupla têm prefêrência aos individuais) (A).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 97
+📜 REFERÊNCIA: Artigo 97º
+📝 CONTEÚDO:
+Artigo 97º — À utilização das mesas de jogos dar-se-á por ordem de chegada, sendo que, quando houver excesso de/demanda, deverá haver rodízio na utilização das mesas de jogos, tomando-se por base uma duração máxima de 30 minutos (A).
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 98
+📜 REFERÊNCIA: Artigo 98º
+📝 CONTEÚDO:
+Artigo 98º — É vedada a retirada de móveis, equipamentos e/ou jogos do interior do salão de jogos (ÀA).
+— “DAS-OBRAS/REFORMAS: 1
+------------------------------------------------------------
+
+📍 ID DO CHUNK: 99
+📜 REFERÊNCIA: Artigo 99º
+📝 CONTEÚDO:
+Artigo 99º — Toda e qualquer obra e/ou reforma em unidades autônomas deverá ser comunicada por escrito e antecipadamente e obter previamente a autorização da administração do condomínio (À).
+$ 1º - ÀA comunicação à administração do condomínio deve conter: os serviços (projetos) a serem executados; a devida anotação de responsabilidade técnica; laudo emitido por profissional habilitado que ateste que os serviços a serem realizados não prejudicarão a solidez do prédio; a previsão de tempo para realização dos serviços; telefone e nome dos responsáveis pelos serviços (A).
+$ 2º - O condomínio não permitirá o início da obra/reforma e nem a entrada de materiais e prestadores de serviço para a realização das mesmas, caso o condômino não atenda ao disposto nos itens acima.
+------------------------------------------------------------
+

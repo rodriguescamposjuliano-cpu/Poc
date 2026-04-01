@@ -20,22 +20,23 @@ chromadb
 # =========================
 flashrank
 
-
 # =========================
-# PDF / OCR
+# PDF / OCR / Imagem
 # =========================
 pymupdf            # ✅ CORRETO (usa import fitz)
 pdf2image
 pytesseract
 pillow
+opencv-python      # Necessário para cv2 no indexador.py
 
 # =========================
-# Dados (opcional)
+# Dados / ML
 # =========================
 pandas
 matplotlib
 scikit-learn
 joblib
+numpy              # Necessário para np no indexador.py
 
 # =========================
 # API / Utils
