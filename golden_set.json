@@ -1,0 +1,181 @@
+[
+    {
+      "id": 1,
+      "categoria": "factual_direta",
+      "pergunta": "Que horários as mudanças podem ser realizadas no Residencial Wish Coimbra?",
+      "arquivo_origem": "001_Regimento_Residencial_Wish_Coimbra.pdf",
+      "chunks_esperados": [
+        "doc_001#chunk_15"
+      ],
+      "resposta_referencia": "As mudanças deverão ser realizadas de segunda a sexta das 08h às 12h e das 14h às 17h e aos sábados das 08h às 12h."
+    },
+    {
+      "id": 2,
+      "categoria": "fora_do_corpus",
+      "pergunta": "É permitido o uso de churrasqueiras elétricas nas varandas do Reality Buritis?",
+      "arquivo_origem": "002_Regimento_Residencial_Reality_Buritis.pdf",
+      "chunks_esperados": [],
+      "resposta_referencia": "Informação não localizada no regimento enviado."
+    },
+    {
+      "id": 3,
+      "categoria": "factual_direta",
+      "pergunta": "Qual a velocidade máxima permitida nas garagens do Edifício American Tower?",
+      "arquivo_origem": "003_Regimento_Residencial_Edificio_American_Tower.pdf",
+      "chunks_esperados": [
+        "doc_003#chunk_25"
+      ],
+      "resposta_referencia": "A velocidade máxima permitida para a circulação de veículos na garagem do prédio é de 10 km por hora."
+    },
+    {
+      "id": 4,
+      "categoria": "combinada",
+      "pergunta": "Qual o valor da multa por descumprimento do horário de silêncio no Edifício Florença?",
+      "arquivo_origem": "004_Regimento_Edificio_Florenca.pdf",
+      "chunks_esperados": [
+        "doc_004#chunk_03",
+        "doc_004#chunk_28"
+      ],
+      "resposta_referencia": "A multa estipulada por infração ao Regimento Interno (incluindo o desrespeito ao horário de silêncio) é de 20% da taxa de condomínio do mês anterior. Em caso de reincidência, a multa será cobrada em dobro."
+    },
+    {
+      "id": 5,
+      "categoria": "fora_do_corpus",
+      "pergunta": "Visitantes podem utilizar a academia no Residencial Monte Fuji?",
+      "arquivo_origem": "005_Regimento_Residencial_Monte_Fuji.pdf",
+      "chunks_esperados": [],
+      "resposta_referencia": "Informação não localizada no regimento enviado."
+    },
+    {
+      "id": 6,
+      "categoria": "fora_do_corpus",
+      "pergunta": "Qual o procedimento para descarte de móveis velhos no Wish Coimbra?",
+      "arquivo_origem": "001_Regimento_Residencial_Wish_Coimbra.pdf",
+      "chunks_esperados": [],
+      "resposta_referencia": "Informação não localizada no regimento enviado."
+    },
+    {
+      "id": 7,
+      "categoria": "factual_direta",
+      "pergunta": "É permitido estender roupas na varanda no Reality Buritis?",
+      "arquivo_origem": "002_Regimento_Residencial_Reality_Buritis.pdf",
+      "chunks_esperados": [
+        "doc_002#chunk_21"
+      ],
+      "resposta_referencia": "Não é permitido estender roupas, tapetes ou quaisquer outros objetos nas janelas ou grade das sacadas, ou de onde estejam expostos com riscos de cair."
+    },
+    {
+      "id": 8,
+      "categoria": "factual_direta",
+      "pergunta": "Qual a idade mínima para crianças usarem a sauna sem acompanhante no American Tower?",
+      "arquivo_origem": "003_Regimento_Residencial_Edificio_American_Tower.pdf",
+      "chunks_esperados": [
+        "doc_003#chunk_59"
+      ],
+      "resposta_referencia": "É proibido o uso da sauna por menores de 12 (doze) anos, desacompanhados dos pais ou responsáveis."
+    },
+    {
+      "id": 9,
+      "categoria": "factual_direta",
+      "pergunta": "Como deve ser feito o transporte de animais nos elevadores do Edifício Florença?",
+      "arquivo_origem": "004_Regimento_Edificio_Florenca.pdf",
+      "chunks_esperados": [
+        "doc_004#chunk_05"
+      ],
+      "resposta_referencia": "A movimentação de animais deve ser feita exclusivamente através das escadas ou do elevador de serviço, devendo ocorrer de maneira segura, por meio do uso de coleiras, focinheiras ou mantendo-os no colo."
+    },
+    {
+      "id": 10,
+      "categoria": "fora_do_corpus",
+      "pergunta": "Qual o limite de convidados para o salão de festas no Monte Fuji?",
+      "arquivo_origem": "005_Regimento_Residencial_Monte_Fuji.pdf",
+      "chunks_esperados": [],
+      "resposta_referencia": "Informação não localizada no regimento enviado."
+    },
+    {
+      "id": 11,
+      "categoria": "combinada",
+      "pergunta": "Quais as restrições para realizar uma obra barulhenta em um sábado no Wish Coimbra?",
+      "arquivo_origem": "001_Regimento_Residencial_Wish_Coimbra.pdf",
+      "chunks_esperados": [
+        "doc_001#chunk_04",
+        "doc_001#chunk_22"
+      ],
+      "resposta_referencia": "Qualquer obra, reforma ou reparo que produza ruídos poderá ser executada aos sábados apenas no horário das 08h às 12h, respeitando eventuais limites estabelecidos pela legislação."
+    },
+    {
+      "id": 12,
+      "categoria": "combinada",
+      "pergunta": "Se meu convidado quebrar um vidro na piscina do Reality Buritis, quem paga e qual a punição?",
+      "arquivo_origem": "002_Regimento_Residencial_Reality_Buritis.pdf",
+      "chunks_esperados": [
+        "doc_002#chunk_11",
+        "doc_002#chunk_23",
+        "doc_002#chunk_24"
+      ],
+      "resposta_referencia": "O condômino anfitrião é responsável por indenizar o condomínio pelos danos causados por seus convidados. Além disso, como o uso de utensílios de vidro na piscina é classificado como infração da letra (D), o condômino estará sujeito a uma multa de 100% do valor da taxa de condomínio."
+    },
+    {
+      "id": 13,
+      "categoria": "factual_direta",
+      "pergunta": "Posso levar meu cachorro para a área da churrasqueira se ele estiver na coleira no American Tower?",
+      "arquivo_origem": "003_Regimento_Residencial_Edificio_American_Tower.pdf",
+      "chunks_esperados": [
+        "doc_003#chunk_85"
+      ],
+      "resposta_referencia": "Não é permitido, pois é proibida a circulação de animais domésticos pelas áreas comuns do condomínio."
+    },
+    {
+      "id": 14,
+      "categoria": "factual_direta",
+      "pergunta": "Quais são as etapas de punição antes da multa no Edifício Florença?",
+      "arquivo_origem": "004_Regimento_Edificio_Florenca.pdf",
+      "chunks_esperados": [
+        "doc_004#chunk_28"
+      ],
+      "resposta_referencia": "Antes de decidir pela aplicação da multa, o Condomínio deverá encaminhar uma notificação ao condômino, dando-lhe o prazo de 15 (quinze) dias para se defender através de documento escrito."
+    },
+    {
+      "id": 15,
+      "categoria": "fora_do_corpus",
+      "pergunta": "Para reservar o salão de festas no Monte Fuji, preciso estar em dia com o condomínio?",
+      "arquivo_origem": "005_Regimento_Residencial_Monte_Fuji.pdf",
+      "chunks_esperados": [],
+      "resposta_referencia": "Informação não localizada no regimento enviado."
+    },
+    {
+      "id": 16,
+      "categoria": "fora_do_corpus",
+      "pergunta": "Qual o valor atual da taxa de condomínio do Wish Coimbra?",
+      "chunks_esperados": [],
+      "resposta_referencia": "Informação não localizada no regimento enviado."
+    },
+    {
+      "id": 17,
+      "categoria": "fora_do_corpus",
+      "pergunta": "Qual a previsão do tempo para Goiânia amanhã?",
+      "chunks_esperados": [],
+      "resposta_referencia": "Informação não localizada no regimento enviado."
+    },
+    {
+      "id": 18,
+      "categoria": "fora_do_corpus",
+      "pergunta": "Quem é o síndico atual do Edifício Florença?",
+      "chunks_esperados": [],
+      "resposta_referencia": "Informação não localizada no regimento enviado."
+    },
+    {
+      "id": 19,
+      "categoria": "fora_do_corpus",
+      "pergunta": "Como faço para cancelar minha assinatura de TV a cabo?",
+      "chunks_esperados": [],
+      "resposta_referencia": "Informação não localizada no regimento enviado."
+    },
+    {
+      "id": 20,
+      "categoria": "fora_do_corpus",
+      "pergunta": "Receita de pamonha goiana tradicional.",
+      "chunks_esperados": [],
+      "resposta_referencia": "Informação não localizada no regimento enviado."
+    }
+  ]
