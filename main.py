@@ -18,6 +18,15 @@ from langchain_community.retrievers import BM25Retriever
 from flashrank import Ranker, RerankRequest
 from rich.text import Text
 import sys
+import logging
+import warnings
+
+os.environ["HF_HUB_OFFLINE"] = "1" # Força modo offline
+os.environ["TOKENIZERS_PARALLELISM"] = "false" # Evita outro warning comum
+
+logging.getLogger("transformers").setLevel(logging.ERROR)
+logging.getLogger("huggingface_hub").setLevel(logging.ERROR)
+warnings.filterwarnings("ignore", category=UserWarning) # Ignora avisos de versão
 
 # Recursos NLTK
 try:
@@ -85,10 +94,10 @@ class SeverinoIA:
 
         # 1. Busca Híbrida (BM25 + Vetorial)
         bm25 = BM25Retriever.from_documents(docs_base, preprocess_func=self._preprocess_local)
-        bm25.k = 30
+        bm25.k = 5
         docs_bm25 = bm25.invoke(query)
 
-        vector_retriever = self.vectorstore.as_retriever(search_kwargs={"k": 30, "filter": {"tenant_id": tenant_id}})
+        vector_retriever = self.vectorstore.as_retriever(search_kwargs={"k": 5, "filter": {"tenant_id": tenant_id}})
         docs_vetoriais = vector_retriever.invoke(query)
 
         # 2. Deduplicação
@@ -106,7 +115,7 @@ class SeverinoIA:
 
         final = []
         # Pegamos os 3 melhores após o rerank
-        for item in ranked[:3]:
+        for item in ranked[:1]:
             idx = item.get("id")
             doc = docs_unicos[idx]
             final.append(doc)
@@ -147,9 +156,9 @@ class SeverinoIA:
         # Prompt forte (anti-alucinação + força citação)
         prompt_template = ChatPromptTemplate.from_messages([
             ("system", """
-        Você é um assistente virtual especializado em regimento interno de condomínio.
+        Você é um assistente virtual especializado em regimento interno de condomínio, focado em ajudar moradores com dúvidas sobre normas e convivência.
 
-        Responda APENAS com base no CONTEXTO.
+        Responda APENAS com base no CONTEXTO fornecido. Se a informação não estiver lá, use o formato de resposta negativa indicado.
 
         CONTEXTO:
         {context}
@@ -157,37 +166,30 @@ class SeverinoIA:
         PERGUNTA:
         {question}
 
-        REGRAS:
-        - Seja cordial e educado.
-        - NÃO invente informações.
-        - Use apenas o contexto fornecido.
-        - Cite fontes obrigatoriamente.
-        - Responda de forma lógica e coerente.
+        REGRAS DE OURO:
+        - Seja cordial, educado e direto.
+        - JAMAIS invente informações. Se não estiver no contexto, admita que não localizou.
+        - Se a pergunta for "Posso...", "É permitido...", etc, comece a resposta com "Sim," ou "Não," de forma clara.
+        - Se o conteúdo do assunto for muito extenso (como uma lista de 30 deveres), selecione na "resposta" os pontos mais relevantes para o usuário, mas cite os itens específicos no "trecho".
 
-        REGRAS ESPECIAIS:
-        - Se a pergunta for "Posso...", "É permitido...", etc:
-        → Responda começando com "Sim," ou "Não," corretamente
-        → Nunca contradiga a resposta
+        REGRAS DE ESTRUTURA (HÍBRIDA):
+        - O regimento pode estar organizado por ARTIGOS (ex: Art. 1º) ou por TÓPICOS/ASSUNTOS (ex: 3. DEVERES DOS CONDÔMINOS).
+        - Identifique o número do item ou artigo que fundamenta sua resposta. No caso de tópicos (como 3.1, 3.2), trate-os com a mesma importância de um artigo.
 
-        - SEMPRE inclua um TRECHO LITERAL do regimento:
-        → Copie exatamente como está no CONTEXTO
-        → Preserve quebras de linha
-        → NÃO reescreva
-        → NÃO resuma o trecho
-        → Inclua o artigo completo (ex: "Art. 5º") quando existir
-        → SEMPRE inclua o parágrafo único ou parágrafos numerados (§) se eles existirem logo após o artigo citado.
-        → NÃO traga apenas itens isolados como "a)" ou "b)"
-        → Se houver lista, inclua o cabeçalho junto
-       
+        REGRAS PARA O TRECHO LITERAL:
+        - Copie EXATAMENTE como está no CONTEXTO.
+        - NÃO altere palavras, NÃO resuma o texto dentro do campo "trecho".
+        - Preserve a numeração original (ex: "3.1." ou "Art. 10") e as quebras de linha.
+        - Se houver muitos sub-itens, traga no campo "trecho" apenas os itens que justificam diretamente a sua resposta para evitar erros de processamento.
 
-        FORMATO OBRIGATÓRIO (JSON):
+        FORMATO OBRIGATÓRIO DE SAÍDA (JSON):
         {{
-        "resposta": "explicação clara e direta",
-        "trecho": "trecho literal copiado exatamente do contexto com quebras de linha",
+        "resposta": "Sua explicação clara, educada e direta para o morador.",
+        "trecho": "O texto original copiado do regimento que comprova a resposta, mantendo numeração e quebras de linha.",
         "citacoes": ["doc_id#chunk_id"]
         }}
 
-        Se não encontrar resposta:
+        CASO NÃO ENCONTRE A INFORMAÇÃO:
         {{
         "resposta": "Informação não localizada no regimento enviado.",
         "trecho": "",

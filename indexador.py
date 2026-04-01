@@ -81,8 +81,10 @@ def linha_e_valida(linha):
 # 3. LIMPEZA E NORMALIZAÇÃO
 # -------------------------------
 def limpar_texto(texto):
-    if not texto: 
-        return ""
+    if not texto: return ""
+    
+    # Filtro de rodapé específico para o Wish Coimbra e similares
+    padrao_rodape = r'(?i)Regimento Interno\s*[-–—]\s*Residencial.*|^\d+$'
     
     linhas = texto.split('\n')
     linhas_validas = []
@@ -90,47 +92,39 @@ def limpar_texto(texto):
     for linha in linhas:
         l = linha.strip()
         
-        # --- PROTEÇÃO PARA ARTIGOS ---
-        # Se a linha começa com "Art", ela é SAGRADA. Não aplicamos filtros de data/ruído nela.
-        if re.match(r'(?i)^Art\b', l):
+        # Ignora rodapés e números de página isolados
+        if re.fullmatch(padrao_rodape, l):
+            continue
+            
+        # Mantém a linha se for um marcador de tópico ou sub-tópico
+        if re.match(r'^\d+(\.\d+)*\.?$', l):
             linhas_validas.append(l)
             continue
 
-        # Filtro de Sanidade padrão
         if not l or not linha_e_valida(l):
             continue
-
-        # Filtro de Cabeçalho/Rodapé
-        if re.fullmatch(r'(?i)\s*(Regimento Interno|Pág\w*\.?\s*\d+|Página\s*\d+)\s*', l):            
+            
+        # Filtra Sumário e outros metadados
+        if re.fullmatch(r'(?i)\s*(Sumário|Pág\w*\.?\s*\d+)\s*', l):            
             continue
         
-        # Filtro de Protocolo: Refinado para não confundir horários (HH:MM) com datas (DD/MM)
-        # Verificamos se tem a barra '/' especificamente.
-        if "/" in l and re.search(r'\d{2}/\d{2}/\d{2,4}', l) and len(l) < 35:
-            continue
-
         linhas_validas.append(l)
     
-    texto_final = '\n'.join(linhas_validas)
-    
-    # --- CORREÇÕES GLOBAIS ---
+    # COSTURA DE PARÁGRAFOS: Une linhas que foram quebradas injustamente
+    texto_final = ""
+    for i in range(len(linhas_validas)):
+        l_atual = linhas_validas[i]
+        if i < len(linhas_validas) - 1:
+            l_prox = linhas_validas[i+1]
+            # Se a linha atual não termina com pontuação e a próxima não é um novo tópico
+            if not l_atual.endswith(('.', ':', '!', '?')) and \
+               not re.match(r'^(\d+\.|Art|§)', l_prox):
+                texto_final += l_atual + " "
+            else:
+                texto_final += l_atual + "\n"
+        else:
+            texto_final += l_atual
 
-    # A) Parágrafo Único
-    texto_final = re.sub(r'(?i)\b(8|S|B)\s+Único\b', 'Parágrafo Único', texto_final)
-    
-    # B) Símbolos de parágrafo
-    texto_final = re.sub(r'(?m)^[8\$S]\s*(\d+)', r'§ \1', texto_final)
-
-    # C) União de palavras (Letra + Hífen + Quebra + Letra)
-    texto_final = re.sub(r'([a-zA-ZÀ-Úà-ú])-\s*\n([a-zA-ZÀ-Úà-ú])', r'\1\2', texto_final)
-    
-    # D) Normalização de Travessões e Hifens de Artigos
-    # Agora incluímos o travessão longo '—' que aparece no seu Art. 28
-    texto_final = re.sub(r'(\d+)\s*[\-–—]\s*', r'\1 - ', texto_final)
-    
-    # E) Espaços duplos (preservando quebras de linha importantes)
-    texto_final = re.sub(r'[ \t]+', ' ', texto_final)
-    
     return texto_final.strip()
 
 # -------------------------------
@@ -138,38 +132,73 @@ def limpar_texto(texto):
 # -------------------------------
 def dividir_documento(texto):
     blocos = []
-    
-    # Este regex ignora se tem 1 espaço, 5 espaços, ponto ou hífen após o número
-    padrao_artigos = r'(?i)(?:^|\n)\s*((?:Art(?:igo)?\.?)\s+\d+[\s.\-–—]*[º°ª]?)'
+    # Limite de caracteres para decidir se um "assunto" deve ser fatiado
+    LIMITE_CHUNK = 2500 
+    OVERLAP = 300 # Sobreposição para não cortar frases no meio
 
     for erro, correcao in mapa_correcao_ocr.items():
         texto = re.sub(erro, correcao, texto)
 
-    matches = list(re.finditer(padrao_artigos, texto))
+    # 1. Tenta padrão de ARTIGOS primeiro
+    padrao_artigos = r'(?i)(?:^|\n)\s*((?:Art(?:igo)?\.?)\s+\d+[\s.\-–—]*[º°ª]?)'
+    matches_art = list(re.finditer(padrao_artigos, texto))
     
-    if len(matches) > 0:
-        for i in range(len(matches)):
-            inicio = matches[i].start()
-            fim = matches[i+1].start() if i+1 < len(matches) else len(texto)
-            
+    if len(matches_art) > 5:
+        for i in range(len(matches_art)):
+            inicio = matches_art[i].start()
+            fim = matches_art[i+1].start() if i+1 < len(matches_art) else len(texto)
             trecho = texto[inicio:fim].strip()
-            # Captura o ID limpo (ex: "Art. 32")
-            id_ref = matches[i].group(1).strip()
-            # Limpa hifens ou pontos extras que sobraram no ID
+            id_ref = matches_art[i].group(1).strip()
             id_ref = re.sub(r'[\s.\-–—]+$', '', id_ref)
             
+            # Se um artigo for absurdamente grande, podemos fatiar aqui também, 
+            # mas geralmente artigos são curtos.
             if len(trecho) > 20:
-                blocos.append({
-                    "tipo": "artigo",
-                    "id": id_ref,
-                    "conteudo": trecho
-                })
+                blocos.append({"tipo": "artigo", "id": id_ref, "conteudo": trecho})
     
-    # Se não achar nada, faz o corte padrão por tamanho
-    if not blocos:
-        tamanho = 1200
-        for i in range(0, len(texto), tamanho - 200):
-            blocos.append({"tipo": "chunk", "id": "bloco", "conteudo": texto[i:i+tamanho]})
+    # 2. PADRÃO ASSUNTO (WISH COIMBRA) com Fatiamento Inteligente
+    else:
+        padrao_topicos = r'(?m)^\s*(\d+\.\s+[A-ZÀ-Ú\s]{4,})$'
+        matches_top = list(re.finditer(padrao_topicos, texto))
+        
+        if len(matches_top) > 0:
+            for i in range(len(matches_top)):
+                inicio = matches_top[i].start()
+                fim = matches_top[i+1].start() if i+1 < len(matches_top) else len(texto)
+                
+                assunto_titulo = matches_top[i].group(1).strip()
+                conteudo_completo = texto[inicio:fim].strip()
+                
+                # ESTRATÉGIA: Se o assunto for maior que o limite, fatiamos
+                if len(conteudo_completo) > LIMITE_CHUNK:
+                    # Quebra o conteúdo em pedaços mantendo o título no início de cada um
+                    corpo_texto = conteudo_completo[len(assunto_titulo):].strip()
+                    
+                    for j in range(0, len(corpo_texto), LIMITE_CHUNK - OVERLAP):
+                        fim_fatia = j + LIMITE_CHUNK
+                        fatia = corpo_texto[j:fim_fatia]
+                        
+                        # Injeção de cabeçalho: O segredo para a IA não se perder
+                        conteudo_final = f"[{assunto_titulo} - CONTINUAÇÃO]\n{fatia}"
+                        if j == 0:
+                            conteudo_final = f"{assunto_titulo}\n{fatia}"
+                            
+                        blocos.append({
+                            "tipo": "assunto_fatiado",
+                            "id": assunto_titulo,
+                            "conteudo": conteudo_final
+                        })
+                else:
+                    if len(conteudo_completo) > 20:
+                        blocos.append({
+                            "tipo": "assunto_completo",
+                            "id": assunto_titulo,
+                            "conteudo": conteudo_completo
+                        })
+        else:
+            # Fallback para documentos sem estrutura clara
+            for i in range(0, len(texto), 1500 - 200):
+                blocos.append({"tipo": "chunk_geral", "id": "geral", "conteudo": texto[i:i+1500]})
             
     return blocos
 
@@ -220,15 +249,18 @@ def main():
             blocos = dividir_documento(texto_bruto)
             
             for indice, b in enumerate(blocos):
+                # O ID de referência agora é o que aparecerá na citação
+                ref_final = b["id"]
+                
                 documentos_para_indexar.append(
                     Document(
                         page_content=b["conteudo"],
                         metadata={
                             "tenant_id": tenant_id,
                             "tipo": b["tipo"],
-                            "referencia": b["id"],
+                            "referencia": ref_final, # Ex: "3. DEVERES DOS CONDÔMINOS"
                             "doc_id": f"doc_{tenant_id}",
-                            "chunk_id": f"chunk_{indice+1:02d}"
+                            "chunk_id": f"{indice+1:02d}"
                         }
                     )
                 )
