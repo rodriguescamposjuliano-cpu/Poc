@@ -1,6 +1,7 @@
 # =========================
-# IA / LLM (LangChain 1.x)
+# IA / LLM (SDKs Oficiais)
 # =========================
+google-genai          # ✅ Necessário para 'from google import genai'
 langchain==1.2.13
 langchain-core==1.2.22
 langchain-community==0.4.1
@@ -23,29 +24,30 @@ flashrank
 # =========================
 # PDF / OCR / Imagem
 # =========================
-pymupdf            # ✅ CORRETO (usa import fitz)
+pymupdf             # (usa import fitz)
 pdf2image
 pytesseract
 pillow
-opencv-python      # Necessário para cv2 no indexador.py
+opencv-python       # Necessário para cv2
 
 # =========================
-# Dados / ML
+# Dados / ML / Excel
 # =========================
-pandas
+pandas              # ✅ Para manipulação de tabelas
+openpyxl            # ✅ NECESSÁRIO para salvar arquivos .xlsx
 matplotlib
 scikit-learn
 joblib
-numpy              # Necessário para np no indexador.py
+numpy               # Necessário para np
 
 # =========================
 # API / Utils
 # =========================
-python-dotenv
+python-dotenv       # ✅ Necessário para carregar o .env
 fastapi
 uvicorn
 
 # =========================
-# Interface
+# Interface / CLI
 # =========================
 rich

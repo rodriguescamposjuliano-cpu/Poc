@@ -29,14 +29,13 @@
     },
     {
       "id": 4,
-      "categoria": "combinada",
-      "pergunta": "Qual o valor da multa por descumprimento do horário de silêncio no Edifício Florença?",
+      "categoria": "factual_direta",
+      "pergunta": "Qual horário não posso produzir ruídos no Edifício Florença?",
       "arquivo_origem": "004_Regimento_Edificio_Florenca.pdf",
       "chunks_esperados": [
-        "doc_004#chunk_03",
-        "doc_004#chunk_28"
+        "doc_004#chunk_03"
       ],
-      "resposta_referencia": "A multa estipulada por infração ao Regimento Interno (incluindo o desrespeito ao horário de silêncio) é de 20% da taxa de condomínio do mês anterior. Em caso de reincidência, a multa será cobrada em dobro."
+      "resposta_referencia": "Das 22:00 às 08:00 horas da manhã."
     },
     {
       "id": 5,
@@ -48,16 +47,18 @@
     },
     {
       "id": 6,
-      "categoria": "fora_do_corpus",
-      "pergunta": "Qual o procedimento para descarte de móveis velhos no Wish Coimbra?",
+      "categoria": "factual_direta",
+      "pergunta": "Como deve ser transportado o lixo no Wish Coimbra?",
       "arquivo_origem": "001_Regimento_Residencial_Wish_Coimbra.pdf",
-      "chunks_esperados": [],
-      "resposta_referencia": "Informação não localizada no regimento enviado."
+      "chunks_esperados": [
+        "doc_001#chunk_20"
+      ],
+      "resposta_referencia": "O lixo deve ser transportado usando recipientes, descartáveis ou não, sacos ou caixas adequadas para cada tipo."
     },
     {
       "id": 7,
       "categoria": "factual_direta",
-      "pergunta": "É permitido estender roupas na varanda no Reality Buritis?",
+      "pergunta": "É permitido estender roupas na sacada no Reality Buritis?",
       "arquivo_origem": "002_Regimento_Residencial_Reality_Buritis.pdf",
       "chunks_esperados": [
         "doc_002#chunk_21"
@@ -67,7 +68,7 @@
     {
       "id": 8,
       "categoria": "factual_direta",
-      "pergunta": "Qual a idade mínima para crianças usarem a sauna sem acompanhante no American Tower?",
+      "pergunta": "Qual a idade mínima para uso da sauna sem acompanhante no American Tower?",
       "arquivo_origem": "003_Regimento_Residencial_Edificio_American_Tower.pdf",
       "chunks_esperados": [
         "doc_003#chunk_59"
@@ -110,6 +111,7 @@
       "arquivo_origem": "002_Regimento_Residencial_Reality_Buritis.pdf",
       "chunks_esperados": [
         "doc_002#chunk_11",
+        "doc_002#chunk_16",
         "doc_002#chunk_23",
         "doc_002#chunk_24"
       ],

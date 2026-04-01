@@ -9,6 +9,7 @@ SINONIMOS = {
     "cachorro": ["pet", "animal", "cão", "pitbull", "shitzu", "bicho"],
     "carro": ["veículo", "automóvel", "carro", "caminhonete", "SUV"],
     "barulho": ["som alto", "gritaria", "algazarra", "baderna", "barulheira"],
+    "silêncio": ["sitêncio"],
     "vaga": ["garagem", "estacionamento", "minha vaga", "lugar de parar"]
 }
 
