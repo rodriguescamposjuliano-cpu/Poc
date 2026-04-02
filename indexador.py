@@ -32,8 +32,6 @@ mapa_correcao_ocr = {
     r"(?i)\bAnt\b\.?": "Art.",
     r"(?i)\bAst\b\.?": "Art.",
     r"(?i)\bAt\b\.?": "Art."
-    
-     
 }
 
 # -------------------------------
