@@ -11,11 +11,15 @@
     },
     {
         "id": 2,
-        "categoria": "fora_do_corpus",
-        "pergunta": "É permitido o uso de churrasqueiras elétricas nas varandas do Reality Buritis?",
+        "categoria": "combinada",
+        "pergunta": "Em que áreas são proibidas bicicletas no Reality Buritis?",
         "arquivo_origem": "002_Regimento_Residencial_Reality_Buritis.pdf",
-        "chunks_esperados": [],
-        "resposta_referencia": "Informação não localizada no regimento enviado."
+        "chunks_esperados": [
+            "doc_002#chunk_09",
+            "doc_002#chunk_04",
+            "doc_002#chunk_05"
+        ],
+        "resposta_referencia": "São probidas bicicletas permanecerem e serem utilizadas nas áreas comuns, inclusive pelo portão de veículos."
     },
     {
         "id": 3,
@@ -154,24 +158,32 @@
     },
     {
         "id": 17,
-        "categoria": "fora_do_corpus",
-        "pergunta": "Qual a previsão do tempo para Goiânia amanhã?",
-        "chunks_esperados": [],
-        "resposta_referencia": "Informação não localizada no regimento enviado."
+        "categoria": "factual_direta",
+        "pergunta": "Em que áreas são permitidas bicicletas no Reality Buritis?",
+        "arquivo_origem": "002_Regimento_Residencial_Reality_Buritis.pdf",
+        "chunks_esperados": [
+            "doc_002#chunk_09"
+        ],
+        "resposta_referencia": "Nas garagens, dentro do espaço correspondente à vaga de cada apartamento, ou no suporte coletivo no muro."
     },
     {
         "id": 18,
-        "categoria": "fora_do_corpus",
-        "pergunta": "Quem é o síndico atual do Edifício Florença?",
-        "chunks_esperados": [],
-        "resposta_referencia": "Informação não localizada no regimento enviado."
+        "categoria": "factual_direta",
+        "pergunta": "Quem é o representante da contabilidade do Edifício Florença?",
+        "chunks_esperados": [
+            "doc_004#chunk_30"
+        ],
+        "resposta_referencia": "É o Sr. Gustavo de Souza Silva."
     },
     {
         "id": 19,
-        "categoria": "fora_do_corpus",
-        "pergunta": "Como faço para cancelar minha assinatura de TV a cabo?",
-        "chunks_esperados": [],
-        "resposta_referencia": "Informação não localizada no regimento enviado."
+        "categoria": "combinada",
+        "pergunta": "Posso deixar lixo no hall do elevador?",
+        "chunks_esperados": [
+            "doc_004#chunk_07",
+            "doc_004#chunk_08"
+        ],
+        "resposta_referencia": "Não é permitido deixar lixo nos halls dos apartamentos."
     },
     {
         "id": 20,
