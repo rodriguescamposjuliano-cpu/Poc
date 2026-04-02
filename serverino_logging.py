@@ -1,9 +1,14 @@
 from langchain_core.documents import Document
 from datetime import datetime
 import json
+import os
 
 DEBUG = True
-LOG_FILE = "severino_debug.log"
+LOG_DIR = "logs_auditoria"
+LOG_FILE = os.path.join(LOG_DIR, "severino_debug.log")
+
+# Garante que a pasta existe (Windows, Mac, Linux)
+os.makedirs(LOG_DIR, exist_ok=True)
 
 class ServerinoLogging:
     def __init__(self):

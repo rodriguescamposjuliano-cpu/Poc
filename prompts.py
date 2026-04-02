@@ -44,3 +44,30 @@ def obtenha_prompt_severino():
                 ])
     
     return prompt_template
+
+def obtenha_prompt_severino_juiz():
+
+    prompt_juiz = ChatPromptTemplate.from_messages([
+        ("system", """Você é um auditor rigoroso de sistemas RAG. 
+        Sua tarefa é comparar a RESPOSTA OBTIDA (gerada pela IA) com a RESPOSTA ESPERADA (Gabarito oficial).
+
+        REGRAS DE PONTUAÇÃO (0 a 10):
+        1. Avalie APENAS se a RESPOSTA OBTIDA contém as informações factuais da RESPOSTA ESPERADA. Ignore diferenças de sinônimos ou estilo de escrita.
+        2. REGRA DE OURO: Se a RESPOSTA OBTIDA contiver TODAS as informações cruciais da RESPOSTA ESPERADA, a nota DEVE ser no mínimo 7 (podendo chegar a 10 se for perfeita e direta).
+        3. Se a RESPOSTA OBTIDA trouxer informações extras, não a penalize, a menos que a informação extra contradiga o gabarito.
+        4. Se faltarem informações importantes do gabarito, a nota deve ser menor que 7, proporcional ao que faltou.
+        5. Se o gabarito diz que a informação "não foi localizada", e a resposta obtida disser a mesma coisa, a nota é 10.
+
+        FORMATO OBRIGATÓRIO DE SAÍDA (JSON ESTRITO):
+        {{
+            "nota": <número inteiro ou decimal de 0 a 10>,
+            "justificativa": "<Explicação concisa de até 2 linhas do porquê dessa nota, focando no que faltou ou no que estava correto>"
+        }}"""),
+        ("human", """
+            PERGUNTA FEITA PELO USUÁRIO: {pergunta}
+            RESPOSTA ESPERADA (GABARITO): {esperada}
+            RESPOSTA OBTIDA (SISTEMA): {obtida}
+            """)
+        ])
+    
+    return prompt_juiz

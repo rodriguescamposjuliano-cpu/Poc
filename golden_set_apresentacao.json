@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "categoria": "factual_direta",
+        "pergunta": "Me fale sobre o horário de mudança no Wish Coimbra.",
+        "arquivo_origem": "001_Regimento_Residencial_Wish_Coimbra.pdf",
+        "chunks_esperados": [
+            "doc_001#chunk_15"
+        ],
+        "resposta_referencia": "As mudanças deverão ser realizadas de segunda a sexta das 08h às 12h e das 14h às 17h e aos sábados das 08h às 12h."
+    }
+]

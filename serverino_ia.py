@@ -78,7 +78,7 @@ class SeverinoIA:
         ranked = self.reranker.rerank(RerankRequest(query=query, passages=passages))
 
         final = []
-        # Pegamos os 3 melhores após o rerank (estava 2 no código original, ajustável)
+        # Pegamos os 5 melhores após o rerank (estava 2 no código original, ajustável)
         for item in ranked[:5]:
             idx = item.get("id")
             doc = docs_unicos[idx]
