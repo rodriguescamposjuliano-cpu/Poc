@@ -1,14 +1,20 @@
 # =========================
 # IA / LLM (SDKs Oficiais)
 # =========================
-google-genai          # ✅ Necessário para 'from google import genai'
+google-genai          
+langchain-google-genai # Necessário para o ChatGoogleGenerativeAI (SeverinoIA)
 langchain==1.2.13
 langchain-core==1.2.22
 langchain-community==0.4.1
 langchain-chroma
 langchain-huggingface
-langchain-groq
 nltk
+
+# =========================
+# Avaliação / Métricas
+# =========================
+ragas                 # Necessário para avaliar o RAG (Fidelidade/Relevância)
+datasets              # Dependência do Ragas para formatar os dados de teste
 
 # =========================
 # Embeddings / Vetor
@@ -33,8 +39,8 @@ opencv-python       # Necessário para cv2
 # =========================
 # Dados / ML / Excel
 # =========================
-pandas              # ✅ Para manipulação de tabelas
-openpyxl            # ✅ NECESSÁRIO para salvar arquivos .xlsx
+pandas              # Para manipulação de tabelas
+openpyxl            # NECESSÁRIO para salvar arquivos .xlsx
 matplotlib
 scikit-learn
 joblib
@@ -43,7 +49,7 @@ numpy               # Necessário para np
 # =========================
 # API / Utils
 # =========================
-python-dotenv       # ✅ Necessário para carregar o .env
+python-dotenv       # Necessário para carregar o .env
 fastapi
 uvicorn
 
