@@ -5,7 +5,7 @@ O **Severino IA** é um ecossistema de Inteligência Artificial baseado em RAG (
 
 ## 🚀 Tecnologias Utilizadas
 
-* **LLM:** Llama-3.1-8b via Groq.
+* **LLM:** Gemini-2.5-Flash.
 * **Vector** Database: ChromaDB.
 * **Embeddings:** `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`.
 * **Busca Híbrida:** BM25 (Léxica) + Vetorial (Semântica).
