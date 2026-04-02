@@ -44,12 +44,12 @@ except ImportError:
     RelevancyMetric = AnswerRelevancy
 
 # =====================================================================
-# IMPORT DA IA PRINCIPAL
+# IMPORT DA IA PRINCIPAL (CORRIGIDO PARA LER DO SERVERINO_IA)
 # =====================================================================
 try:
-    from main import SeverinoIA
+    from serverino_ia import SeverinoIA
 except ImportError:
-    print("Aviso: Módulo 'main.SeverinoIA' não encontrado. Verifique se o arquivo main.py está na pasta.")
+    print("Aviso: Módulo 'serverino_ia.SeverinoIA' não encontrado. Verifique se o arquivo serverino_ia.py está na pasta.")
     exit(1)
 
 load_dotenv()
@@ -139,17 +139,6 @@ def exibir_resumo_final(medias_recall, media_ragas, media_juiz, media_fidelidade
     print("\n🔍 3) AVALIAÇÃO DE RECALL MÉDIO (Somente perguntas do Corpus):")
     for modo, recalls in medias_recall.items():
         print(f"   [{modo.upper():<6}] Recall@3: {recalls[3]:.2%} | Recall@5: {recalls[5]:.2%} | Recall@10: {recalls[10]:.2%}")
-
-    print("\n💡 ANÁLISE DE TRADE-OFFS (Quando o Híbrido melhora/piora):")
-    print("   ✔️ QUANDO MELHORA: O Híbrido se sai melhor quando a pergunta exige jargões precisos")
-    print("      ou IDs que o Vetorial dilui (ex: números de artigo), e, ao mesmo tempo, necessita de")
-    print("      semântica que o BM25 erra. A etapa de DEDUPLICAÇÃO NA FUSÃO garante que o reranker")
-    print("      avalie mais documentos únicos, maximizando a chance de subir o chunk correto.")
-    print("   ❌ QUANDO PIORA: Em raros casos, o Híbrido pode reduzir o Recall@K inferior (como K=3)")
-    print("      se o modelo Reranker sub-rankear um chunk que continha um match exato perfeito no BM25")
-    print("      mas possuía baixa pontuação nas features semânticas do Cross-Encoder. Além disso, se os")
-    print("      modelos base (Sparse/Dense) retornarem muito lixo, os documentos cruciais podem não")
-    print("      entrar no funil para o Rerank (efeito de truncation problem).")
     print("="*80 + "\n")
 
 

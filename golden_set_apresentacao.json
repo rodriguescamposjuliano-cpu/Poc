@@ -8,5 +8,17 @@
             "doc_001#chunk_15"
         ],
         "resposta_referencia": "As mudanças deverão ser realizadas de segunda a sexta das 08h às 12h e das 14h às 17h e aos sábados das 08h às 12h."
+    },
+    {
+        "id": 2,
+        "categoria": "combinada",
+        "pergunta": "Em que áreas são proibidas bicicletas no Reality Buritis?",
+        "arquivo_origem": "002_Regimento_Residencial_Reality_Buritis.pdf",
+        "chunks_esperados": [
+            "doc_002#chunk_09",
+            "doc_002#chunk_04",
+            "doc_002#chunk_05"
+        ],
+        "resposta_referencia": "São probidas bicicletas permanecerem e serem utilizadas nas áreas comuns, inclusive pelo portão de veículos."
     }
 ]

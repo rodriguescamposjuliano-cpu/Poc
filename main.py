@@ -43,7 +43,6 @@ except:
 load_dotenv()
 console = Console()
 
-
 def limpar_console():
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -90,47 +89,6 @@ def exiba_resposta(resposta_final):
             
             console.print(linha_fontes)
 
-def exiba_resultado_avalicao(resultado):
-    texto_resultado = f"""
-    [bold cyan]❓ Pergunta[/bold cyan]
-    {resultado['Pergunta']}
-
-    [bold yellow]🎯 Resposta Esperada[/bold yellow]
-    {resultado['Esperada']}
-    [bold magenta]🤖 Resposta Obtida[/bold magenta]
-    {resultado['Obtida']}
-
-    [bold blue]📂 Recuperação de Contexto[/bold blue]
-
-    [bold]• Chunks Esperados:[/bold]
-    {resultado.get('Chunks Esperados', '')}
-    [bold]• Chunks Obtidos:[/bold]
-    {resultado.get('Chunks Obtidos', '')}
-
-    [bold]• Chunks Iguais:[/bold] {resultado['Chunks Iguais']}
-    [bold]• Chunks Contidos:[/bold] {resultado['Chunks Contidos']}
-
-    [bold green]📊 Métricas RAGAS[/bold green]
-    • Fidelidade: {resultado['Fidelidade']:.2f}
-    • Relevância: {resultado['Relevancia']:.2f}
-    • Nota RAGAS: {resultado['Nota Ragas']:.1f}/10
-
-    [bold red]⚖️ Avaliação do Juiz[/bold red]
-    • Nota: {resultado['Nota Juiz']:.1f}/10
-
-    [bold]🏆 Score Final:[/bold] {resultado['Score Final']:.1f}/10
-
-    • Justificativa:
-    {resultado['Justificativa']}
-    """
-
-    console.print(
-        Panel.fit(
-            Text.from_markup(texto_resultado),
-            border_style="bright_blue"
-        )
-    )
-
 if __name__ == "__main__":
     ia = SeverinoIA()
     
@@ -139,7 +97,7 @@ if __name__ == "__main__":
         console.print(Panel.fit("SEVERINO IA", style="bold blue"))
 
         console.print("[1] Conversar com IA")
-        console.print("[2] Rodar avaliação (RAGAS + Juiz)")
+        console.print("[2] Rodar avaliação (RAGAS + Juiz + Recalls)")
         console.print("[sair] Encerrar\n", markup=False)
 
         opcao = input("Escolha: ").strip()
@@ -148,12 +106,12 @@ if __name__ == "__main__":
             break
 
         if opcao == "2":
-            with console.status("[bold yellow]Realizando avaliação..."):
+            with console.status("[bold yellow]Realizando avaliação e benchmarks...[/bold yellow]\n"):
                 avaliador = Avaliador(ia, obtenha_prompt_severino_juiz())
-                resultado = avaliador.rodar_unico("golden_set_apresentacao.json")
-                exiba_resultado_avalicao(resultado)
+                avaliador.rodar_avaliacao("golden_set_apresentacao.json")
 
-            input("\nPressione ENTER para continuar...")
+            input("\nPressione ENTER para voltar ao menu principal...")
+            continue
 
         if opcao != "1":
             continue
@@ -199,4 +157,3 @@ if __name__ == "__main__":
             console.print("\n" + "━" * 50, style="yellow")
             console.print(f"[bold yellow]Severino[/bold yellow] [dim](em {tempo:.2f}s)[/dim]")
             exiba_resposta(resposta_final)
-            
