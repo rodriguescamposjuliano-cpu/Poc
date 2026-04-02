@@ -78,7 +78,7 @@ class SeverinoIA:
         ranked = self.reranker.rerank(RerankRequest(query=query, passages=passages))
 
         final = []
-        # Pegamos os 5 melhores após o rerank (estava 2 no código original, ajustável)
+        # Pegamos os 5 melhores após o rerank
         for item in ranked[:5]:
             idx = item.get("id")
             doc = docs_unicos[idx]
@@ -86,14 +86,66 @@ class SeverinoIA:
         
         return final
 
+    def buscar_avaliar_modos(self, query, tenant_id, k_max=10):
+        """
+        Método exclusivo para Benchmark.
+        Retorna top K para os modos Sparse, Dense e Híbrido.
+        """
+        results = self.vectorstore.get(where={"tenant_id": tenant_id})
+        docs_base = [Document(page_content=c, metadata=m) for c, m in zip(results['documents'], results['metadatas'])]
+        
+        if not docs_base: 
+            return {"sparse": [], "dense": [], "hybrid": []}
+
+        # --- MODO 1: SPARSE (BM25) ---
+        bm25 = BM25Retriever.from_documents(docs_base, preprocess_func=self._preprocess_local)
+        bm25.k = k_max
+        docs_bm25 = bm25.invoke(query)
+
+        # --- MODO 2: DENSE (VETORIAL) ---
+        vector_retriever = self.vectorstore.as_retriever(search_kwargs={"k": k_max, "filter": {"tenant_id": tenant_id}})
+        docs_vetoriais = vector_retriever.invoke(query)
+
+        # --- MODO 3: HYBRID (Fusão com Deduplicação + Rerank) ---
+        # Buscamos um número maior (pool) para a fusão e deduplicação ser eficaz antes do rerank
+        pool_size = max(15, k_max * 2)
+        bm25_hyb = BM25Retriever.from_documents(docs_base, preprocess_func=self._preprocess_local)
+        bm25_hyb.k = pool_size
+        docs_bm25_hyb = bm25_hyb.invoke(query)
+        
+        vector_retriever_hyb = self.vectorstore.as_retriever(search_kwargs={"k": pool_size, "filter": {"tenant_id": tenant_id}})
+        docs_vetoriais_hyb = vector_retriever_hyb.invoke(query)
+
+        # Fusão e Deduplicação rigorosa baseada no conteúdo
+        todos = docs_bm25_hyb + docs_vetoriais_hyb
+        docs_unicos = []
+        vistos = set()
+        for d in todos:
+            if d.page_content not in vistos:
+                docs_unicos.append(d)
+                vistos.add(d.page_content)
+
+        # Reranking
+        passages = [{"id": i, "text": d.page_content} for i, d in enumerate(docs_unicos)]
+        ranked = self.reranker.rerank(RerankRequest(query=query, passages=passages))
+
+        docs_hybrid = []
+        for item in ranked[:k_max]:
+            idx = item.get("id")
+            docs_hybrid.append(docs_unicos[idx])
+
+        return {
+            "sparse": docs_bm25,
+            "dense": docs_vetoriais,
+            "hybrid": docs_hybrid
+        }
+
     def responder(self, pergunta, tenant_id):
         docs = self.buscar(pergunta, tenant_id)
 
-        # Regra de recusa (mais segura)
         if not docs or len(docs) == 0:
             return "Informação não localizada no regimento enviado."
 
-        # Montagem do contexto com IDs REAIS
         contexto_lista = []
         for i, d in enumerate(docs):
             doc_id = d.metadata.get("doc_id", f"doc_{tenant_id}")
@@ -102,7 +154,6 @@ class SeverinoIA:
             ref_id = f"[{doc_id}#{chunk_id}]"
             texto = d.page_content
 
-            # tenta puxar contexto anterior se parecer item de lista
             if texto.strip().startswith(("a)", "b)", "c)", "d)")) and i > 0:
                 texto = docs[i-1].page_content + "\n" + texto
 
@@ -110,23 +161,17 @@ class SeverinoIA:
 
         contexto_string = "\n\n".join(contexto_lista)
 
-        # Carrega o prompt template do prompts.py
         prompt_template = prompts.obtenha_prompt_severino()
                 
-        # Log para avaliar os chunks/contexto enviados ao modelo
         ServerinoLogging().log_debug("DEBUG_PROMPT_ENVIADO", {"pergunta": pergunta, "contexto": contexto_string})
 
         chain = prompt_template | self.llm | StrOutputParser()
-
         resposta = chain.invoke({"context": contexto_string, "question": pergunta}).strip()
 
-        # Extração robusta do JSON usando Regex para ignorar textos antes ou depois
         match = re.search(r'\{.*\}', resposta, re.DOTALL)
-        
         if match:
             resposta_limpa = match.group(0)
         else:
-            # Fallback caso a regex falhe, limpa os blocos de markdown
             resposta_limpa = resposta.replace("```json", "").replace("```", "").strip()
 
         try:

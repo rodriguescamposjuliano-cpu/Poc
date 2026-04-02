@@ -4,11 +4,9 @@ import re
 import math
 import traceback
 import pandas as pd
-
 from datasets import Dataset
 from ragas import evaluate
 from ragas.metrics import Faithfulness
-
 from ragas.llms import LangchainLLMWrapper
 from ragas.embeddings import LangchainEmbeddingsWrapper
 
@@ -137,7 +135,6 @@ class Avaliador:
 
         resposta_obj = self.ia.responder(pergunta, tenant)
 
-        # 🔥 IMPORTANTE: sua IA precisa retornar dict
         if isinstance(resposta_obj, dict):
             resposta_bruta = resposta_obj.get("resposta", "")
         else:
@@ -152,7 +149,6 @@ class Avaliador:
             resposta = resposta_bruta.strip()
             trecho = ""
 
-        # 🔥 Usa resposta limpa (sem ruído)
         resposta_principal = self._extrair_resposta_principal(resposta)
 
         # --- Extrai chunks ---
@@ -162,7 +158,7 @@ class Avaliador:
             for c in raw_chunks
         ]))
 
-        # 🔥 CONTEXTO REAL (ESSENCIAL)
+        # CONTEXTO REAL (ESSENCIAL)
         contexto = self._extrair_contexto_real(resposta_obj)
 
         # --- Caso recusa ---
@@ -186,14 +182,14 @@ class Avaliador:
 
             f_score, r_score = self._extrair_metricas_ragas(resultado_ragas)
 
-            # 🔥 Peso ajustado (relevância > fidelidade)
+            # Peso ajustado (relevância > fidelidade)
             nota_ragas = ((f_score * 0.4) + (r_score * 0.6)) * 10
 
             nota_juiz, justificativa = self._avaliar_juiz(
                 pergunta, esperada, resposta
             )
 
-            # 🔥 CALIBRAÇÃO INTELIGENTE
+            # ALIBRAÇÃO INTELIGENTE
             if nota_juiz >= 9:
                 nota_ragas = max(nota_ragas, 8)
             elif nota_juiz >= 7:
@@ -201,7 +197,7 @@ class Avaliador:
 
         iguais, contidos = self._avaliar_chunks(chunks_esperados, chunks)
 
-        # 🔥 SCORE FINAL HÍBRIDO
+        # SCORE FINAL HÍBRIDO
         score_final = (nota_ragas * 0.4) + (nota_juiz * 0.6)
 
         return {
